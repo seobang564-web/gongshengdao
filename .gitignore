@@ -1,0 +1,23 @@
+# Blender 生成物
+*.blend
+*.blend1
+*.blend@
+__pycache__/
+# 渲染帧、视频、压缩包（体积大，由脚本生成）
+output/
+render/
+whitebox/
+*.mp4
+*.webm
+*.zip
+*.png
+!evidence/**/*.png
+# 版权素材：人物模型、Mixamo 原始动作
+characters/
+动作/
+*.fbx
+*.fbx.part_*
+# 系统文件
+.DS_Store
+~$*
+.~*
