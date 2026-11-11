@@ -16,9 +16,9 @@
 docs/
   01_需求/            需求说明（整理自开题报告）
   02_规约/            验收规约：最终验收逐条检查的标准（编号、测试方法、通过标准、证据）
-  03_ADR/             架构决策记录（含前置调研）
-  04_Harness/         项目级 Harness：开发规范、AI 操作约定、代码规范、日志与观测约定
-  05_Global_Plan_Tasks/  项目级目标、阶段计划、任务分解
+  03_ADR/             前置调研（需求 / 规约 / 技术）+ 架构决策记录
+  04_Harness/         项目级 Harness：开发规范、AI 操作约定、代码规范、文档规范、日志规范、观测性约定
+  05_Global_Plan_Tasks/  项目级目标（Global）、初期计划（Plan）、任务分解规范与任务表（Tasks）
 blender/              Blender 5.2 脚本（全部无界面运行：blender -b ... -P 脚本）
   gongshengdao_scene_v3.py / _v4.py   岛屿场景
   import_character.py / animate_loop.py   人物导入与待机循环
