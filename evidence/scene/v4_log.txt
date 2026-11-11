@@ -1,0 +1,3 @@
+Blender 5.2.3 LTS
+[共生岛] 场景搭好，用时 9 秒，物体 884 个
+[共生岛] 已输出 /Users/macbook/Desktop/共生岛/blender/render/v4_night.png，渲染 167 秒

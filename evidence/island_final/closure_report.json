@@ -1,0 +1,60 @@
+{
+ "A1_idle": {
+  "loop_last_vs_first": 0.23
+ },
+ "B2_wave": {
+  "start_vs_neutral": 0.0,
+  "end_vs_neutral": 0.0
+ },
+ "A3_stretch": {
+  "start_vs_neutral": 0.0,
+  "end_vs_neutral": 0.0
+ },
+ "C1a_yawn": {
+  "start_vs_neutral": 0.0,
+  "end_vs_neutral": 0.0
+ },
+ "C2b_feed": {
+  "start_vs_neutral": 0.0,
+  "end_vs_neutral": 0.0
+ },
+ "B3_cheer": {
+  "start_vs_neutral": 0.0,
+  "end_vs_neutral": 0.0
+ },
+ "C1b_water": {
+  "start_vs_neutral": 0.0,
+  "end_vs_neutral": 0.0
+ },
+ "C3_fire_loop": {
+  "loop_last_vs_first": 0.49
+ },
+ "C3_fire_in": {
+  "start_vs_neutral": 0.0,
+  "end_vs_neutral": 0.0
+ },
+ "C3_fire_out": {
+  "start_vs_neutral": 0.0,
+  "end_vs_neutral": 0.0
+ },
+ "W_stand_fire": {
+  "start_vs_neutral": 0.0,
+  "end_vs_neutral": 0.0
+ },
+ "W_fire_stand": {
+  "start_vs_neutral": 0.0,
+  "end_vs_neutral": 0.0
+ },
+ "W_stand_planter": {
+  "start_vs_neutral": 0.0,
+  "end_vs_neutral": 0.0
+ },
+ "W_planter_stand": {
+  "start_vs_neutral": 0.0,
+  "end_vs_neutral": 0.0
+ },
+ "B4_rush": {
+  "start_vs_neutral": 0.0,
+  "end_vs_neutral": 0.0
+ }
+}

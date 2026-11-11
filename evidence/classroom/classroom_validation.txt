@@ -1,0 +1,8 @@
+00:00.143  translation      | WARNING Falling back to standard locale ("C")
+00:00.517  blend            | Read blend: "/Users/macbook/Desktop/共生岛/blender/magic_classroom.blend"
+CHECK_LOOP matrix_max_error=2.38418579e-07 light_max_error=0
+CHECK_GEOMETRY frames=192 float_groups=15 animated_meshes=212 triangles=370588 ui_ratio=0.60000006
+CLASSROOM_ACCEPTANCE_PASS
+Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:31:22)
+
+Blender quit

@@ -1,0 +1,22 @@
+共生岛 · 魔法教室构建日志
+[教室    0.00s] Blender 5.2.3 LTS
+[教室    0.04s] 引擎 BLENDER_EEVEE, Look AgX - Punchy, samples=64
+[教室    0.11s] 建筑完成：240 块地板，3 个真实拱窗，开放右墙/后墙/顶面。
+[教室    0.12s] 黑板完成：中心 UI 3.87298 × 1.66538 米，占面板面积 60%。
+[教室    0.12s] 窗外背景完成：三片贴合真实窗洞的天空与裁剪浮岛，阴影光线透明。
+[教室    0.79s] 窗外背景 开启
+[教室    1.00s] 时段 morning
+[教室    5.94s] PASS：192 帧悬浮物、火苗、光尘对黑板 UI / C1 投影重叠 = 0
+[教室    6.03s] PASS：黑板UI 63个采样点均无遮挡
+[教室    6.10s] 物体 2291；评估三角面（包含实例/修改器）370,588
+[教室    6.18s] 保存 /Users/macbook/Desktop/共生岛/blender/magic_classroom.blend
+[教室    6.23s] 时段 morning
+[教室    8.96s] 预览 morning: 2.72 秒，/Users/macbook/Desktop/共生岛/blender/render/classroom_morning.png
+[教室    9.01s] 时段 noon
+[教室   11.03s] 预览 noon: 2.01 秒，/Users/macbook/Desktop/共生岛/blender/render/classroom_noon.png
+[教室   11.08s] 时段 night
+[教室   13.38s] 预览 night: 2.29 秒，/Users/macbook/Desktop/共生岛/blender/render/classroom_night.png
+[教室   13.43s] 时段 morning
+[教室   13.43s] 运行统计 {"blender": "5.2.3 LTS", "build_seconds": 6.1, "render_seconds": {"morning": 2.72, "noon": 2.01, "night": 2.29}, "peak_process_rss_gib": 1.116, "triangles": 370588, "objects": 2291, "resolution": [2560, 1440], "preview_percent": 50, "samples": 64, "clearance_frames": 192, "clearance_hits": 0, "ui_static_ray_failures": 0}
+[教室   13.47s] 保存 /Users/macbook/Desktop/共生岛/blender/magic_classroom.blend
+[教室   13.47s] 构建与交付完成

@@ -1,0 +1,21 @@
+{
+  "blender": "5.2.3 LTS",
+  "build_seconds": 6.1,
+  "render_seconds": {
+    "morning": 2.72,
+    "noon": 2.01,
+    "night": 2.29
+  },
+  "peak_process_rss_gib": 1.116,
+  "triangles": 370588,
+  "objects": 2291,
+  "resolution": [
+    2560,
+    1440
+  ],
+  "preview_percent": 50,
+  "samples": 64,
+  "clearance_frames": 192,
+  "clearance_hits": 0,
+  "ui_static_ray_failures": 0
+}

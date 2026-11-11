@@ -1,0 +1,8 @@
+09:43:33 [night] A1_idle: 合成 2 帧 → layer/A1_idle_night/
+09:43:33 [night] A1_idle: video/A1_idle_night.webm
+09:43:33 [night] 背景视频 video/bg_night.mp4
+09:43:33 [night] 合成完成，用时 0.0 分钟
+09:45:44 [night] A1_idle: 合成 2 帧 → layer/A1_idle_night/
+09:45:44 [night] A1_idle: video/A1_idle_night.webm
+09:45:45 [night] 背景视频 video/bg_night.mp4
+09:45:45 [night] 合成完成，用时 0.0 分钟

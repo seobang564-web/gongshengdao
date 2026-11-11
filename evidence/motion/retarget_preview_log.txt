@@ -1,0 +1,23 @@
+[共生岛] Breathing Idle 出错：
+Traceback (most recent call last):
+  File "/Users/macbook/Desktop/共生岛/blender/retarget_mixamo.py", line 333, in <module>
+    n = retarget(clip)
+  File "/Users/macbook/Desktop/共生岛/blender/retarget_mixamo.py", line 203, in retarget
+    ev = src.evaluated_get(dg)
+TypeError: Object.evaluated_get(): error with argument 1, "depsgraph" -  Function.depsgraph does not support a 'None' assignment Depsgraph type
+
+[共生岛] Happy Walk: 27 帧，重定向 + 渲染 5 秒
+[共生岛] Jogging: 62 帧，重定向 + 渲染 7 秒
+[共生岛] Arm Stretching: 214 帧，重定向 + 渲染 24 秒
+[共生岛] Waving: 77 帧，重定向 + 渲染 8 秒
+[共生岛] Joyful Jump: 45 帧，重定向 + 渲染 5 秒
+[共生岛] Victory Idle: 44 帧，重定向 + 渲染 5 秒
+[共生岛] Watering: 135 帧，重定向 + 渲染 15 秒
+[共生岛] Throwing: 135 帧，重定向 + 渲染 15 秒
+[共生岛] Sitting Idle: 247 帧，重定向 + 渲染 27 秒
+[共生岛] Sitting_edge: 51 帧，重定向 + 渲染 6 秒
+[共生岛] Stand To Sit: 55 帧，重定向 + 渲染 6 秒
+[共生岛] Sit To Stand: 55 帧，重定向 + 渲染 6 秒
+[共生岛] Thinking: 103 帧，重定向 + 渲染 11 秒
+[共生岛] Yawn: 201 帧，重定向 + 渲染 23 秒
+[共生岛] 全部完成 163 秒
