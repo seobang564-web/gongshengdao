@@ -1,134 +1,184 @@
-# 共生岛 · 项目交接文档（2026-11-11 更新）
+# 共生岛 · 建模 / 动画 / 渲染 交接文档（2026-11-11）
 
-## 1. 项目目标
-- 课程项目：桌面日程管理应用，搭配 AI 虚拟角色（开题报告为 docx）。
-- 视觉方案：用 Blender 预渲染精美岛屿场景和人物，做成循环动态桌面背景，通过 Wallpaper Engine **网页壁纸**叠加日程等内容，并按时间和日程自动切换人物动画。
-- 人物风格定为「二次元 3A」级精度，不做 Q 版。以后的近景镜头采用预渲染片段。
-- **当前阶段（2026-11-11）分两条线同时进行：**
-  - **建模 / 渲染线**：Codex 在用户的 Windows 电脑上制作并渲染岛屿的 11 个人物动画片段（见 3.4）。
-  - **功能线**：另开新对话做日程后端、壁纸播放器（状态机）、日程 UI、AI 角色对话，先用占位视频（见第 4 节）。
+> 这份文档给接手**建模、动画、渲染**的新对话。功能开发（课表识别、排程、AI 聊天、桌面播放器）在另外的对话里做，不在这里。
+> 读完本文就能接着干。更细的规范在仓库 `gongshengdao/docs/`（见第 9 节）。
 
-## 2. 目录结构（用户 Mac：`~/Desktop/共生岛/`）
+---
+
+## 1. 项目一句话
+大学生桌面日程应用「共生岛」（课程项目）：课表导入 → 今日待办 → AI 人物聊天。桌面上是一座会随早 / 午 / 夜变化的岛屿，人物伊蕾娜按日程在岛上活动。
+美术方案：**Blender 预渲染**，桌面端只播放视频——背景每个时段一段 8 秒无缝循环，人物每个动作一段**透明 WebM**，叠在背景上，由状态机按日程切换（ADR-003）。
+
+## 2. 当前状态（一眼看懂）
+| 部分 | 状态 |
+|---|---|
+| 岛屿场景 v4（早 / 午 / 夜三套光照，篝火、拱桥、瀑布、码头、灯笼等） | ✅ 完成 |
+| 人物：导入、卡通材质与描边、骨骼链重建、站立待机 192 帧循环 | ✅ 完成 |
+| 15 个 Mixamo 动作重定向到伊蕾娜 | ✅ 完成 |
+| 斗篷物理摆动（cloth_sim v2） | ✅ 完成，用户已认可效果 |
+| **岛屿最终版 15 个人物片段**（首尾闭合、走路路径、坐凳子、衣摆） | ✅ 构建完成，闭合检查全部为 0 |
+| 渲染 / 合成流水线（裁剪渲染 + 遮罩 + 比值阴影 → 透明 WebM） | ✅ 在 Mac 上端到端验证通过 |
+| **Windows 正式渲染** | 🟡 渲染包已交给用户，用户让 Codex 在 Windows 上跑。**等待试渲结果** |
+| 场景内白模审核（15 个片段在真实场景里的效果） | ⚠️ 只渲了第 1 个片段就停了（Mac 太慢），穿模 / 位置偏差要等 Windows 的 preview 视频来看 |
+| 魔法教室场景 | ✅ 场景完成（另一个 AI 按我们的画风提示词做的），**还没放人物、没做听课动作** |
+| 木屋室内（自习、睡觉、起床） | ⬜ 未开始（动作清单里是 P0） |
+
+## 3. 硬约束（必须遵守）
+- **Blender 5.2**。所有 .blend 是 5.2 格式，4.x 打不开；不要用低版本保存。
+- **一律无界面运行** `blender -b [x.blend] -P 脚本.py -- 参数`。在 GUI 里构建完整场景会占用约 32GB 内存卡死（用户 Mac 是 M1 Pro 16GB）。
+- **人物保持「二次元 3A」精度，不做 Q 版**。用户考虑过换成方块人，最后明确决定**继续用伊蕾娜**。
+- **动画规格固定**：2560×1440，24fps；循环片段 192 帧，第 193 帧 = 第 1 帧；一次性片段从「中立站姿」开始并结束（= 站立待机 A1 第 1 帧）；坐姿片段以「中立坐姿」（= C3_fire_loop 第 1 帧）衔接；头尾 12 帧过渡。
+- **环境动画必须是 192 帧整周期**（Cyclic 修改器或整数频率正弦）。不能用不周期的噪声——会破坏背景循环，也会让人物层合成出错。
+- **改材质颜色先做 sRGB → 线性转换**（`lin()`），否则发灰。
+- **不替用户输入密码、付款信息**；下载、付费、提交表单先问；不点系统弹窗（如「移到废纸篓」）。
+- **大任务先给白模 / 方案，用户批准后再做成品**；渲染先试 1 帧报告耗时，用户确认再全量。
+- 伊蕾娜出自《魔女之旅》（白石定规 / SB Creative），**只用于非商业课程演示**；人物模型不进 Git，渲染结果不公开发布。
+
+## 4. 文件在哪（用户 Mac：`~/Desktop/共生岛/`）
 ```
 共生岛/
-├─ claude.md                               # 本交接文档的本地版
-├─ 共生岛_场景与动作清单.md                 # 统一规范、场景、动作、一天的状态流程（第四节）
-├─ Codex提示词.md                          # 发给 Codex 的 11 个片段制作和渲染提示词
-├─ 共生岛_Codex动画渲染包.zip              # 给 Windows 的包（58MB，见 3.4）
-├─ 共生岛开题报告_需求与项目规模_Blender方案.docx   # 报告最新版（改了 6.2/7.1/7.3）
-├─ 动作/                                   # 21 个 Mixamo 动作 FBX（Breathing Idle、Waving 等）
-├─ 动作预览/                               # 白模预览：每个动作一个 PNG 序列文件夹
-│  └─ _视频/                               # 00_全部动作审核.mp4 + 每个动作单独 mp4
-├─ docs/superpowers/                       # 魔法教室的设计 spec 和计划（另一个 AI 写的）
-├─ win_render_v4/ + 共生岛_v4动画_Windows渲染包.zip   # v4 背景循环（含站立待机）的渲染包
+├─ claude.md                         本交接文档（本地副本）
+├─ 共生岛_场景与动作清单.md           动作清单、一天的状态流程、制作顺序（原始规划）
+├─ 共生岛开题报告.docx                开题报告（用户已改名，原「_Blender方案」版）
+├─ 共生岛_岛屿最终版_Windows渲染包.zip   ★ 当前正在 Windows 上渲染的包（84MB）
+├─ 动作/                             19 个 Mixamo 动作 FBX + _probe.json（每个动作的帧数、臀部轨迹）
+├─ 动作预览/、动作预览_衣摆/          白模预览、衣摆 v1/v2 对比视频与抽帧
+├─ gongshengdao/                     ★ Git 仓库（文档 + 脚本 + 评测证据，见第 9 节）
+├─ 备份_20261103/                    旧版脚本备份（改脚本前先备份到这里）
+├─ _to_delete/                       待用户手动删除的文件
 └─ blender/
-   ├─ gongshengdao_scene_v3.py / _v4.py    # 场景脚本（v4 exec v3 后重排布局）
-   ├─ import_character.py / animate_loop.py
-   ├─ build_anim_v4.py → gongshengdao_v4_anim.blend    # 当前动画工程（5.2 格式）
-   ├─ prepare_farm_v4.py → farm_v4_{morning,noon,night}.blend
-   ├─ retarget_mixamo.py                   # Mixamo 动作重定向到伊蕾娜 + 白模预览
-   ├─ magic_classroom.py / classroom_parts/ / check_classroom.py → magic_classroom.blend
-   ├─ characters/elaina/                   # YLN.fbx.part_00–05（需合并）+ 合并后的 fbx + textures/
-   └─ render/                              # 各种预览图和日志
+   ├─ gongshengdao_scene_v3.py / _v4.py      场景（v4 exec v3 后重排；GSD_ATTACH=True 时只重新绑定不重建）
+   ├─ import_character.py                    人物导入（分卷 FBX 合并，md5 2397966c4927de44101da895633e3113）
+   ├─ animate_loop.py                        骨骼链重建 + 站立待机 + 环境动画 → build_anim_v4.py 生成 gongshengdao_v4_anim.blend
+   ├─ gongshengdao_v4_anim.blend             ★ 动画工程：v4 场景 + 人物 + 待机（所有片段构建的起点）
+   ├─ retarget_mixamo.py                     Mixamo 重定向；`-- preview island` 出白模；`-- lib` 作为库被调用
+   ├─ cloth_sim.py                           斗篷弹簧摆（v2 参数）；cloth_sim_v1.py 是第一版
+   ├─ magic_classroom.py + classroom_parts/ + check_classroom.py → magic_classroom.blend
+   ├─ _launch.py                             ★ 后台启动器（见第 6 节）
+   ├─ characters/elaina/                     人物模型与贴图（有版权，不进 Git）
+   └─ island_final/                          ★ 岛屿最终版
+      ├─ build_clips.py                      构建 15 个片段 → island_{morning,noon,night}.blend + clips_*.json + closure_report.json
+      ├─ island_{morning,noon,night}.blend   三个时段的渲染文件（各 28MB，贴图已打包，含全部片段动作）
+      ├─ clips_{morning,noon,night}.json     片段清单（帧数、循环、起止位置、裁剪区域）
+      ├─ scripts/render_island.py            渲染：bg / clips / masks / all / test，断点续渲
+      ├─ scripts/compose_island.py           合成：透明 PNG、WebM、预览 MP4、背景 MP4
+      ├─ winpkg/                             Windows 批处理 + 说明.txt
+      ├─ whitebox.py / whitebox_all.py       场景内白模预览（Workbench）
+      ├─ probe_scene.py / probe.json / top.png   场景坐标探测、俯视图（1 米网格）
+      ├─ job.json                            后台任务参数（见第 6 节）
+      ├─ build_log.txt                       构建日志
+      └─ output/ check/ whitebox/            Mac 上的测试输出（可删）
 ```
 
-## 3. 已完成的功能
-- 报告：表格和代码底色改成黑白，流程图排版优化；第 6.2、7.1、7.3 节改为 Blender + Wallpaper Engine 方案。
-- 场景经历：草稿 → v2 卡通 → v3 风格化 PBR → v4 按效果图重排（见 3.1）。
-- 人物：伊蕾娜 FBX 已导入，带卡通材质和描边，有 85mm 近景相机 CAM_closeup。
-- 骨骼：FBX 里的 Auto-Rig Pro 约束丢失了，已解析 FBX 并重建骨骼链（23 根链骨，头发 16 组，衣摆 10 组）。
-- 站立待机循环（A1）：呼吸、重心摇摆、看向四周、点头、眨眼、头发和衣摆摆动、袖口反向补偿。
-- 环境循环：水面、烟、萤火虫、花瓣、雾、鸭子和船起伏、草和花随风弯曲、篝火（共 46 项以上）。
+## 5. 岛屿最终版：片段与位置
+### 5.1 位置（世界坐标，CHAR_root）
+| 名称 | 位置 | 朝向 | 说明 |
+|---|---|---|---|
+| stand | (-1.623, 0.574, 0.45) | −28°（面向镜头） | 门廊台阶前的默认站位 |
+| fire | (-0.316, -3.600, 0.437) | −28°（面向篝火） | 篝火北侧原木凳 seat0 前 0.53 m；凳面高 0.849 |
+| planter | (-5.187, 1.334, 0.431) | −75.7°（面向花箱） | 门廊前 planter3 东端 |
+| door | (-2.973, 4.164, 0.74) | 180° | 木屋门口（门廊上） |
 
-## 3.1 v4 场景（2026-11-05，参考用户给的像素风效果图 1:1 重排）
-- `gongshengdao_scene_v4.py`：exec v3 后覆盖布局和夜景。`S(fx, fy, z)` 把效果图屏幕比例坐标换算成世界坐标；岛形按 OUTLINE_F 轮廓生成。
-- 相机 az=-28，el=42，ortho=24（正交斜俯视）。木屋正面朝右下，门廊呈 L 形，左前角接码头。有石板路、野餐桌、拱桥和瀑布、对岸亮灯小屋、月亮、星星、水面碎光。
-- 樱花树已去掉，原位置（屏幕 0.53, 0.80）换成篝火：石圈火塘、木柴、三根原木凳、三脚架吊锅，火苗第 1–193 帧无缝循环，只在夜里显示。
-- 夜景：月光 1.05，环境光 0.55，灯笼 260W，窗户 320W，7 块暖色面光 + 1 块冷色月光补光；物体带 `gsd_show` 属性的按时段显示或隐藏。
-- 石板路路径点：v4 脚本第 183–188 行的 main / back / toward_bridge 列表；门廊前花箱 planter*，码头 dock*，篝火 campfire*。
-- 运行方式：在 Blender GUI 的 Python 控制台里用 subprocess.Popen 起一个 `bpy.app.binary_path -b ...` 后台进程（GUI 不加载大场景）。
-- 背景循环渲染包：`共生岛_v4动画_Windows渲染包.zip`（三个 farm_v4 文件 + bat 脚本）。
+朝向公式：`heading = atan2(dx, -dy)`（人物默认面朝 (sin h, −cos h)）。
 
-## 3.2 魔法教室场景（2026-11-07，由另一个 AI 按我们给的提示词制作）
-- `blender/magic_classroom.py`（+ `classroom_parts/`）→ `magic_classroom.blend`。Blender 5.2.3 验证：构建 6 秒，内存峰值约 1.1GB，约 37 万三角面，2291 个物体。
-- 剖面小屋式正交斜俯视（去掉后墙、右墙、顶面），和岛屿同系列；另有 CAM_persp（35mm）和 CAM_closeup（85mm）。
-- 黑板中央 60% 是干净深色区（材质 cls_board_ui），留给日程 UI；192 帧内悬浮物、星象仪对黑板 UI 区和人物位 C1 的遮挡为 0。
-- 人物位 Empty：CHAR_SPOT_1（讲桌右侧）、CHAR_SPOT_2（窗边）。窗外背景板 cls_backdrop，可用 SHOW_BACKDROP 开关。
-- 早 / 午 / 夜三套光照，`check_classroom.py` 做循环和遮挡验收（CLASSROOM_ACCEPTANCE_PASS）。
-- 还没有放人物，也没有做 B5 听课动作。
+### 5.2 15 个片段
+| 片段 | 帧数 | 类型 | 位置 | 时段 | 来源 |
+|---|---|---|---|---|---|
+| A1_idle | 192 | 循环 | stand | 早午夜 | animate_loop 待机 |
+| B2_wave | 77 | 一次性 | stand | 早午夜 | Waving |
+| B3_cheer | 79 | 一次性 | stand | 早午夜 | Joyful Jump + Victory Idle（交叉 10 帧） |
+| A3_stretch | 214 | 一次性 | stand | 早 | Arm Stretching |
+| C1a_yawn | 201 | 一次性 | stand | 早 | Yawn |
+| C2b_feed | 135 | 一次性 | stand | 午 | Throwing（原地化） |
+| C1b_water | 135 | 一次性 | planter | 早 | Watering（原地化） |
+| W_stand_planter / W_planter_stand | 71 / 71 | 走路 | stand ↔ planter | 早 | Happy Walk + 路径 |
+| W_stand_fire / W_fire_stand | 111 / 111 | 走路 | stand ↔ fire | 午夜 | Happy Walk + 路径 |
+| C3_fire_in | 55 | 站 → 坐 | fire | 午夜 | Stand To Sit |
+| C3_fire_loop | 192 | 循环（坐） | fire | 午夜 | **Sitting**（不是 Sitting Idle，那个是坐地上的） |
+| C3_fire_out | 55 | 坐 → 站 | fire | 午夜 | Sit To Stand |
+| B4_rush | 160 | 小跑 | fire → door | 夜 | Jogging + 路径，最后 14 帧站定，合成时淡出 12 帧 |
 
-## 3.3 岛屿动作白模预览（2026-11-10）
-- `retarget_mixamo.py -- preview island`：把 15 个 Mixamo 动作套到伊蕾娜身上，Workbench 白模渲染到 `动作预览/<动作名>/`，合成 `动作预览/_视频/00_全部动作审核.mp4`（70 秒，带编号和名称）。
-- 修了一个 bug：重定向时源场景的 depsgraph 可能为 None（Breathing Idle 报错），现在会先 update 视图层再取。
-- 已知现象：白模里没有凳子，坐姿动作坐在空中；浇水、撒面包屑弯腰时帽子挡脸；走路、小跑是原地动作。
+各时段数量：早 8 段、午 9 段、夜 9 段，共 26 段。
 
-## 3.4 交给 Codex 的 11 个岛屿片段（2026-11-10）
-- 渲染包：`共生岛_Codex动画渲染包.zip`，用户解压到 Windows 桌面，把里面的 `Codex提示词.md` 整段发给 Codex。
-- 片段（前缀 / 时段）：A1_idle（早午夜，已有）、A2_walk（夜、早）、A3_stretch（早）、B2_wave（早午夜）、B3_cheer（早午夜）、B4_rush（夜）、C1a_yawn（早）、C1b_water（早）、C2a_dock_sit（午，循环）、C2b_feed（午）、C3_fire_in / loop / out（夜）。人物约 2,300 帧 + 背景 3×192 帧。
-- 规范：一次性片段从中立姿势起止（首尾 12 帧过渡）；循环片段 192 帧首尾无缝；保留袖口补偿、眨眼、头发衣摆摆动。
-- 渲染方式：背景每个时段只渲一次（不含人物）；人物片段只渲人物层（透明背景 + holdout 遮挡 + shadow catcher 影子），最后叠加。
-- 流程有两个停顿点：场景内白模预览等用户逐个批准；每个时段先渲 1 帧报告耗时，用户确认后再渲全部。顺序：夜 → 早 → 午。
-- 提醒 Codex：.blend 里的人物贴图可能指向 Mac 绝对路径，要先 find_missing_files。
+### 5.3 关键做法（`build_clips.py`）
+- 重定向用 `retarget_mixamo.py` 的 lib 模式（`sys.argv = [..., "--", "lib"]` 后 exec），`LAST` 里有比例 k、臀部逐帧位移、漂移量。
+- 一次性片段：首尾 12 帧和中立姿势混合（`ease(i/RAMP)`，首帧权重为 0，所以首尾严格等于中立姿势）。
+- 循环（C3_fire_loop）：Sitting 从第 25 帧截 192 帧，最后 24 帧和开头交叉淡化。
+- 走路：步伐相位按**实际移动距离**推进（起步 / 停步时步子变慢，不滑步）；路径 Chaikin 平滑，地面高度用射线检测 `island_top`、`path_*`、`house_porch_*`、`house_step*`、`campfire_ground`；头尾 16 帧平滑转身。
+- 坐下：按臀部高度算坐下进度 p，修正量在「站立对齐」和「坐姿对齐」之间过渡，坐姿目标 = 凳面 + 0.10 m。
+- 衣摆：`cloth_sim.simulate(..., pin_start, pin_end)`，头尾钉到相邻片段的衣摆姿势。
+- 篝火路径要绕开：北侧两根原木凳（seat2、seat0）几乎首尾相接，东北有栅栏 fence7 → 从东侧绕进凳子和火之间。路径点见 `build_clips.py` 的 `P_FIRE`、`P_PL`、`P_DOOR`。
+- 构建末尾会给所有环境曲线补 Cyclic，夜里灯笼闪烁改为整数频率正弦（23、41 次 / 192 帧）。
+- 裁剪区域：每帧取人物关键点 + 帽子 + 斗篷尖，按该时段的太阳方向和 7 m 内点光源算影子落点，投影到镜头，留 48 px 边距。
 
-## 4. 壁纸切换逻辑和接口约定（功能线用）
-### 4.1 三层结构
-| 层 | 内容 | 什么时候换 |
-|---|---|---|
-| 背景层 | bg_morning / bg_noon / bg_night 三段 8 秒循环 mp4 | 跨时段时交叉淡化 2–3 秒 |
-| 人物层 | 各片段的透明 WebM（VP9 yuva420p） | 状态机决定 |
-| 界面层 | 日程卡片、提醒气泡（HTML） | 跟随日程数据 |
+### 5.4 渲染与合成原理（ADR-006）
+- 背景：隐藏 CHAR_人物 集合，整幅渲染 192 帧。
+- 人物：只渲裁剪区域（`use_border + use_crop_to_border`），场景、光照、描边和背景完全相同。
+- 遮罩：Workbench，人物白、其余黑（大体积 / 雾 / 天空等隐藏），几秒钟一帧。
+- 合成：同一帧「有人物 ÷ 背景（第 ((f−1) mod 192)+1 帧）」= 阴影比例；变暗量 < 0.05 视为噪点；人物外扩 2 px 不算阴影；开运算（腐蚀 2 → 膨胀 2）去掉物体边缘细线；裁剪边缘 16 px 渐隐。
+- 编码用 Blender 自带 FFmpeg（VSE）：WebM VP9 + RGBA（已验证 alpha_mode=1），背景 H.264。
 
-PNG 序列转透明 WebM：`ffmpeg -framerate 24 -i frame_%04d.png -c:v libvpx-vp9 -pix_fmt yuva420p -b:v 4M <片段>_<时段>.webm`
+## 6. 怎么在用户 Mac 上跑 Blender（重要）
+新对话通过「电脑控制」操作用户的 Blender，通过 device_bash 读写文件。device_bash 运行在一台 Linux 虚拟机里，**不能直接运行 Mac 上的 Blender**。所以用这个办法：
+1. 用 device_bash 写好 `blender/island_final/job.json`：
+   ```json
+   {"name": "build", "args": ["{B}/gongshengdao_v4_anim.blend", "-P", "{B}/island_final/build_clips.py"], "log": "build_stdout.txt"}
+   ```
+   `{B}` 会替换成 `~/Desktop/共生岛/blender`，`{P}` 替换成 `~/Desktop/共生岛`。
+2. 在 Blender GUI 的 Python 控制台（Shift+F4 切换）里执行一次：
+   ```python
+   import os; D=os.path.expanduser('~/Desktop'); LAUNCH_DIR=[os.path.join(D,d,'blender') for d in os.listdir(D) if os.path.exists(os.path.join(D,d,'blender','_launch.py'))][0]; exec(open(os.path.join(LAUNCH_DIR,'_launch.py'),encoding='utf-8').read())
+   ```
+   之后每次只要按「↑」+ 回车重跑；控制台里的 `proc.kill()` 可以终止当前后台任务。
+3. 用 device_bash 看 `island_final/<log>` 和输出文件。
 
-### 4.2 状态机
-- 优先级：**事件动作**（提醒→B2 挥手，完成→B3 欢呼，截止风险→B4 小跑）＞ **日程状态**（有课→学院，学习任务→室内）＞ **时段默认**（早 A1 待机 + 偶尔 C1；午 C2a 码头晃脚；夜 C3 篝火）。
-- 只在当前片段播完时切换（所有片段都在中立姿势起止），新状态先排队。
-- 不同位置之间必须经过走路片段。位置图：默认站位 ↔ 篝火 ↔ 木屋门口，默认站位 ↔ 码头，默认站位 ↔ 花箱。
-- 坐着时（篝火、码头）事件只弹气泡，或先播站起来再播事件动作。
-- 两个 `<video>` 元素交替，预加载下一段，在 ended 时切换，避免卡顿。
-- 日程数据：日程应用在本机开接口（例如 127.0.0.1:8765，HTTP 查状态 + WebSocket 推事件），壁纸轮询或订阅。
+注意：
+- 电脑控制的批量操作经常 **60 秒超时，但命令其实已经执行**——先查日志 / 输出文件，不要重复执行。
+- 电脑控制权限 30 分钟不用会过期，要重新申请（resolve_access → request_access）。
+- Blender 刚打开时有启动画面，先点空白处关掉，再把鼠标移到视口按 Shift+F4。
+- Mac 上 EEVEE 很慢：夜景 25% 分辨率 8 采样约 110–140 秒一帧。**Mac 只做构建和 Workbench 白模（约 1 秒一帧），EEVEE 渲染交给 Windows**。
+- device_commit 偶尔没真正覆盖文件，提交后用 device_list_dir 核对大小。
+- 用户说过：打开浏览器用 SunBrowser。
 
-### 4.3 接口约定（建模线和功能线都要遵守）
-- 文件命名：`{片段前缀}_{时段}.webm`、`bg_{时段}.mp4`，前缀和 3.4 一致。
-- clips.json：每个片段的位置、帧数、是否循环、起止位置；播放器只读这个文件，不写死片段名。
-- 视频规格：2560×1440，24fps。
-- 事件名：reminder、done、deadline_risk、class_start 等。
-- 位置图里还缺 3 段走路：篝火→默认站位回程（A2_back）、默认站位↔码头、默认站位↔花箱。clips.json 先登记，Codex 到停顿点 1 时补做。
+## 7. 下一步（按优先级）
+1. **等 Windows 试渲结果**：用户会发来 `render_log_*.txt` 的耗时估算、`bg_night/frame_0001.png`、几张 `raw/*/A_0001.png`。检查人物不是粉色（贴图丢失）、不发黑、裁剪区域没切到人物或影子。确认后让用户全量渲染（`4_render_all.bat`）。
+2. **看 preview 视频逐段审核**（规约 SPEC-DS-7）：重点是
+   - C3 三段：坐下时臀部是否贴凳面、腿和斗篷是否穿进原木凳；
+   - 走路：绕篝火路径是否擦到原木凳 seat0 东端 / seat1、栅栏；上台阶、上门廊时脚是否贴合（B4_rush）；
+   - C1b_water：是否穿进花箱；planter 位置离 planter1 只有约 0.4 m；
+   - 弯腰动作（浇水、撒面包屑）帽子挡脸的程度；
+   - 合成：人物周围有没有方框、闪烁的暗斑、假阴影。
+   有问题就改 `build_clips.py`（位置、路径点、坐姿目标 +0.10、RAMP 等），重新构建 → 只重渲出问题的片段（`render_island.py -- clips --clips 名字`，先删掉该片段的 raw 目录）→ 重新合成。
+3. **魔法教室放人物**：用 CHAR_SPOT_1 / 2，做 B5 听课循环（可用 Typing / Sitting / Thinking 重定向），流程照搬岛屿最终版（中立姿势、闭合检查、衣摆、裁剪渲染）。教室只做白天也可以（动作清单里是简化版）。
+4. **木屋室内场景**（P0）：自习（B1 学习循环）、睡觉流程（D1 上床、D2 睡觉循环）、起床流程（G1–G7）。镜头要和岛屿同风格（剖面小屋、正交斜俯视）；床和衣帽钩是睡觉、起床共用的。
+5. 其他：岛屿深夜熄灯版、骑扫帚过渡、彩蛋动作（见动作清单）。
 
-## 5. 关键技术栈
-- Blender 5.2（用户 Mac M1 Pro，16GB；Windows 电脑负责正式渲染）。脚本都用 bpy/bmesh 写，用 `blender -b -P` 无界面运行。
-- EEVEE Next。5.x 版合成器用 `scene.compositing_node_group`。AgX + "AgX - Punchy"，Glare(Bloom)。
-- 粒子实例化做植被，Simple Deform 修改器做风动。Freestyle 描边只作用于人物集合。
-- 视图层：BG / FG（holdout）/ CHAR；集合名 FG_前景遮挡、CHAR_人物、LIGHTS_灯光。
-- 动作：5.x 是分层 action，4.x 用 `action.fcurves`。F 曲线加 Cyclic 修改器实现循环。
-- 云渲染平台调研（11-04，现已改为用户自己的 Windows 电脑渲染，仅作备查）：Render Elf 最高 4.5.1；瑞云需镭速；SheepIt 连不上；渲染101 只确认到 5.0；国外 blender.farm / Megarender / RenderStreet / Super Renders Farm 支持 5.2；国内可租 AutoDL / 恒源云 / 智星云 GPU。
+## 8. 已知问题与经验
+- 原始 FBX 的 Auto-Rig Pro 约束丢失，已在 `animate_loop.fix_hierarchy()` 用 CHAIN 字典重建父子关系。姿势旋转公式 R⁻¹·A·R（静置骨架空间）。
+- 袖口（forearm_twist.* 下的 Bone.085/099）必须反向补偿，否则袖子横到腰前；`retarget_mixamo.py` 已处理。
+- 斗篷 6 条链（Bone.075/077/078/096/093/088，按绕身体一圈的顺序）都挂在 spine_01 上；cloth_sim v1 太松（横甩、撕成条），v2：STIFF (0.34, 0.24, 0.17)、DAMP 0.72、最大摆角 (14, 20, 26)°、相邻链拉平 0.45。
+- 人物的短裙**没有单独骨骼**（跟着腿和胯动），要摆动需要先加骨骼。
+- 码头在主镜头最左边缘、大半在画面外，并且会被桌面图标挡住 → 不在码头安排活动（ADR-007）。
+- 俯视 Workbench 图里原木凳不显示（原因未查），但主镜头里正常。
+- Mixamo「Sitting Idle」是坐在地上，坐凳子用「Sitting」；「Sitting_edge」臀部高 0.9 m，适合高台边缘晃腿。
+- 合成第一版有物体边缘的细线假阴影，加开运算后解决（对比图在 `gongshengdao/evidence/island_final/compose_check.jpg`）。
+- 5.x 动作 API：`action.fcurves` 不存在；写曲线前必须先把动作分配给对象，否则 `fcurve_ensure_for_datablock` 报错。
+- 旧方案（已废弃，不要再用）：v4 渲染包 `共生岛_v4动画_Windows渲染包.zip`（背景里带人物）、Codex 渲染包 `共生岛_Codex动画渲染包.zip`（让 Codex 自己做动画的方案）、各云渲染平台。
 
-## 6. 重要文件说明
-- `gongshengdao_scene_v3.py`：入口 `build()`；`GSD_ATTACH=True` 时只运行 `rebind()`；`apply_time(t)` 切换时段。
-- `import_character.py`：`ensure_fbx()` 合并分卷 FBX，md5 应为 2397966c4927de44101da895633e3113；人物层级 CHAR_root → CHAR_fit，身高 1.55；位置和相机方位从 builtins.GSD_CHAR_POS / GSD_CAM_AZ 读取。
-- `animate_loop.py`：`fix_hierarchy()` 按 CHAIN 字典重建父子关系；姿势旋转公式 R⁻¹·A·R（静置骨架空间）。
-- `retarget_mixamo.py`：`-- preview island|indoor|all|"<动作名>"`；手臂先对齐 A 字 / T 字静止方向再套转动；走路、小跑原地化（IN_PLACE）。注意：每次运行会清空 `动作预览/log.txt`。
-- `speed.py`：草稿 / 最低 / 最终画质切换。
+## 9. Git 仓库 `共生岛/gongshengdao/`
+- 内容：`docs/`（需求、验收规约、前置调研 + ADR-001~007、Harness 六份规范、Global / Plan / Tasks、项目目录）、`blender/`（全部脚本）、`evidence/`（闭合检查、合成检查、日志、预览）。
+- 推送到 Gitee：用户自己操作（远程地址里的用户名要用户自己填，终端需要「桌面文件夹」访问权限）。
+- **改脚本后要同步进仓库**：这个文件夹在 device_bash 里不能删除文件，直接在里面 `git commit` 会留下锁文件报错。做法是在虚拟机里 `git clone` 一份到 `$HOME`，复制改好的文件、提交，再用 `rsync -a --exclude .git/config ./ <仓库目录>/` 同步回去（排除 config 是为了保留用户的远程地址）。或者先向用户申请删除权限。
+- 提交信息格式：`<类型>(<范围>): <说明>`，作者「方舒煜 <seobang564@gmail.com>」。
+- `.gitignore` 已排除 .blend、渲染帧、视频、zip、人物模型、Mixamo FBX。
 
-## 7. 已知问题
-- 所有 .blend 都是 5.2 格式，低版本打不开。
-- 在 Blender GUI 里跑完整场景会占用约 32GB 内存并卡死，必须用无界面运行。
-- 用电脑控制操作 Blender 时，输入命令后工具调用常常 60 秒超时，但命令其实已经执行；要去检查输出文件，不要重复执行。
-- device_commit 偶尔没有真正覆盖文件，提交后要用 device_list_dir 核对文件大小。
-- 「只渲人物层再叠加」在 EEVEE 5.2 里的阴影和遮挡还没实测过。
-- 伊蕾娜出自《魔女之旅》（版权方白石定规 / SB Creative），**只能用于非商业课程演示**。
-
-## 8. 下一步
-1. 建模线：跟进 Codex 的停顿点 1（场景内白模预览，逐个批准），让它补做 3 段走路；停顿点 2 看单帧耗时后再全量渲染。
-2. 功能线（新对话）：技术选型 → 日程后端 + 本机接口 → 壁纸播放器状态机 + clips.json → 占位视频 → 调试面板（改虚拟时间、手动触发事件）→ 日程 UI → AI 角色对话。
-3. 成品视频出来后替换占位视频，联调。
-4. 之后：木屋室内场景（自习、睡觉、起床流程，P0）、魔法教室放人物 + B5 听课、骑扫帚过渡、深夜熄灯版。
-
-## 9. 约束 / 注意事项
-- 报告只改用户点名的章节，其它部分不能动。
-- 人物保持二次元 3A 精致风格，不做 Q 版。
-- 动画参数固定：8 秒，24fps，192 帧，首尾循环。
-- 不替用户输入密码或支付信息。下载文件、付费操作、提交表单都要先得到用户明确同意。不点击系统弹窗（比如「移到废纸篓」）。
-- 不能直接在 GUI 里构建高精度场景（16GB 内存会爆），用 `-b` 无界面运行。
-- 修改材质颜色要先做 sRGB→线性转换（`lin()`），否则颜色会发灰。
-- 用户打开浏览器时偏好用 SunBrowser。
+## 10. 和功能开发对话的接口
+桌面播放器只读 `output/video/clips_<时段>.json`：
+```json
+{"time": "night", "background": "bg_night.mp4", "loop_frames": 192, "fps": 24, "resolution": [2560, 1440],
+ "positions": {"stand": [...], "fire": [...], "planter": [...], "door": [...]},
+ "clips": [{"name": "C3_fire_in", "file": "C3_fire_in_night.webm", "frames": 55, "loop": false,
+            "from": "fire", "to": "fire", "pose_from": "stand", "pose_to": "seat",
+            "x": 0, "y": 0, "w": 0, "h": 0, "fade_out": 0}]}
+```
+x / y 是人物层在 2560×1440 画面里的左上角坐标。新增片段时保持这个格式和命名（`<编号>_<动作>`，走路用 `W_<起点>_<终点>`），功能那边就不用改代码。
