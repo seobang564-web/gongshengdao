@@ -127,6 +127,11 @@ def compose_clip(c):
         save(fo, out)
         made += 1
     log(f"[{T}] {name}: 合成 {made} 帧 → layer/{name}_{T}/")
+    f1 = os.path.join(dst, "frame_0001.png")
+    if os.path.exists(f1):                      # 以实际尺寸为准（Blender 裁剪可能差 1 像素）
+        im = bpy.data.images.load(f1, check_existing=False)
+        w, h = im.size[0], im.size[1]
+        bpy.data.images.remove(im)
     return dst, (x, y, w, h)
 
 
@@ -251,7 +256,7 @@ for c in reg["clips"]:
     folder, box = compose_clip(c)
     entry = {"name": c["name"], "time": T, "file": f"{c['name']}_{T}.webm", "frames": c["frames"], "loop": c["loop"],
              "from": c["from"], "to": c["to"], "pose_from": c["pose_from"], "pose_to": c["pose_to"],
-             "x": int(c["crop"][0]), "y": int(c["crop"][1]), "w": int(c["crop"][2]), "h": int(c["crop"][3]), "fade_out": c.get("fade_out", 0)}
+             "x": int(c["crop"][0]), "y": int(c["crop"][1]), "w": int(round(box[2] / PCT)), "h": int(round(box[3] / PCT)), "fade_out": c.get("fade_out", 0)}
     index.append(entry)
     if VIDEO:
         try:
