@@ -11,6 +11,8 @@
         --pct 50                 分辨率百分比（只用于快速试渲）
         --samples 16             采样数（只用于快速试渲）
         --frames 1-5             只渲这些帧（只用于快速试渲）
+        --preset final|balanced  画质预设（默认 final）。balanced：采样 32、体积采样 32，大约快一倍
+        注意：同一个时段的背景和人物片段必须用同一个预设（合成时要求两者完全一致）
 中途关掉后重新运行会跳过已经渲好的帧。输出在 .blend 同目录的 output\\ 里。
 """
 import bpy, os, sys, json, time
@@ -48,10 +50,50 @@ def log(m):
 
 
 json.dump(reg, open(os.path.join(OUT, f"clips_{T}.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
-json.dump({"time": T, "pct": PCT}, open(os.path.join(OUT, f"meta_{T}.json"), "w"))
+json.dump({"time": T, "pct": PCT, "preset": opt("--preset", "final")}, open(os.path.join(OUT, f"meta_{T}.json"), "w"))
 sc.render.resolution_percentage = PCT
 if SAMPLES:
     sc.eevee.taa_render_samples = int(SAMPLES)
+PRESET = opt("--preset", "final")
+
+
+def optimize():
+    """防止「Shadow buffer full」：阴影需求超过 EEVEE 阴影缓存时会随机丢阴影、变慢。
+    · 面光补光（AREA）是大面积柔光，不需要投影 → 关掉投影
+    · 点光源 / 聚光灯限制最高阴影分辨率
+    · 全局阴影分辨率 0.5
+    背景和人物片段都经过这里，设置完全一致，不影响合成。"""
+    n_off = n_lim = 0
+    for o in bpy.data.objects:
+        if o.type != "LIGHT":
+            continue
+        L = o.data
+        if L.type == "AREA" and getattr(L, "use_shadow", False):
+            L.use_shadow = False; n_off += 1
+        elif L.type in ("POINT", "SPOT"):
+            for attr in ("shadow_maximum_resolution", "shadow_resolution_limit"):
+                if hasattr(L, attr):
+                    try:
+                        setattr(L, attr, max(getattr(L, attr), 0.02)); n_lim += 1
+                    except Exception:
+                        pass
+                    break
+    ee = sc.eevee
+    for attr, val in (("shadow_resolution_scale", 0.5), ("shadow_pool_size", "1024"), ("shadow_ray_count", 1), ("shadow_step_count", 6)):
+        try:
+            setattr(ee, attr, val)
+        except Exception:
+            pass
+    if PRESET == "balanced":
+        for attr, val in (("taa_render_samples", 32), ("volumetric_samples", 32), ("volumetric_tile_size", "16")):
+            try:
+                setattr(ee, attr, val)
+            except Exception:
+                pass
+    return n_off, n_lim
+
+
+_off, _lim = optimize()
 RX, RY = reg["resolution"]
 rig = bpy.data.objects["rig"]
 ROOT = bpy.data.objects["CHAR_root"]
@@ -174,6 +216,7 @@ def do_masks():
 
 
 t0 = time.time()
+log(f"阴影优化：关闭 {_off} 盏面光的投影，限制 {_lim} 盏点光源的阴影分辨率；画质预设 {PRESET}，采样 {sc.eevee.taa_render_samples}")
 log(f"===== {T} 开始：{STEP}，分辨率 {PCT}%，片段 {', '.join(c['name'] for c in clips())}")
 if STEP in ("bg", "all", "test"):
     do_bg()
@@ -187,5 +230,6 @@ if TEST:
     for k, (per, n) in EST.items():
         tot += per * n
         lines.append(f"  {k}: 每帧 {per:.1f} 秒 × {n} 帧 ≈ {per * n / 60:.1f} 分钟")
+    lines.append("  （背景用第 2 帧计时，已排除首帧编译着色器的时间；人物片段只渲了 1 帧，含少量编译时间，实际会略快）")
     log(f"[{T}] 试渲完成。估算（不含遮罩，遮罩很快）：\n" + "\n".join(lines) + f"\n  合计约 {tot / 3600:.1f} 小时")
 log(f"===== {T} 结束：{STEP}，用时 {(time.time() - t0) / 60:.1f} 分钟")
