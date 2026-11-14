@@ -167,8 +167,8 @@
 
 ## 9. Git 仓库 `共生岛/gongshengdao/`
 - 内容：`docs/`（需求、验收规约、前置调研 + ADR-001~007、Harness 六份规范、Global / Plan / Tasks、项目目录）、`blender/`（全部脚本）、`evidence/`（闭合检查、合成检查、日志、预览）。
-- 推送到 Gitee：用户自己操作（远程地址里的用户名要用户自己填，终端需要「桌面文件夹」访问权限）。
-- **改脚本后要同步进仓库**：这个文件夹在 device_bash 里不能删除文件，直接在里面 `git commit` 会留下锁文件报错。做法是在虚拟机里 `git clone` 一份到 `$HOME`，复制改好的文件、提交，再用 `rsync -a --exclude .git/config ./ <仓库目录>/` 同步回去（排除 config 是为了保留用户的远程地址）。或者先向用户申请删除权限。
+- 远程仓库：GitHub `https://github.com/seobang564-web/gongshengdao`（公开，用户确认过原样公开）。claude.ai 已连接 GitHub，可用 add_repo 拿推送权限，从云端克隆推送。
+- **改脚本后要同步进仓库**：这个文件夹在 device_bash 里不能删除文件，直接在里面 `git commit` 会留下锁文件报错。做法是在虚拟机里 `git clone` 一份到 `$HOME`，复制改好的文件、提交，再用 `rsync -a --exclude .git/config ./ <仓库目录>/` 同步回去（排除 config 是为了保留用户的远程地址）。或者先向用户申请删除权限。推到 GitHub：在虚拟机仓库里 `git bundle create <共生岛>/_to_delete/x.bundle main`，暂存到云端后 fetch 进克隆再 push。
 - 提交信息格式：`<类型>(<范围>): <说明>`，作者「方舒煜 <seobang564@gmail.com>」。
 - `.gitignore` 已排除 .blend、渲染帧、视频、zip、人物模型、Mixamo FBX。
 
