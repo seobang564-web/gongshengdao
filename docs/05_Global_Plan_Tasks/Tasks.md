@@ -14,8 +14,8 @@
 | T-A-07 | 魔法教室场景（交给外部 AI，按我们的画风提示词） | `magic_classroom.py` | `evidence/classroom/` 验收 PASS | ✅ |
 | T-A-08 | 岛屿 15 个片段构建：中立姿势闭合、路径走路、坐姿贴合、裁剪区域 | `island_final/build_clips.py` | SPEC-DS-4/5 → `closure_report.json` | ✅ |
 | T-A-09 | 渲染与合成流水线（裁剪渲染、遮罩、比值阴影、WebM） | `render_island.py`、`compose_island.py` | SPEC-DS-6 → `compose_check.jpg` | ✅ |
-| T-A-10 | Windows 正式渲染 3 时段 | `output/video/` | 试渲耗时报告 → 全量 | 🟡 |
-| T-A-11 | 叠加预览逐段检查穿模 / 滑步 / 悬空 | 检查记录 | SPEC-DS-7 | ⬜ 依赖 T-A-10 |
+| T-A-10 | Windows 正式渲染 3 时段 | `output/video/`：3 段背景 + 26 段人物 WebM + 26 段预览 + 3 份清单 | 55/55 视频，合成 / 编码 0 错误（`evidence/island_final/windows_compose_report.md`） | ✅ |
+| T-A-11 | 叠加预览逐段检查穿模 / 滑步 / 悬空 | 检查记录 | SPEC-DS-7 | 🟡 抽帧未见明显穿模；坐凳接触、细微脚滑待看视频 |
 | T-A-12 | 木屋室内场景 + 学习 / 睡觉 / 起床动作 | — | — | ⬜ 视进度 |
 
 ## 2. P1 排程

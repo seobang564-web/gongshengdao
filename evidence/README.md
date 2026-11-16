@@ -7,6 +7,8 @@
 | island_final/render_log_night.txt | Mac 上的端到端试渲日志（25% 分辨率、8 采样） | — |
 | island_final/compose_log_night.txt | 合成与 WebM 编码日志 | SPEC-DS-6 |
 | island_final/compose_check.jpg | 合成检查四联图：遮罩 / 透明度 / 洋红底 / 叠到另一相位背景 | SPEC-DS-6 |
+| island_final/windows_compose_report.md | Windows 正式渲染与合成检查报告：55 个视频齐全、0 错误、26 段抽帧检查 | SPEC-DS-3/6/7、SPEC-DL-4 |
+| island_final/windows_file_inventory.csv | 全部成品视频的帧数、尺寸、编码、透明通道 | SPEC-DL-4 |
 | island_final/island_topview.jpg | 岛屿俯视图（1 米网格），用于路径规划 | ADR-007 |
 | island_final/scene_probe.json | 场景物体坐标探测结果 | — |
 | motion/ | 15 个 Mixamo 动作重定向后的白模抽帧和日志 | ADR-005 |
