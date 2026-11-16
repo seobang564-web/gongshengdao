@@ -75,7 +75,7 @@ def dilate(a, r=1):
     return np.maximum.reduce(_shift_stack(a, r))
 
 
-def box(a, r=1):
+def box_blur(a, r=1):
     return sum(_shift_stack(a, r)) / float((2 * r + 1) ** 2)
 
 
@@ -110,7 +110,7 @@ def compose_clip(c):
         md = dilate(m, 2)
         d = np.where(md > 0.02, 0.0, d)                  # 人物本身（含描边）不算阴影
         d = dilate(erode(d, 2), 2)                       # 开运算：去掉物体边缘的细线（抗锯齿差异），保留成片的阴影
-        d = box(d, 1)
+        d = box_blur(d, 1)
         s = 1 - d
         # 裁剪边缘 16 像素内渐隐（避免边框处的细微差异）
         ry = np.minimum(np.arange(hh), np.arange(hh)[::-1]); rx = np.minimum(np.arange(ww), np.arange(ww)[::-1])
@@ -253,15 +253,21 @@ index = []
 for c in reg["clips"]:
     if SEL and c["name"] not in SEL:
         continue
-    folder, box = compose_clip(c)
+    try:
+        folder, cbox = compose_clip(c)
+    except Exception as e:
+        import traceback
+        log(f"[{T}] {c['name']} 合成出错：{e}\n{traceback.format_exc()}")
+        continue
+    ew, eh = cbox[2] + cbox[2] % 2, cbox[3] + cbox[3] % 2        # 编码时补成偶数，清单和 WebM 尺寸一致
     entry = {"name": c["name"], "time": T, "file": f"{c['name']}_{T}.webm", "frames": c["frames"], "loop": c["loop"],
              "from": c["from"], "to": c["to"], "pose_from": c["pose_from"], "pose_to": c["pose_to"],
-             "x": int(c["crop"][0]), "y": int(c["crop"][1]), "w": int(round(box[2] / PCT)), "h": int(round(box[3] / PCT)), "fade_out": c.get("fade_out", 0)}
+             "x": int(c["crop"][0]), "y": int(c["crop"][1]), "w": int(round(ew / PCT)), "h": int(round(eh / PCT)), "fade_out": c.get("fade_out", 0)}
     index.append(entry)
     if VIDEO:
         try:
-            encode_layer(c, folder, box)
-            encode_preview(c, folder, box)
+            encode_layer(c, folder, cbox)
+            encode_preview(c, folder, cbox)
         except Exception as e:
             import traceback
             log(f"[{T}] {c['name']} 视频编码出错：{e}\n{traceback.format_exc()}")
