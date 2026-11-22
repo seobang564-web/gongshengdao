@@ -1,0 +1,7 @@
+[   0.1s] 老师网格 星穹铁道—遐蝶3_mesh.001：删除隐形叠加层 11001 个面
+[   5.0s] B5_listen（elaina）：192 帧，裁剪 [139, 751, 996, 688]，4.8 秒
+[  17.6s] T1_lecture（teacher）：576 帧，裁剪 [1188, 216, 930, 742]，12.6 秒
+[  27.8s] T2_pace（teacher）：441 帧，裁剪 [671, 271, 1730, 692]，10.2 秒
+[  28.5s] 贴图：打包 6 张，找不到 0 张 []
+[  28.7s] 已保存 /Users/macbook/Desktop/共生岛/blender/classroom_anim/winpkg_build/classroom.blend（21.4 MB）
+[  28.7s] PACK_DONE

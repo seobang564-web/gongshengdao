@@ -1,0 +1,93 @@
+{
+ "time": "classroom",
+ "loop_frames": 192,
+ "fps": 24,
+ "resolution": [
+  2560,
+  1440
+ ],
+ "camera": "CAM_side_back",
+ "layers": {
+  "elaina": "CHAR_人物",
+  "teacher": "TEACHER_老师"
+ },
+ "positions": {
+  "seat": [
+   -2.099,
+   0.876,
+   -0.0
+  ],
+  "center": [
+   2.4,
+   2.343,
+   1.271
+  ]
+ },
+ "clips": [
+  {
+   "name": "B5_listen",
+   "layer": "elaina",
+   "loop": true,
+   "from": "seat",
+   "to": "seat",
+   "pose_from": "seat",
+   "pose_to": "seat",
+   "actions": {
+    "rig": "CLIP_B5_listen",
+    "CHAR_root": "CLIPR_B5_listen"
+   },
+   "frames": 192,
+   "fade_out": 0,
+   "crop": [
+    139,
+    751,
+    996,
+    688
+   ]
+  },
+  {
+   "name": "T1_lecture",
+   "layer": "teacher",
+   "loop": true,
+   "from": "center",
+   "to": "center",
+   "pose_from": "stand",
+   "pose_to": "stand",
+   "actions": {
+    "TEACHER_arm": "TEACHER_lecture",
+    "TEACHER_root": "TEACHER_root",
+    "TEACHER_pointer": "TEACHER_pointer"
+   },
+   "frames": 576,
+   "fade_out": 0,
+   "crop": [
+    1188,
+    216,
+    930,
+    742
+   ]
+  },
+  {
+   "name": "T2_pace",
+   "layer": "teacher",
+   "loop": false,
+   "from": "center",
+   "to": "center",
+   "pose_from": "stand",
+   "pose_to": "stand",
+   "actions": {
+    "TEACHER_arm": "TEACHER_pace",
+    "TEACHER_root": "TEACHER_pace_root",
+    "TEACHER_pointer": "TEACHER_pace_pointer"
+   },
+   "frames": 441,
+   "fade_out": 0,
+   "crop": [
+    671,
+    271,
+    1730,
+    692
+   ]
+  }
+ ]
+}

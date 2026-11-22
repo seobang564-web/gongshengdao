@@ -1,0 +1,8 @@
+17:47:25 [classroom] B5_listen: 合成 192 帧 → layer/B5_listen_classroom/
+17:47:45 [classroom] B5_listen: video/B5_listen_classroom.webm
+17:50:52 [classroom] T1_lecture: 合成 576 帧 → layer/T1_lecture_classroom/
+17:52:13 [classroom] T1_lecture: video/T1_lecture_classroom.webm
+17:56:14 [classroom] T2_pace: 合成 441 帧 → layer/T2_pace_classroom/
+17:57:34 [classroom] T2_pace: video/T2_pace_classroom.webm
+17:58:26 [classroom] 背景视频 video/bg_classroom.mp4
+17:58:26 [classroom] 合成完成，用时 12.0 分钟

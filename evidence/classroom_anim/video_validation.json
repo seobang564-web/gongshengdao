@@ -1,0 +1,485 @@
+[
+  {
+    "file": "B5_listen_classroom.webm",
+    "exists": true,
+    "expected_frames": 192,
+    "bytes": 6540840,
+    "metadata": {
+      "codec": "vp9",
+      "pix_fmt": "yuv420p(tv, bt709)",
+      "fps": 24.0,
+      "source_size": [
+        996,
+        688
+      ],
+      "size": [
+        996,
+        688
+      ],
+      "rotate": 0,
+      "duration": 8.0
+    },
+    "decoded_frames": 192,
+    "frame_count_ok": true,
+    "temporal_diff_mean": 1.3431709024141942,
+    "largest_frame_changes": [
+      {
+        "frame": 76,
+        "mean_abs_difference": 5.084525462962963
+      },
+      {
+        "frame": 69,
+        "mean_abs_difference": 4.828564814814815
+      },
+      {
+        "frame": 75,
+        "mean_abs_difference": 4.784872685185185
+      },
+      {
+        "frame": 77,
+        "mean_abs_difference": 4.78171875
+      },
+      {
+        "frame": 154,
+        "mean_abs_difference": 4.726105324074074
+      },
+      {
+        "frame": 153,
+        "mean_abs_difference": 4.657824074074074
+      },
+      {
+        "frame": 70,
+        "mean_abs_difference": 4.488900462962963
+      },
+      {
+        "frame": 81,
+        "mean_abs_difference": 4.480295138888889
+      },
+      {
+        "frame": 88,
+        "mean_abs_difference": 4.388599537037037
+      },
+      {
+        "frame": 68,
+        "mean_abs_difference": 4.3775
+      }
+    ],
+    "stream_info": "Input #0, matroska,webm, from 'D:\\gsd_classroom_v2\\output\\video\\B5_listen_classroom.webm':\r\n  Metadata:\r\n    SCENE           : enc_B5_listen\r\n    FILE            : <untitled>\r\n    DATE            : 2026/11/18 17:47:25\r\n    ENCODER         : Lavf62.12.100\r\n  Duration: 00:00:08.00, start: 0.000000, bitrate: 6540 kb/s\r\n  Stream #0:0: Video: vp9 (Profile 0), yuv420p(tv, bt709), 996x688, SAR 1:1 DAR 249:172, 24 fps, 24 tbr, 1k tbn\r\n    Metadata:\r\n      alpha_mode      : 1\r\n      DURATION        : 00:00:08.000000000\r\nAt least one output file must be specified\r\n",
+    "alpha_probe_exit": 0,
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_pixels": 356827
+  },
+  {
+    "file": "preview_B5_listen_classroom.mp4",
+    "exists": true,
+    "expected_frames": 192,
+    "bytes": 2420360,
+    "metadata": {
+      "codec": "h264",
+      "pix_fmt": "yuv420p(tv, bt709, progressive)",
+      "fps": 24.0,
+      "source_size": [
+        1280,
+        720
+      ],
+      "size": [
+        1280,
+        720
+      ],
+      "rotate": 0,
+      "duration": 8.0
+    },
+    "decoded_frames": 192,
+    "frame_count_ok": true,
+    "temporal_diff_mean": 0.3974650656874152,
+    "largest_frame_changes": [
+      {
+        "frame": 154,
+        "mean_abs_difference": 1.0336631944444445
+      },
+      {
+        "frame": 76,
+        "mean_abs_difference": 1.0301215277777778
+      },
+      {
+        "frame": 145,
+        "mean_abs_difference": 1.026394675925926
+      },
+      {
+        "frame": 153,
+        "mean_abs_difference": 0.99734375
+      },
+      {
+        "frame": 19,
+        "mean_abs_difference": 0.9672569444444444
+      },
+      {
+        "frame": 75,
+        "mean_abs_difference": 0.9576736111111112
+      },
+      {
+        "frame": 77,
+        "mean_abs_difference": 0.9542881944444445
+      },
+      {
+        "frame": 69,
+        "mean_abs_difference": 0.9493923611111111
+      },
+      {
+        "frame": 155,
+        "mean_abs_difference": 0.9320081018518519
+      },
+      {
+        "frame": 73,
+        "mean_abs_difference": 0.8988194444444444
+      }
+    ]
+  },
+  {
+    "file": "T1_lecture_classroom.webm",
+    "exists": true,
+    "expected_frames": 576,
+    "bytes": 29929712,
+    "metadata": {
+      "codec": "vp9",
+      "pix_fmt": "yuv420p(tv, bt709)",
+      "fps": 24.0,
+      "source_size": [
+        930,
+        742
+      ],
+      "size": [
+        930,
+        742
+      ],
+      "rotate": 0,
+      "duration": 24.0
+    },
+    "decoded_frames": 576,
+    "frame_count_ok": true,
+    "temporal_diff_mean": 0.9917962459742352,
+    "largest_frame_changes": [
+      {
+        "frame": 199,
+        "mean_abs_difference": 4.544583333333334
+      },
+      {
+        "frame": 197,
+        "mean_abs_difference": 4.471128472222222
+      },
+      {
+        "frame": 195,
+        "mean_abs_difference": 4.390515046296296
+      },
+      {
+        "frame": 189,
+        "mean_abs_difference": 4.373072916666667
+      },
+      {
+        "frame": 193,
+        "mean_abs_difference": 4.3014525462962965
+      },
+      {
+        "frame": 369,
+        "mean_abs_difference": 4.252858796296296
+      },
+      {
+        "frame": 192,
+        "mean_abs_difference": 4.247065972222222
+      },
+      {
+        "frame": 177,
+        "mean_abs_difference": 4.1663599537037035
+      },
+      {
+        "frame": 200,
+        "mean_abs_difference": 4.1412152777777775
+      },
+      {
+        "frame": 188,
+        "mean_abs_difference": 4.115324074074074
+      }
+    ],
+    "stream_info": "Input #0, matroska,webm, from 'D:\\gsd_classroom_v2\\output\\video\\T1_lecture_classroom.webm':\r\n  Metadata:\r\n    SCENE           : enc_T1_lecture\r\n    FILE            : <untitled>\r\n    DATE            : 2026/11/18 17:50:52\r\n    ENCODER         : Lavf62.12.100\r\n  Duration: 00:00:24.00, start: 0.000000, bitrate: 9976 kb/s\r\n  Stream #0:0: Video: vp9 (Profile 0), yuv420p(tv, bt709), 930x742, SAR 1:1 DAR 465:371, 24 fps, 24 tbr, 1k tbn\r\n    Metadata:\r\n      alpha_mode      : 1\r\n      DURATION        : 00:00:24.000000000\r\nAt least one output file must be specified\r\n",
+    "alpha_probe_exit": 0,
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_pixels": 629298
+  },
+  {
+    "file": "preview_T1_lecture_classroom.mp4",
+    "exists": true,
+    "expected_frames": 576,
+    "bytes": 6835190,
+    "metadata": {
+      "codec": "h264",
+      "pix_fmt": "yuv420p(tv, bt709, progressive)",
+      "fps": 24.0,
+      "source_size": [
+        1280,
+        720
+      ],
+      "size": [
+        1280,
+        720
+      ],
+      "rotate": 0,
+      "duration": 24.0
+    },
+    "decoded_frames": 576,
+    "frame_count_ok": true,
+    "temporal_diff_mean": 0.2935154488727858,
+    "largest_frame_changes": [
+      {
+        "frame": 199,
+        "mean_abs_difference": 1.3749363425925927
+      },
+      {
+        "frame": 181,
+        "mean_abs_difference": 1.1563425925925925
+      },
+      {
+        "frame": 361,
+        "mean_abs_difference": 1.0635706018518518
+      },
+      {
+        "frame": 379,
+        "mean_abs_difference": 1.0598611111111111
+      },
+      {
+        "frame": 19,
+        "mean_abs_difference": 0.8968518518518519
+      },
+      {
+        "frame": 200,
+        "mean_abs_difference": 0.889693287037037
+      },
+      {
+        "frame": 195,
+        "mean_abs_difference": 0.8330960648148148
+      },
+      {
+        "frame": 325,
+        "mean_abs_difference": 0.8198321759259259
+      },
+      {
+        "frame": 197,
+        "mean_abs_difference": 0.8143807870370371
+      },
+      {
+        "frame": 192,
+        "mean_abs_difference": 0.7924594907407407
+      }
+    ]
+  },
+  {
+    "file": "bg_classroom.mp4",
+    "exists": true,
+    "expected_frames": 192,
+    "bytes": 4774244,
+    "metadata": {
+      "codec": "h264",
+      "pix_fmt": "yuv420p(tv, bt709, progressive)",
+      "fps": 24.0,
+      "source_size": [
+        2560,
+        1440
+      ],
+      "size": [
+        2560,
+        1440
+      ],
+      "rotate": 0,
+      "duration": 8.0
+    },
+    "decoded_frames": 192,
+    "frame_count_ok": true,
+    "temporal_diff_mean": 0.1832391652123327,
+    "largest_frame_changes": [
+      {
+        "frame": 181,
+        "mean_abs_difference": 0.5404861111111111
+      },
+      {
+        "frame": 55,
+        "mean_abs_difference": 0.49950810185185185
+      },
+      {
+        "frame": 19,
+        "mean_abs_difference": 0.4986111111111111
+      },
+      {
+        "frame": 73,
+        "mean_abs_difference": 0.48477430555555556
+      },
+      {
+        "frame": 163,
+        "mean_abs_difference": 0.47736689814814814
+      },
+      {
+        "frame": 37,
+        "mean_abs_difference": 0.4621875
+      },
+      {
+        "frame": 145,
+        "mean_abs_difference": 0.43019097222222225
+      },
+      {
+        "frame": 91,
+        "mean_abs_difference": 0.42791087962962965
+      },
+      {
+        "frame": 127,
+        "mean_abs_difference": 0.42619212962962966
+      },
+      {
+        "frame": 109,
+        "mean_abs_difference": 0.42462962962962963
+      }
+    ]
+  },
+  {
+    "file": "T2_pace_classroom.webm",
+    "exists": true,
+    "expected_frames": 441,
+    "bytes": 36096051,
+    "metadata": {
+      "codec": "vp9",
+      "pix_fmt": "yuv420p(tv, bt709)",
+      "fps": 24.0,
+      "source_size": [
+        1730,
+        692
+      ],
+      "size": [
+        1730,
+        692
+      ],
+      "rotate": 0,
+      "duration": 18.38
+    },
+    "decoded_frames": 441,
+    "frame_count_ok": true,
+    "temporal_diff_mean": 1.1116196075336702,
+    "largest_frame_changes": [
+      {
+        "frame": 217,
+        "mean_abs_difference": 2.566892361111111
+      },
+      {
+        "frame": 227,
+        "mean_abs_difference": 2.529866898148148
+      },
+      {
+        "frame": 235,
+        "mean_abs_difference": 2.5067881944444443
+      },
+      {
+        "frame": 225,
+        "mean_abs_difference": 2.4544675925925925
+      },
+      {
+        "frame": 229,
+        "mean_abs_difference": 2.3948726851851854
+      },
+      {
+        "frame": 199,
+        "mean_abs_difference": 2.386533564814815
+      },
+      {
+        "frame": 224,
+        "mean_abs_difference": 2.333275462962963
+      },
+      {
+        "frame": 240,
+        "mean_abs_difference": 2.3306828703703704
+      },
+      {
+        "frame": 353,
+        "mean_abs_difference": 2.3285011574074073
+      },
+      {
+        "frame": 237,
+        "mean_abs_difference": 2.3267592592592594
+      }
+    ],
+    "stream_info": "Input #0, matroska,webm, from 'D:\\gsd_classroom_v2\\output\\video\\T2_pace_classroom.webm':\r\n  Metadata:\r\n    SCENE           : enc_T2_pace\r\n    FILE            : <untitled>\r\n    DATE            : 2026/11/18 17:56:14\r\n    ENCODER         : Lavf62.12.100\r\n  Duration: 00:00:18.38, start: 0.000000, bitrate: 15715 kb/s\r\n  Stream #0:0: Video: vp9 (Profile 0), yuv420p(tv, bt709), 1730x692, SAR 1:1 DAR 5:2, 24 fps, 24 tbr, 1k tbn\r\n    Metadata:\r\n      alpha_mode      : 1\r\n      DURATION        : 00:00:18.375000000\r\nAt least one output file must be specified\r\n",
+    "alpha_probe_exit": 0,
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_pixels": 1118474
+  },
+  {
+    "file": "preview_T2_pace_classroom.mp4",
+    "exists": true,
+    "expected_frames": 441,
+    "bytes": 5435458,
+    "metadata": {
+      "codec": "h264",
+      "pix_fmt": "yuv420p(tv, bt709, progressive)",
+      "fps": 24.0,
+      "source_size": [
+        1280,
+        720
+      ],
+      "size": [
+        1280,
+        720
+      ],
+      "rotate": 0,
+      "duration": 18.38
+    },
+    "decoded_frames": 441,
+    "frame_count_ok": true,
+    "temporal_diff_mean": 0.4228502735690236,
+    "largest_frame_changes": [
+      {
+        "frame": 217,
+        "mean_abs_difference": 1.2514641203703705
+      },
+      {
+        "frame": 235,
+        "mean_abs_difference": 1.1887673611111111
+      },
+      {
+        "frame": 37,
+        "mean_abs_difference": 1.184670138888889
+      },
+      {
+        "frame": 379,
+        "mean_abs_difference": 1.164849537037037
+      },
+      {
+        "frame": 199,
+        "mean_abs_difference": 1.11359375
+      },
+      {
+        "frame": 397,
+        "mean_abs_difference": 1.0976967592592592
+      },
+      {
+        "frame": 55,
+        "mean_abs_difference": 1.0973032407407408
+      },
+      {
+        "frame": 361,
+        "mean_abs_difference": 1.0602546296296296
+      },
+      {
+        "frame": 181,
+        "mean_abs_difference": 1.0303298611111111
+      },
+      {
+        "frame": 253,
+        "mean_abs_difference": 0.9865451388888888
+      }
+    ]
+  }
+]

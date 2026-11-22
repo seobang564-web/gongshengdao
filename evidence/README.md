@@ -15,3 +15,10 @@
 | cloth/ | 斗篷物理 v1、v2 对比抽帧和日志 | SPEC-DS-8 |
 | classroom/ | 魔法教室验收：循环误差、遮挡检查、规模统计、三时段预览 | ADR-002 |
 | scene/ | 岛屿场景 v3、v4 预览图和日志 | SPEC-DS-2 |
+| classroom_anim/build_log.txt、pack_log.txt | 教室人物片段构建、裁剪框与打包日志 | SPEC-DS-3/8 |
+| classroom_anim/clips_classroom_final.json | 教室成品片段清单（含 layer：elaina / teacher） | SPEC-DL-4 |
+| classroom_anim/render_log_classroom.txt、compose_log_classroom.txt | Windows 正式渲染（55 分钟）与合成（12 分钟）日志，0 错误 | SPEC-DS-6 |
+| classroom_anim/成品检查报告.md、video_validation.json | Windows 成品检查：帧数、透明通道、预览逐段抽帧 | SPEC-DS-7、SPEC-DL-4 |
+| classroom_anim/mask_before_after.jpg | 遮罩修复前后：光尘打出的黑孔（左）→ 排除光尘后（右） | SPEC-DS-6 |
+| classroom_anim/final_T*_together_sheet.jpg、eevee_*.jpg、compose_check.jpg | 师生同框成品抽帧、EEVEE 静帧、合成检查 | SPEC-DS-7 |
+| classroom_anim/staff2_sheet.jpg | 教鞭朝向修复后的白模抽帧（走路斜向前下，不穿模） | SPEC-DS-7 |

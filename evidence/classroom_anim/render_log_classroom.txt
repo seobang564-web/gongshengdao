@@ -1,0 +1,2625 @@
+16:45:57 描边：反转外壳 58 个网格，Freestyle 已关闭；本时段隐藏不发光的发光物体：无
+16:45:57 阴影优化：关闭 3 盏面光的投影，限制 7 盏点光源的阴影分辨率；画质预设 final，采样 64
+16:45:57 ===== classroom 开始：test，分辨率 100%，片段 B5_listen, T1_lecture, T2_pace
+16:46:03 [classroom] 背景 第 1/2 帧 5.8 秒
+16:46:07 [classroom] 背景 第 2/2 帧 4.1 秒
+16:46:10 [classroom] B5_listen 第 1/1 帧 2.5 秒
+16:46:12 [classroom] T1_lecture 第 1/1 帧 1.4 秒
+16:46:14 [classroom] T2_pace 第 1/1 帧 1.9 秒
+16:46:15 [classroom] B5_listen 遮罩 第 1/1 帧 0.6 秒
+16:46:16 [classroom] T1_lecture 遮罩 第 1/1 帧 0.4 秒
+16:46:17 [classroom] T2_pace 遮罩 第 1/1 帧 0.5 秒
+16:46:17 [classroom] 试渲完成。估算（不含遮罩，遮罩很快）：
+  bg: 每帧 4.1 秒 × 192 帧 ≈ 13.0 分钟
+  B5_listen: 每帧 2.5 秒 × 192 帧 ≈ 8.2 分钟
+  T1_lecture: 每帧 1.4 秒 × 576 帧 ≈ 13.6 分钟
+  T2_pace: 每帧 1.9 秒 × 441 帧 ≈ 13.8 分钟
+  （背景用第 2 帧计时，已排除首帧编译着色器的时间；人物片段只渲了 1 帧，含少量编译时间，实际会略快）
+  合计约 0.8 小时
+16:46:17 ===== classroom 结束：test，用时 0.3 分钟
+16:51:17 描边：反转外壳 58 个网格，Freestyle 已关闭；本时段隐藏不发光的发光物体：无
+16:51:17 阴影优化：关闭 3 盏面光的投影，限制 7 盏点光源的阴影分辨率；画质预设 final，采样 64
+16:51:17 ===== classroom 开始：all，分辨率 100%，片段 B5_listen, T1_lecture, T2_pace
+16:51:23 [classroom] 背景 第 3/192 帧 5.7 秒
+16:51:27 [classroom] 背景 第 4/192 帧 3.8 秒
+16:51:30 [classroom] 背景 第 5/192 帧 3.3 秒
+16:51:33 [classroom] 背景 第 6/192 帧 2.9 秒
+16:51:36 [classroom] 背景 第 7/192 帧 2.9 秒
+16:51:40 [classroom] 背景 第 8/192 帧 2.9 秒
+16:51:43 [classroom] 背景 第 9/192 帧 2.9 秒
+16:51:46 [classroom] 背景 第 10/192 帧 2.9 秒
+16:51:49 [classroom] 背景 第 11/192 帧 2.9 秒
+16:51:52 [classroom] 背景 第 12/192 帧 3.1 秒
+16:51:55 [classroom] 背景 第 13/192 帧 2.9 秒
+16:51:58 [classroom] 背景 第 14/192 帧 2.9 秒
+16:52:01 [classroom] 背景 第 15/192 帧 2.9 秒
+16:52:04 [classroom] 背景 第 16/192 帧 2.9 秒
+16:52:07 [classroom] 背景 第 17/192 帧 2.9 秒
+16:52:10 [classroom] 背景 第 18/192 帧 2.9 秒
+16:52:14 [classroom] 背景 第 19/192 帧 4.3 秒
+16:52:18 [classroom] 背景 第 20/192 帧 3.2 秒
+16:52:21 [classroom] 背景 第 21/192 帧 2.9 秒
+16:52:24 [classroom] 背景 第 22/192 帧 2.9 秒
+16:52:27 [classroom] 背景 第 23/192 帧 2.9 秒
+16:52:30 [classroom] 背景 第 24/192 帧 2.9 秒
+16:52:33 [classroom] 背景 第 25/192 帧 2.9 秒
+16:52:36 [classroom] 背景 第 26/192 帧 2.9 秒
+16:52:39 [classroom] 背景 第 27/192 帧 2.9 秒
+16:52:42 [classroom] 背景 第 28/192 帧 3.0 秒
+16:52:45 [classroom] 背景 第 29/192 帧 3.0 秒
+16:52:48 [classroom] 背景 第 30/192 帧 3.0 秒
+16:52:51 [classroom] 背景 第 31/192 帧 3.0 秒
+16:52:54 [classroom] 背景 第 32/192 帧 3.0 秒
+16:52:57 [classroom] 背景 第 33/192 帧 3.0 秒
+16:53:00 [classroom] 背景 第 34/192 帧 2.9 秒
+16:53:03 [classroom] 背景 第 35/192 帧 2.9 秒
+16:53:07 [classroom] 背景 第 36/192 帧 3.1 秒
+16:53:10 [classroom] 背景 第 37/192 帧 2.9 秒
+16:53:13 [classroom] 背景 第 38/192 帧 2.9 秒
+16:53:16 [classroom] 背景 第 39/192 帧 2.9 秒
+16:53:19 [classroom] 背景 第 40/192 帧 2.9 秒
+16:53:22 [classroom] 背景 第 41/192 帧 2.9 秒
+16:53:25 [classroom] 背景 第 42/192 帧 3.0 秒
+16:53:28 [classroom] 背景 第 43/192 帧 3.0 秒
+16:53:31 [classroom] 背景 第 44/192 帧 2.9 秒
+16:53:34 [classroom] 背景 第 45/192 帧 3.0 秒
+16:53:37 [classroom] 背景 第 46/192 帧 2.9 秒
+16:53:40 [classroom] 背景 第 47/192 帧 2.9 秒
+16:53:43 [classroom] 背景 第 48/192 帧 2.9 秒
+16:53:46 [classroom] 背景 第 49/192 帧 2.9 秒
+16:53:49 [classroom] 背景 第 50/192 帧 3.0 秒
+16:53:52 [classroom] 背景 第 51/192 帧 3.0 秒
+16:53:55 [classroom] 背景 第 52/192 帧 2.9 秒
+16:53:58 [classroom] 背景 第 53/192 帧 2.9 秒
+16:54:01 [classroom] 背景 第 54/192 帧 2.9 秒
+16:54:04 [classroom] 背景 第 55/192 帧 2.9 秒
+16:54:07 [classroom] 背景 第 56/192 帧 2.9 秒
+16:54:10 [classroom] 背景 第 57/192 帧 2.9 秒
+16:54:13 [classroom] 背景 第 58/192 帧 3.0 秒
+16:54:16 [classroom] 背景 第 59/192 帧 2.9 秒
+16:54:19 [classroom] 背景 第 60/192 帧 2.9 秒
+16:54:22 [classroom] 背景 第 61/192 帧 2.9 秒
+16:54:25 [classroom] 背景 第 62/192 帧 3.0 秒
+16:54:28 [classroom] 背景 第 63/192 帧 2.9 秒
+16:54:31 [classroom] 背景 第 64/192 帧 2.9 秒
+16:54:34 [classroom] 背景 第 65/192 帧 3.0 秒
+16:54:38 [classroom] 背景 第 66/192 帧 3.0 秒
+16:54:41 [classroom] 背景 第 67/192 帧 2.9 秒
+16:54:44 [classroom] 背景 第 68/192 帧 2.9 秒
+16:54:47 [classroom] 背景 第 69/192 帧 3.0 秒
+16:54:50 [classroom] 背景 第 70/192 帧 3.0 秒
+16:54:53 [classroom] 背景 第 71/192 帧 2.9 秒
+16:54:56 [classroom] 背景 第 72/192 帧 2.9 秒
+16:54:59 [classroom] 背景 第 73/192 帧 2.9 秒
+16:55:02 [classroom] 背景 第 74/192 帧 2.9 秒
+16:55:05 [classroom] 背景 第 75/192 帧 2.9 秒
+16:55:08 [classroom] 背景 第 76/192 帧 3.0 秒
+16:55:11 [classroom] 背景 第 77/192 帧 2.9 秒
+16:55:14 [classroom] 背景 第 78/192 帧 2.9 秒
+16:55:17 [classroom] 背景 第 79/192 帧 3.0 秒
+16:55:20 [classroom] 背景 第 80/192 帧 2.9 秒
+16:55:23 [classroom] 背景 第 81/192 帧 2.9 秒
+16:55:26 [classroom] 背景 第 82/192 帧 3.0 秒
+16:55:29 [classroom] 背景 第 83/192 帧 2.9 秒
+16:55:32 [classroom] 背景 第 84/192 帧 2.9 秒
+16:55:35 [classroom] 背景 第 85/192 帧 2.9 秒
+16:55:39 [classroom] 背景 第 86/192 帧 2.9 秒
+16:55:42 [classroom] 背景 第 87/192 帧 2.9 秒
+16:55:45 [classroom] 背景 第 88/192 帧 3.0 秒
+16:55:48 [classroom] 背景 第 89/192 帧 3.0 秒
+16:55:51 [classroom] 背景 第 90/192 帧 2.9 秒
+16:55:54 [classroom] 背景 第 91/192 帧 3.0 秒
+16:55:57 [classroom] 背景 第 92/192 帧 2.9 秒
+16:56:00 [classroom] 背景 第 93/192 帧 3.0 秒
+16:56:03 [classroom] 背景 第 94/192 帧 3.0 秒
+16:56:06 [classroom] 背景 第 95/192 帧 3.0 秒
+16:56:09 [classroom] 背景 第 96/192 帧 2.9 秒
+16:56:12 [classroom] 背景 第 97/192 帧 3.0 秒
+16:56:15 [classroom] 背景 第 98/192 帧 3.0 秒
+16:56:19 [classroom] 背景 第 99/192 帧 3.0 秒
+16:56:22 [classroom] 背景 第 100/192 帧 2.9 秒
+16:56:25 [classroom] 背景 第 101/192 帧 2.9 秒
+16:56:28 [classroom] 背景 第 102/192 帧 3.0 秒
+16:56:31 [classroom] 背景 第 103/192 帧 2.9 秒
+16:56:34 [classroom] 背景 第 104/192 帧 2.9 秒
+16:56:37 [classroom] 背景 第 105/192 帧 2.9 秒
+16:56:40 [classroom] 背景 第 106/192 帧 3.0 秒
+16:56:43 [classroom] 背景 第 107/192 帧 3.0 秒
+16:56:46 [classroom] 背景 第 108/192 帧 3.0 秒
+16:56:49 [classroom] 背景 第 109/192 帧 2.9 秒
+16:56:52 [classroom] 背景 第 110/192 帧 3.0 秒
+16:56:55 [classroom] 背景 第 111/192 帧 3.0 秒
+16:56:58 [classroom] 背景 第 112/192 帧 3.0 秒
+16:57:01 [classroom] 背景 第 113/192 帧 3.0 秒
+16:57:05 [classroom] 背景 第 114/192 帧 3.0 秒
+16:57:08 [classroom] 背景 第 115/192 帧 3.0 秒
+16:57:11 [classroom] 背景 第 116/192 帧 2.9 秒
+16:57:14 [classroom] 背景 第 117/192 帧 2.9 秒
+16:57:17 [classroom] 背景 第 118/192 帧 3.0 秒
+16:57:20 [classroom] 背景 第 119/192 帧 3.0 秒
+16:57:23 [classroom] 背景 第 120/192 帧 2.9 秒
+16:57:26 [classroom] 背景 第 121/192 帧 2.9 秒
+16:57:29 [classroom] 背景 第 122/192 帧 3.0 秒
+16:57:32 [classroom] 背景 第 123/192 帧 2.9 秒
+16:57:35 [classroom] 背景 第 124/192 帧 2.9 秒
+16:57:38 [classroom] 背景 第 125/192 帧 2.9 秒
+16:57:41 [classroom] 背景 第 126/192 帧 2.9 秒
+16:57:44 [classroom] 背景 第 127/192 帧 2.9 秒
+16:57:47 [classroom] 背景 第 128/192 帧 3.0 秒
+16:57:50 [classroom] 背景 第 129/192 帧 3.0 秒
+16:57:53 [classroom] 背景 第 130/192 帧 3.0 秒
+16:57:56 [classroom] 背景 第 131/192 帧 2.9 秒
+16:57:59 [classroom] 背景 第 132/192 帧 3.0 秒
+16:58:03 [classroom] 背景 第 133/192 帧 2.9 秒
+16:58:06 [classroom] 背景 第 134/192 帧 3.0 秒
+16:58:09 [classroom] 背景 第 135/192 帧 3.0 秒
+16:58:12 [classroom] 背景 第 136/192 帧 3.0 秒
+16:58:15 [classroom] 背景 第 137/192 帧 3.0 秒
+16:58:18 [classroom] 背景 第 138/192 帧 3.0 秒
+16:58:21 [classroom] 背景 第 139/192 帧 3.0 秒
+16:58:24 [classroom] 背景 第 140/192 帧 3.0 秒
+16:58:27 [classroom] 背景 第 141/192 帧 3.0 秒
+16:58:30 [classroom] 背景 第 142/192 帧 3.0 秒
+16:58:33 [classroom] 背景 第 143/192 帧 2.9 秒
+16:58:37 [classroom] 背景 第 144/192 帧 2.9 秒
+16:58:40 [classroom] 背景 第 145/192 帧 3.0 秒
+16:58:43 [classroom] 背景 第 146/192 帧 3.0 秒
+16:58:46 [classroom] 背景 第 147/192 帧 3.0 秒
+16:58:49 [classroom] 背景 第 148/192 帧 2.9 秒
+16:58:52 [classroom] 背景 第 149/192 帧 3.0 秒
+16:58:55 [classroom] 背景 第 150/192 帧 3.0 秒
+16:58:58 [classroom] 背景 第 151/192 帧 3.0 秒
+16:59:01 [classroom] 背景 第 152/192 帧 3.0 秒
+16:59:04 [classroom] 背景 第 153/192 帧 2.9 秒
+16:59:07 [classroom] 背景 第 154/192 帧 3.0 秒
+16:59:10 [classroom] 背景 第 155/192 帧 3.0 秒
+16:59:14 [classroom] 背景 第 156/192 帧 3.0 秒
+16:59:17 [classroom] 背景 第 157/192 帧 2.9 秒
+16:59:20 [classroom] 背景 第 158/192 帧 3.1 秒
+16:59:23 [classroom] 背景 第 159/192 帧 3.1 秒
+16:59:26 [classroom] 背景 第 160/192 帧 2.9 秒
+16:59:29 [classroom] 背景 第 161/192 帧 2.9 秒
+16:59:32 [classroom] 背景 第 162/192 帧 2.9 秒
+16:59:35 [classroom] 背景 第 163/192 帧 3.0 秒
+16:59:38 [classroom] 背景 第 164/192 帧 2.9 秒
+16:59:41 [classroom] 背景 第 165/192 帧 2.9 秒
+16:59:44 [classroom] 背景 第 166/192 帧 3.0 秒
+16:59:47 [classroom] 背景 第 167/192 帧 2.9 秒
+16:59:51 [classroom] 背景 第 168/192 帧 3.0 秒
+16:59:54 [classroom] 背景 第 169/192 帧 2.9 秒
+16:59:57 [classroom] 背景 第 170/192 帧 3.1 秒
+17:00:00 [classroom] 背景 第 171/192 帧 3.0 秒
+17:00:03 [classroom] 背景 第 172/192 帧 3.0 秒
+17:00:07 [classroom] 背景 第 173/192 帧 2.9 秒
+17:00:10 [classroom] 背景 第 174/192 帧 3.0 秒
+17:00:13 [classroom] 背景 第 175/192 帧 3.0 秒
+17:00:16 [classroom] 背景 第 176/192 帧 2.9 秒
+17:00:19 [classroom] 背景 第 177/192 帧 2.9 秒
+17:00:22 [classroom] 背景 第 178/192 帧 3.0 秒
+17:00:25 [classroom] 背景 第 179/192 帧 2.9 秒
+17:00:28 [classroom] 背景 第 180/192 帧 3.0 秒
+17:00:31 [classroom] 背景 第 181/192 帧 2.9 秒
+17:00:34 [classroom] 背景 第 182/192 帧 2.9 秒
+17:00:37 [classroom] 背景 第 183/192 帧 2.9 秒
+17:00:40 [classroom] 背景 第 184/192 帧 3.0 秒
+17:00:43 [classroom] 背景 第 185/192 帧 3.0 秒
+17:00:46 [classroom] 背景 第 186/192 帧 2.9 秒
+17:00:49 [classroom] 背景 第 187/192 帧 2.9 秒
+17:00:52 [classroom] 背景 第 188/192 帧 3.0 秒
+17:00:55 [classroom] 背景 第 189/192 帧 2.9 秒
+17:00:59 [classroom] 背景 第 190/192 帧 3.0 秒
+17:01:02 [classroom] 背景 第 191/192 帧 3.0 秒
+17:01:05 [classroom] 背景 第 192/192 帧 2.9 秒
+17:01:07 [classroom] B5_listen 第 2/192 帧 2.1 秒
+17:01:09 [classroom] B5_listen 第 3/192 帧 1.6 秒
+17:01:11 [classroom] B5_listen 第 4/192 帧 1.6 秒
+17:01:12 [classroom] B5_listen 第 5/192 帧 1.6 秒
+17:01:14 [classroom] B5_listen 第 6/192 帧 1.6 秒
+17:01:16 [classroom] B5_listen 第 7/192 帧 1.6 秒
+17:01:18 [classroom] B5_listen 第 8/192 帧 1.6 秒
+17:01:19 [classroom] B5_listen 第 9/192 帧 1.6 秒
+17:01:21 [classroom] B5_listen 第 10/192 帧 1.6 秒
+17:01:23 [classroom] B5_listen 第 11/192 帧 1.6 秒
+17:01:25 [classroom] B5_listen 第 12/192 帧 1.6 秒
+17:01:26 [classroom] B5_listen 第 13/192 帧 1.6 秒
+17:01:28 [classroom] B5_listen 第 14/192 帧 1.6 秒
+17:01:30 [classroom] B5_listen 第 15/192 帧 1.7 秒
+17:01:32 [classroom] B5_listen 第 16/192 帧 1.7 秒
+17:01:33 [classroom] B5_listen 第 17/192 帧 1.6 秒
+17:01:35 [classroom] B5_listen 第 18/192 帧 1.6 秒
+17:01:37 [classroom] B5_listen 第 19/192 帧 1.6 秒
+17:01:39 [classroom] B5_listen 第 20/192 帧 1.6 秒
+17:01:40 [classroom] B5_listen 第 21/192 帧 1.6 秒
+17:01:42 [classroom] B5_listen 第 22/192 帧 1.6 秒
+17:01:44 [classroom] B5_listen 第 23/192 帧 1.6 秒
+17:01:45 [classroom] B5_listen 第 24/192 帧 1.6 秒
+17:01:47 [classroom] B5_listen 第 25/192 帧 1.6 秒
+17:01:49 [classroom] B5_listen 第 26/192 帧 1.5 秒
+17:01:50 [classroom] B5_listen 第 27/192 帧 1.6 秒
+17:01:52 [classroom] B5_listen 第 28/192 帧 1.6 秒
+17:01:54 [classroom] B5_listen 第 29/192 帧 1.6 秒
+17:01:56 [classroom] B5_listen 第 30/192 帧 1.6 秒
+17:01:57 [classroom] B5_listen 第 31/192 帧 1.6 秒
+17:01:59 [classroom] B5_listen 第 32/192 帧 1.6 秒
+17:02:01 [classroom] B5_listen 第 33/192 帧 1.9 秒
+17:02:04 [classroom] B5_listen 第 34/192 帧 2.9 秒
+17:02:06 [classroom] B5_listen 第 35/192 帧 1.9 秒
+17:02:08 [classroom] B5_listen 第 36/192 帧 1.6 秒
+17:02:10 [classroom] B5_listen 第 37/192 帧 1.6 秒
+17:02:11 [classroom] B5_listen 第 38/192 帧 1.5 秒
+17:02:13 [classroom] B5_listen 第 39/192 帧 1.5 秒
+17:02:15 [classroom] B5_listen 第 40/192 帧 1.9 秒
+17:02:17 [classroom] B5_listen 第 41/192 帧 1.6 秒
+17:02:18 [classroom] B5_listen 第 42/192 帧 1.6 秒
+17:02:20 [classroom] B5_listen 第 43/192 帧 1.6 秒
+17:02:22 [classroom] B5_listen 第 44/192 帧 1.6 秒
+17:02:23 [classroom] B5_listen 第 45/192 帧 1.6 秒
+17:02:25 [classroom] B5_listen 第 46/192 帧 1.6 秒
+17:02:27 [classroom] B5_listen 第 47/192 帧 1.6 秒
+17:02:29 [classroom] B5_listen 第 48/192 帧 1.6 秒
+17:02:30 [classroom] B5_listen 第 49/192 帧 1.5 秒
+17:02:32 [classroom] B5_listen 第 50/192 帧 1.6 秒
+17:02:34 [classroom] B5_listen 第 51/192 帧 1.7 秒
+17:02:35 [classroom] B5_listen 第 52/192 帧 1.6 秒
+17:02:37 [classroom] B5_listen 第 53/192 帧 1.5 秒
+17:02:39 [classroom] B5_listen 第 54/192 帧 1.6 秒
+17:02:40 [classroom] B5_listen 第 55/192 帧 1.6 秒
+17:02:42 [classroom] B5_listen 第 56/192 帧 1.6 秒
+17:02:44 [classroom] B5_listen 第 57/192 帧 1.6 秒
+17:02:45 [classroom] B5_listen 第 58/192 帧 1.6 秒
+17:02:47 [classroom] B5_listen 第 59/192 帧 1.6 秒
+17:02:49 [classroom] B5_listen 第 60/192 帧 1.5 秒
+17:02:50 [classroom] B5_listen 第 61/192 帧 1.6 秒
+17:02:52 [classroom] B5_listen 第 62/192 帧 1.6 秒
+17:02:54 [classroom] B5_listen 第 63/192 帧 1.6 秒
+17:02:56 [classroom] B5_listen 第 64/192 帧 1.6 秒
+17:02:57 [classroom] B5_listen 第 65/192 帧 1.6 秒
+17:02:59 [classroom] B5_listen 第 66/192 帧 1.6 秒
+17:03:01 [classroom] B5_listen 第 67/192 帧 1.6 秒
+17:03:02 [classroom] B5_listen 第 68/192 帧 1.6 秒
+17:03:04 [classroom] B5_listen 第 69/192 帧 1.6 秒
+17:03:06 [classroom] B5_listen 第 70/192 帧 1.6 秒
+17:03:07 [classroom] B5_listen 第 71/192 帧 1.5 秒
+17:03:09 [classroom] B5_listen 第 72/192 帧 1.6 秒
+17:03:11 [classroom] B5_listen 第 73/192 帧 1.5 秒
+17:03:12 [classroom] B5_listen 第 74/192 帧 1.6 秒
+17:03:14 [classroom] B5_listen 第 75/192 帧 1.6 秒
+17:03:16 [classroom] B5_listen 第 76/192 帧 1.5 秒
+17:03:17 [classroom] B5_listen 第 77/192 帧 1.6 秒
+17:03:19 [classroom] B5_listen 第 78/192 帧 1.6 秒
+17:03:21 [classroom] B5_listen 第 79/192 帧 1.6 秒
+17:03:22 [classroom] B5_listen 第 80/192 帧 1.6 秒
+17:03:24 [classroom] B5_listen 第 81/192 帧 1.6 秒
+17:03:26 [classroom] B5_listen 第 82/192 帧 1.6 秒
+17:03:28 [classroom] B5_listen 第 83/192 帧 1.6 秒
+17:03:29 [classroom] B5_listen 第 84/192 帧 1.6 秒
+17:03:31 [classroom] B5_listen 第 85/192 帧 1.6 秒
+17:03:33 [classroom] B5_listen 第 86/192 帧 1.6 秒
+17:03:34 [classroom] B5_listen 第 87/192 帧 1.5 秒
+17:03:36 [classroom] B5_listen 第 88/192 帧 1.5 秒
+17:03:38 [classroom] B5_listen 第 89/192 帧 1.6 秒
+17:03:39 [classroom] B5_listen 第 90/192 帧 1.6 秒
+17:03:41 [classroom] B5_listen 第 91/192 帧 1.6 秒
+17:03:43 [classroom] B5_listen 第 92/192 帧 1.6 秒
+17:03:44 [classroom] B5_listen 第 93/192 帧 1.6 秒
+17:03:46 [classroom] B5_listen 第 94/192 帧 1.6 秒
+17:03:48 [classroom] B5_listen 第 95/192 帧 1.6 秒
+17:03:49 [classroom] B5_listen 第 96/192 帧 1.5 秒
+17:03:51 [classroom] B5_listen 第 97/192 帧 1.6 秒
+17:03:53 [classroom] B5_listen 第 98/192 帧 1.6 秒
+17:03:55 [classroom] B5_listen 第 99/192 帧 1.6 秒
+17:03:56 [classroom] B5_listen 第 100/192 帧 1.5 秒
+17:03:58 [classroom] B5_listen 第 101/192 帧 1.6 秒
+17:04:00 [classroom] B5_listen 第 102/192 帧 1.6 秒
+17:04:01 [classroom] B5_listen 第 103/192 帧 1.5 秒
+17:04:03 [classroom] B5_listen 第 104/192 帧 1.6 秒
+17:04:05 [classroom] B5_listen 第 105/192 帧 1.6 秒
+17:04:06 [classroom] B5_listen 第 106/192 帧 1.6 秒
+17:04:08 [classroom] B5_listen 第 107/192 帧 1.5 秒
+17:04:10 [classroom] B5_listen 第 108/192 帧 1.6 秒
+17:04:11 [classroom] B5_listen 第 109/192 帧 1.5 秒
+17:04:13 [classroom] B5_listen 第 110/192 帧 1.5 秒
+17:04:14 [classroom] B5_listen 第 111/192 帧 1.5 秒
+17:04:16 [classroom] B5_listen 第 112/192 帧 1.5 秒
+17:04:18 [classroom] B5_listen 第 113/192 帧 1.6 秒
+17:04:20 [classroom] B5_listen 第 114/192 帧 1.5 秒
+17:04:21 [classroom] B5_listen 第 115/192 帧 1.6 秒
+17:04:23 [classroom] B5_listen 第 116/192 帧 1.5 秒
+17:04:25 [classroom] B5_listen 第 117/192 帧 1.6 秒
+17:04:26 [classroom] B5_listen 第 118/192 帧 1.6 秒
+17:04:28 [classroom] B5_listen 第 119/192 帧 1.6 秒
+17:04:30 [classroom] B5_listen 第 120/192 帧 1.5 秒
+17:04:31 [classroom] B5_listen 第 121/192 帧 1.6 秒
+17:04:33 [classroom] B5_listen 第 122/192 帧 1.6 秒
+17:04:35 [classroom] B5_listen 第 123/192 帧 1.6 秒
+17:04:36 [classroom] B5_listen 第 124/192 帧 1.5 秒
+17:04:38 [classroom] B5_listen 第 125/192 帧 1.6 秒
+17:04:40 [classroom] B5_listen 第 126/192 帧 1.6 秒
+17:04:41 [classroom] B5_listen 第 127/192 帧 1.6 秒
+17:04:43 [classroom] B5_listen 第 128/192 帧 1.7 秒
+17:04:45 [classroom] B5_listen 第 129/192 帧 1.6 秒
+17:04:47 [classroom] B5_listen 第 130/192 帧 1.5 秒
+17:04:48 [classroom] B5_listen 第 131/192 帧 1.6 秒
+17:04:50 [classroom] B5_listen 第 132/192 帧 1.5 秒
+17:04:52 [classroom] B5_listen 第 133/192 帧 1.6 秒
+17:04:53 [classroom] B5_listen 第 134/192 帧 1.6 秒
+17:04:55 [classroom] B5_listen 第 135/192 帧 1.6 秒
+17:04:57 [classroom] B5_listen 第 136/192 帧 1.5 秒
+17:04:58 [classroom] B5_listen 第 137/192 帧 1.5 秒
+17:05:00 [classroom] B5_listen 第 138/192 帧 1.6 秒
+17:05:02 [classroom] B5_listen 第 139/192 帧 1.6 秒
+17:05:03 [classroom] B5_listen 第 140/192 帧 1.6 秒
+17:05:05 [classroom] B5_listen 第 141/192 帧 1.6 秒
+17:05:07 [classroom] B5_listen 第 142/192 帧 1.6 秒
+17:05:08 [classroom] B5_listen 第 143/192 帧 1.6 秒
+17:05:10 [classroom] B5_listen 第 144/192 帧 1.5 秒
+17:05:12 [classroom] B5_listen 第 145/192 帧 1.5 秒
+17:05:13 [classroom] B5_listen 第 146/192 帧 1.6 秒
+17:05:15 [classroom] B5_listen 第 147/192 帧 1.6 秒
+17:05:17 [classroom] B5_listen 第 148/192 帧 1.5 秒
+17:05:18 [classroom] B5_listen 第 149/192 帧 1.6 秒
+17:05:20 [classroom] B5_listen 第 150/192 帧 1.6 秒
+17:05:22 [classroom] B5_listen 第 151/192 帧 1.6 秒
+17:05:23 [classroom] B5_listen 第 152/192 帧 1.6 秒
+17:05:25 [classroom] B5_listen 第 153/192 帧 1.6 秒
+17:05:27 [classroom] B5_listen 第 154/192 帧 1.6 秒
+17:05:28 [classroom] B5_listen 第 155/192 帧 1.5 秒
+17:05:30 [classroom] B5_listen 第 156/192 帧 1.6 秒
+17:05:32 [classroom] B5_listen 第 157/192 帧 1.5 秒
+17:05:33 [classroom] B5_listen 第 158/192 帧 1.6 秒
+17:05:35 [classroom] B5_listen 第 159/192 帧 1.6 秒
+17:05:37 [classroom] B5_listen 第 160/192 帧 1.6 秒
+17:05:39 [classroom] B5_listen 第 161/192 帧 1.6 秒
+17:05:40 [classroom] B5_listen 第 162/192 帧 1.6 秒
+17:05:42 [classroom] B5_listen 第 163/192 帧 1.5 秒
+17:05:44 [classroom] B5_listen 第 164/192 帧 1.6 秒
+17:05:45 [classroom] B5_listen 第 165/192 帧 1.6 秒
+17:05:47 [classroom] B5_listen 第 166/192 帧 1.6 秒
+17:05:49 [classroom] B5_listen 第 167/192 帧 1.6 秒
+17:05:50 [classroom] B5_listen 第 168/192 帧 1.6 秒
+17:05:52 [classroom] B5_listen 第 169/192 帧 1.6 秒
+17:05:54 [classroom] B5_listen 第 170/192 帧 1.6 秒
+17:05:56 [classroom] B5_listen 第 171/192 帧 1.6 秒
+17:05:57 [classroom] B5_listen 第 172/192 帧 1.6 秒
+17:05:59 [classroom] B5_listen 第 173/192 帧 1.6 秒
+17:06:01 [classroom] B5_listen 第 174/192 帧 1.6 秒
+17:06:02 [classroom] B5_listen 第 175/192 帧 1.6 秒
+17:06:04 [classroom] B5_listen 第 176/192 帧 1.6 秒
+17:06:06 [classroom] B5_listen 第 177/192 帧 1.6 秒
+17:06:07 [classroom] B5_listen 第 178/192 帧 1.6 秒
+17:06:09 [classroom] B5_listen 第 179/192 帧 1.6 秒
+17:06:11 [classroom] B5_listen 第 180/192 帧 1.6 秒
+17:06:12 [classroom] B5_listen 第 181/192 帧 1.6 秒
+17:06:14 [classroom] B5_listen 第 182/192 帧 1.6 秒
+17:06:16 [classroom] B5_listen 第 183/192 帧 1.6 秒
+17:06:18 [classroom] B5_listen 第 184/192 帧 1.6 秒
+17:06:19 [classroom] B5_listen 第 185/192 帧 1.5 秒
+17:06:21 [classroom] B5_listen 第 186/192 帧 1.6 秒
+17:06:23 [classroom] B5_listen 第 187/192 帧 1.6 秒
+17:06:24 [classroom] B5_listen 第 188/192 帧 1.6 秒
+17:06:26 [classroom] B5_listen 第 189/192 帧 1.5 秒
+17:06:28 [classroom] B5_listen 第 190/192 帧 1.5 秒
+17:06:29 [classroom] B5_listen 第 191/192 帧 1.6 秒
+17:06:31 [classroom] B5_listen 第 192/192 帧 1.6 秒
+17:06:33 [classroom] T1_lecture 第 2/576 帧 1.4 秒
+17:06:34 [classroom] T1_lecture 第 3/576 帧 1.4 秒
+17:06:36 [classroom] T1_lecture 第 4/576 帧 1.3 秒
+17:06:37 [classroom] T1_lecture 第 5/576 帧 1.3 秒
+17:06:39 [classroom] T1_lecture 第 6/576 帧 1.4 秒
+17:06:40 [classroom] T1_lecture 第 7/576 帧 1.4 秒
+17:06:42 [classroom] T1_lecture 第 8/576 帧 1.3 秒
+17:06:43 [classroom] T1_lecture 第 9/576 帧 1.4 秒
+17:06:45 [classroom] T1_lecture 第 10/576 帧 1.4 秒
+17:06:46 [classroom] T1_lecture 第 11/576 帧 1.4 秒
+17:06:48 [classroom] T1_lecture 第 12/576 帧 1.3 秒
+17:06:49 [classroom] T1_lecture 第 13/576 帧 1.4 秒
+17:06:50 [classroom] T1_lecture 第 14/576 帧 1.4 秒
+17:06:52 [classroom] T1_lecture 第 15/576 帧 1.3 秒
+17:06:53 [classroom] T1_lecture 第 16/576 帧 1.3 秒
+17:06:55 [classroom] T1_lecture 第 17/576 帧 1.3 秒
+17:06:56 [classroom] T1_lecture 第 18/576 帧 1.4 秒
+17:06:58 [classroom] T1_lecture 第 19/576 帧 1.4 秒
+17:06:59 [classroom] T1_lecture 第 20/576 帧 1.3 秒
+17:07:01 [classroom] T1_lecture 第 21/576 帧 1.4 秒
+17:07:02 [classroom] T1_lecture 第 22/576 帧 1.3 秒
+17:07:04 [classroom] T1_lecture 第 23/576 帧 1.4 秒
+17:07:05 [classroom] T1_lecture 第 24/576 帧 1.3 秒
+17:07:07 [classroom] T1_lecture 第 25/576 帧 1.3 秒
+17:07:08 [classroom] T1_lecture 第 26/576 帧 1.3 秒
+17:07:09 [classroom] T1_lecture 第 27/576 帧 1.3 秒
+17:07:11 [classroom] T1_lecture 第 28/576 帧 1.3 秒
+17:07:12 [classroom] T1_lecture 第 29/576 帧 1.3 秒
+17:07:14 [classroom] T1_lecture 第 30/576 帧 1.3 秒
+17:07:15 [classroom] T1_lecture 第 31/576 帧 1.4 秒
+17:07:17 [classroom] T1_lecture 第 32/576 帧 1.3 秒
+17:07:18 [classroom] T1_lecture 第 33/576 帧 1.3 秒
+17:07:20 [classroom] T1_lecture 第 34/576 帧 1.3 秒
+17:07:21 [classroom] T1_lecture 第 35/576 帧 1.4 秒
+17:07:22 [classroom] T1_lecture 第 36/576 帧 1.4 秒
+17:07:24 [classroom] T1_lecture 第 37/576 帧 1.4 秒
+17:07:25 [classroom] T1_lecture 第 38/576 帧 1.4 秒
+17:07:27 [classroom] T1_lecture 第 39/576 帧 1.4 秒
+17:07:28 [classroom] T1_lecture 第 40/576 帧 1.3 秒
+17:07:30 [classroom] T1_lecture 第 41/576 帧 1.3 秒
+17:07:31 [classroom] T1_lecture 第 42/576 帧 1.3 秒
+17:07:33 [classroom] T1_lecture 第 43/576 帧 1.3 秒
+17:07:34 [classroom] T1_lecture 第 44/576 帧 1.4 秒
+17:07:35 [classroom] T1_lecture 第 45/576 帧 1.4 秒
+17:07:37 [classroom] T1_lecture 第 46/576 帧 1.4 秒
+17:07:38 [classroom] T1_lecture 第 47/576 帧 1.4 秒
+17:07:40 [classroom] T1_lecture 第 48/576 帧 1.3 秒
+17:07:41 [classroom] T1_lecture 第 49/576 帧 1.3 秒
+17:07:43 [classroom] T1_lecture 第 50/576 帧 1.4 秒
+17:07:44 [classroom] T1_lecture 第 51/576 帧 1.3 秒
+17:07:46 [classroom] T1_lecture 第 52/576 帧 1.4 秒
+17:07:47 [classroom] T1_lecture 第 53/576 帧 1.3 秒
+17:07:49 [classroom] T1_lecture 第 54/576 帧 1.3 秒
+17:07:50 [classroom] T1_lecture 第 55/576 帧 1.4 秒
+17:07:51 [classroom] T1_lecture 第 56/576 帧 1.3 秒
+17:07:53 [classroom] T1_lecture 第 57/576 帧 1.3 秒
+17:07:54 [classroom] T1_lecture 第 58/576 帧 1.4 秒
+17:07:56 [classroom] T1_lecture 第 59/576 帧 1.4 秒
+17:07:57 [classroom] T1_lecture 第 60/576 帧 1.4 秒
+17:07:59 [classroom] T1_lecture 第 61/576 帧 1.3 秒
+17:08:00 [classroom] T1_lecture 第 62/576 帧 1.4 秒
+17:08:02 [classroom] T1_lecture 第 63/576 帧 1.3 秒
+17:08:03 [classroom] T1_lecture 第 64/576 帧 1.3 秒
+17:08:05 [classroom] T1_lecture 第 65/576 帧 1.4 秒
+17:08:06 [classroom] T1_lecture 第 66/576 帧 1.4 秒
+17:08:08 [classroom] T1_lecture 第 67/576 帧 1.4 秒
+17:08:09 [classroom] T1_lecture 第 68/576 帧 1.4 秒
+17:08:11 [classroom] T1_lecture 第 69/576 帧 1.3 秒
+17:08:12 [classroom] T1_lecture 第 70/576 帧 1.4 秒
+17:08:14 [classroom] T1_lecture 第 71/576 帧 1.3 秒
+17:08:15 [classroom] T1_lecture 第 72/576 帧 1.4 秒
+17:08:17 [classroom] T1_lecture 第 73/576 帧 1.4 秒
+17:08:18 [classroom] T1_lecture 第 74/576 帧 1.3 秒
+17:08:19 [classroom] T1_lecture 第 75/576 帧 1.3 秒
+17:08:21 [classroom] T1_lecture 第 76/576 帧 1.3 秒
+17:08:22 [classroom] T1_lecture 第 77/576 帧 1.3 秒
+17:08:24 [classroom] T1_lecture 第 78/576 帧 1.4 秒
+17:08:25 [classroom] T1_lecture 第 79/576 帧 1.3 秒
+17:08:27 [classroom] T1_lecture 第 80/576 帧 1.3 秒
+17:08:28 [classroom] T1_lecture 第 81/576 帧 1.4 秒
+17:08:30 [classroom] T1_lecture 第 82/576 帧 1.3 秒
+17:08:31 [classroom] T1_lecture 第 83/576 帧 1.3 秒
+17:08:32 [classroom] T1_lecture 第 84/576 帧 1.3 秒
+17:08:34 [classroom] T1_lecture 第 85/576 帧 1.4 秒
+17:08:35 [classroom] T1_lecture 第 86/576 帧 1.3 秒
+17:08:37 [classroom] T1_lecture 第 87/576 帧 1.3 秒
+17:08:38 [classroom] T1_lecture 第 88/576 帧 1.4 秒
+17:08:40 [classroom] T1_lecture 第 89/576 帧 1.4 秒
+17:08:41 [classroom] T1_lecture 第 90/576 帧 1.3 秒
+17:08:43 [classroom] T1_lecture 第 91/576 帧 1.3 秒
+17:08:44 [classroom] T1_lecture 第 92/576 帧 1.3 秒
+17:08:46 [classroom] T1_lecture 第 93/576 帧 1.4 秒
+17:08:47 [classroom] T1_lecture 第 94/576 帧 1.4 秒
+17:08:49 [classroom] T1_lecture 第 95/576 帧 1.4 秒
+17:08:50 [classroom] T1_lecture 第 96/576 帧 1.3 秒
+17:08:51 [classroom] T1_lecture 第 97/576 帧 1.3 秒
+17:08:53 [classroom] T1_lecture 第 98/576 帧 1.3 秒
+17:08:54 [classroom] T1_lecture 第 99/576 帧 1.4 秒
+17:08:56 [classroom] T1_lecture 第 100/576 帧 1.4 秒
+17:08:57 [classroom] T1_lecture 第 101/576 帧 1.4 秒
+17:08:59 [classroom] T1_lecture 第 102/576 帧 1.3 秒
+17:09:00 [classroom] T1_lecture 第 103/576 帧 1.3 秒
+17:09:02 [classroom] T1_lecture 第 104/576 帧 1.4 秒
+17:09:03 [classroom] T1_lecture 第 105/576 帧 1.4 秒
+17:09:05 [classroom] T1_lecture 第 106/576 帧 1.4 秒
+17:09:06 [classroom] T1_lecture 第 107/576 帧 1.4 秒
+17:09:08 [classroom] T1_lecture 第 108/576 帧 1.4 秒
+17:09:09 [classroom] T1_lecture 第 109/576 帧 1.3 秒
+17:09:11 [classroom] T1_lecture 第 110/576 帧 1.3 秒
+17:09:12 [classroom] T1_lecture 第 111/576 帧 1.3 秒
+17:09:14 [classroom] T1_lecture 第 112/576 帧 1.4 秒
+17:09:15 [classroom] T1_lecture 第 113/576 帧 1.4 秒
+17:09:17 [classroom] T1_lecture 第 114/576 帧 1.4 秒
+17:09:18 [classroom] T1_lecture 第 115/576 帧 1.3 秒
+17:09:19 [classroom] T1_lecture 第 116/576 帧 1.3 秒
+17:09:21 [classroom] T1_lecture 第 117/576 帧 1.3 秒
+17:09:22 [classroom] T1_lecture 第 118/576 帧 1.4 秒
+17:09:24 [classroom] T1_lecture 第 119/576 帧 1.4 秒
+17:09:25 [classroom] T1_lecture 第 120/576 帧 1.4 秒
+17:09:27 [classroom] T1_lecture 第 121/576 帧 1.3 秒
+17:09:28 [classroom] T1_lecture 第 122/576 帧 1.3 秒
+17:09:30 [classroom] T1_lecture 第 123/576 帧 1.3 秒
+17:09:31 [classroom] T1_lecture 第 124/576 帧 1.3 秒
+17:09:33 [classroom] T1_lecture 第 125/576 帧 1.3 秒
+17:09:34 [classroom] T1_lecture 第 126/576 帧 1.4 秒
+17:09:36 [classroom] T1_lecture 第 127/576 帧 1.4 秒
+17:09:37 [classroom] T1_lecture 第 128/576 帧 1.4 秒
+17:09:38 [classroom] T1_lecture 第 129/576 帧 1.3 秒
+17:09:40 [classroom] T1_lecture 第 130/576 帧 1.3 秒
+17:09:41 [classroom] T1_lecture 第 131/576 帧 1.4 秒
+17:09:43 [classroom] T1_lecture 第 132/576 帧 1.3 秒
+17:09:44 [classroom] T1_lecture 第 133/576 帧 1.3 秒
+17:09:46 [classroom] T1_lecture 第 134/576 帧 1.4 秒
+17:09:47 [classroom] T1_lecture 第 135/576 帧 1.4 秒
+17:09:49 [classroom] T1_lecture 第 136/576 帧 1.4 秒
+17:09:50 [classroom] T1_lecture 第 137/576 帧 1.3 秒
+17:09:52 [classroom] T1_lecture 第 138/576 帧 1.3 秒
+17:09:53 [classroom] T1_lecture 第 139/576 帧 1.4 秒
+17:09:55 [classroom] T1_lecture 第 140/576 帧 1.4 秒
+17:09:56 [classroom] T1_lecture 第 141/576 帧 1.4 秒
+17:09:58 [classroom] T1_lecture 第 142/576 帧 1.4 秒
+17:09:59 [classroom] T1_lecture 第 143/576 帧 1.4 秒
+17:10:01 [classroom] T1_lecture 第 144/576 帧 1.4 秒
+17:10:02 [classroom] T1_lecture 第 145/576 帧 1.4 秒
+17:10:04 [classroom] T1_lecture 第 146/576 帧 1.4 秒
+17:10:05 [classroom] T1_lecture 第 147/576 帧 1.4 秒
+17:10:07 [classroom] T1_lecture 第 148/576 帧 1.5 秒
+17:10:08 [classroom] T1_lecture 第 149/576 帧 1.6 秒
+17:10:10 [classroom] T1_lecture 第 150/576 帧 1.5 秒
+17:10:11 [classroom] T1_lecture 第 151/576 帧 1.3 秒
+17:10:13 [classroom] T1_lecture 第 152/576 帧 1.4 秒
+17:10:14 [classroom] T1_lecture 第 153/576 帧 1.4 秒
+17:10:16 [classroom] T1_lecture 第 154/576 帧 1.4 秒
+17:10:17 [classroom] T1_lecture 第 155/576 帧 1.4 秒
+17:10:19 [classroom] T1_lecture 第 156/576 帧 1.4 秒
+17:10:20 [classroom] T1_lecture 第 157/576 帧 1.4 秒
+17:10:22 [classroom] T1_lecture 第 158/576 帧 1.4 秒
+17:10:23 [classroom] T1_lecture 第 159/576 帧 1.4 秒
+17:10:25 [classroom] T1_lecture 第 160/576 帧 1.4 秒
+17:10:26 [classroom] T1_lecture 第 161/576 帧 1.3 秒
+17:10:28 [classroom] T1_lecture 第 162/576 帧 1.3 秒
+17:10:29 [classroom] T1_lecture 第 163/576 帧 1.4 秒
+17:10:31 [classroom] T1_lecture 第 164/576 帧 1.4 秒
+17:10:32 [classroom] T1_lecture 第 165/576 帧 1.4 秒
+17:10:34 [classroom] T1_lecture 第 166/576 帧 1.4 秒
+17:10:35 [classroom] T1_lecture 第 167/576 帧 1.3 秒
+17:10:36 [classroom] T1_lecture 第 168/576 帧 1.4 秒
+17:10:38 [classroom] T1_lecture 第 169/576 帧 1.3 秒
+17:10:39 [classroom] T1_lecture 第 170/576 帧 1.4 秒
+17:10:41 [classroom] T1_lecture 第 171/576 帧 1.4 秒
+17:10:42 [classroom] T1_lecture 第 172/576 帧 1.3 秒
+17:10:44 [classroom] T1_lecture 第 173/576 帧 1.3 秒
+17:10:45 [classroom] T1_lecture 第 174/576 帧 1.3 秒
+17:10:47 [classroom] T1_lecture 第 175/576 帧 1.3 秒
+17:10:48 [classroom] T1_lecture 第 176/576 帧 1.3 秒
+17:10:50 [classroom] T1_lecture 第 177/576 帧 1.4 秒
+17:10:51 [classroom] T1_lecture 第 178/576 帧 1.4 秒
+17:10:53 [classroom] T1_lecture 第 179/576 帧 1.4 秒
+17:10:54 [classroom] T1_lecture 第 180/576 帧 1.4 秒
+17:10:56 [classroom] T1_lecture 第 181/576 帧 1.4 秒
+17:10:57 [classroom] T1_lecture 第 182/576 帧 1.4 秒
+17:10:59 [classroom] T1_lecture 第 183/576 帧 1.4 秒
+17:11:00 [classroom] T1_lecture 第 184/576 帧 1.4 秒
+17:11:02 [classroom] T1_lecture 第 185/576 帧 1.4 秒
+17:11:03 [classroom] T1_lecture 第 186/576 帧 1.4 秒
+17:11:05 [classroom] T1_lecture 第 187/576 帧 1.4 秒
+17:11:06 [classroom] T1_lecture 第 188/576 帧 1.4 秒
+17:11:08 [classroom] T1_lecture 第 189/576 帧 1.4 秒
+17:11:09 [classroom] T1_lecture 第 190/576 帧 1.4 秒
+17:11:11 [classroom] T1_lecture 第 191/576 帧 1.4 秒
+17:11:12 [classroom] T1_lecture 第 192/576 帧 1.3 秒
+17:11:13 [classroom] T1_lecture 第 193/576 帧 1.4 秒
+17:11:15 [classroom] T1_lecture 第 194/576 帧 1.3 秒
+17:11:16 [classroom] T1_lecture 第 195/576 帧 1.4 秒
+17:11:18 [classroom] T1_lecture 第 196/576 帧 1.4 秒
+17:11:19 [classroom] T1_lecture 第 197/576 帧 1.4 秒
+17:11:21 [classroom] T1_lecture 第 198/576 帧 1.3 秒
+17:11:22 [classroom] T1_lecture 第 199/576 帧 1.4 秒
+17:11:24 [classroom] T1_lecture 第 200/576 帧 1.4 秒
+17:11:25 [classroom] T1_lecture 第 201/576 帧 1.4 秒
+17:11:27 [classroom] T1_lecture 第 202/576 帧 1.4 秒
+17:11:28 [classroom] T1_lecture 第 203/576 帧 1.4 秒
+17:11:30 [classroom] T1_lecture 第 204/576 帧 1.5 秒
+17:11:31 [classroom] T1_lecture 第 205/576 帧 1.4 秒
+17:11:33 [classroom] T1_lecture 第 206/576 帧 1.4 秒
+17:11:34 [classroom] T1_lecture 第 207/576 帧 1.3 秒
+17:11:36 [classroom] T1_lecture 第 208/576 帧 1.3 秒
+17:11:37 [classroom] T1_lecture 第 209/576 帧 1.3 秒
+17:11:39 [classroom] T1_lecture 第 210/576 帧 1.4 秒
+17:11:40 [classroom] T1_lecture 第 211/576 帧 1.4 秒
+17:11:42 [classroom] T1_lecture 第 212/576 帧 1.4 秒
+17:11:43 [classroom] T1_lecture 第 213/576 帧 1.3 秒
+17:11:45 [classroom] T1_lecture 第 214/576 帧 1.4 秒
+17:11:46 [classroom] T1_lecture 第 215/576 帧 1.4 秒
+17:11:48 [classroom] T1_lecture 第 216/576 帧 1.4 秒
+17:11:49 [classroom] T1_lecture 第 217/576 帧 1.4 秒
+17:11:51 [classroom] T1_lecture 第 218/576 帧 1.4 秒
+17:11:52 [classroom] T1_lecture 第 219/576 帧 1.4 秒
+17:11:54 [classroom] T1_lecture 第 220/576 帧 1.4 秒
+17:11:55 [classroom] T1_lecture 第 221/576 帧 1.4 秒
+17:11:57 [classroom] T1_lecture 第 222/576 帧 1.4 秒
+17:11:58 [classroom] T1_lecture 第 223/576 帧 1.4 秒
+17:12:00 [classroom] T1_lecture 第 224/576 帧 1.4 秒
+17:12:01 [classroom] T1_lecture 第 225/576 帧 1.4 秒
+17:12:03 [classroom] T1_lecture 第 226/576 帧 1.4 秒
+17:12:04 [classroom] T1_lecture 第 227/576 帧 1.4 秒
+17:12:06 [classroom] T1_lecture 第 228/576 帧 1.4 秒
+17:12:07 [classroom] T1_lecture 第 229/576 帧 1.3 秒
+17:12:09 [classroom] T1_lecture 第 230/576 帧 1.4 秒
+17:12:10 [classroom] T1_lecture 第 231/576 帧 1.4 秒
+17:12:12 [classroom] T1_lecture 第 232/576 帧 1.4 秒
+17:12:13 [classroom] T1_lecture 第 233/576 帧 1.4 秒
+17:12:15 [classroom] T1_lecture 第 234/576 帧 1.3 秒
+17:12:16 [classroom] T1_lecture 第 235/576 帧 1.4 秒
+17:12:18 [classroom] T1_lecture 第 236/576 帧 1.4 秒
+17:12:19 [classroom] T1_lecture 第 237/576 帧 1.4 秒
+17:12:21 [classroom] T1_lecture 第 238/576 帧 1.4 秒
+17:12:22 [classroom] T1_lecture 第 239/576 帧 1.3 秒
+17:12:23 [classroom] T1_lecture 第 240/576 帧 1.3 秒
+17:12:25 [classroom] T1_lecture 第 241/576 帧 1.3 秒
+17:12:26 [classroom] T1_lecture 第 242/576 帧 1.3 秒
+17:12:28 [classroom] T1_lecture 第 243/576 帧 1.4 秒
+17:12:29 [classroom] T1_lecture 第 244/576 帧 1.4 秒
+17:12:31 [classroom] T1_lecture 第 245/576 帧 1.4 秒
+17:12:32 [classroom] T1_lecture 第 246/576 帧 1.4 秒
+17:12:34 [classroom] T1_lecture 第 247/576 帧 1.5 秒
+17:12:35 [classroom] T1_lecture 第 248/576 帧 1.4 秒
+17:12:37 [classroom] T1_lecture 第 249/576 帧 1.4 秒
+17:12:38 [classroom] T1_lecture 第 250/576 帧 1.4 秒
+17:12:40 [classroom] T1_lecture 第 251/576 帧 1.4 秒
+17:12:41 [classroom] T1_lecture 第 252/576 帧 1.4 秒
+17:12:43 [classroom] T1_lecture 第 253/576 帧 1.4 秒
+17:12:44 [classroom] T1_lecture 第 254/576 帧 1.4 秒
+17:12:46 [classroom] T1_lecture 第 255/576 帧 1.4 秒
+17:12:47 [classroom] T1_lecture 第 256/576 帧 1.4 秒
+17:12:49 [classroom] T1_lecture 第 257/576 帧 1.4 秒
+17:12:50 [classroom] T1_lecture 第 258/576 帧 1.4 秒
+17:12:52 [classroom] T1_lecture 第 259/576 帧 1.4 秒
+17:12:53 [classroom] T1_lecture 第 260/576 帧 1.4 秒
+17:12:55 [classroom] T1_lecture 第 261/576 帧 1.4 秒
+17:12:56 [classroom] T1_lecture 第 262/576 帧 1.4 秒
+17:12:58 [classroom] T1_lecture 第 263/576 帧 1.4 秒
+17:12:59 [classroom] T1_lecture 第 264/576 帧 1.4 秒
+17:13:01 [classroom] T1_lecture 第 265/576 帧 1.4 秒
+17:13:02 [classroom] T1_lecture 第 266/576 帧 1.5 秒
+17:13:04 [classroom] T1_lecture 第 267/576 帧 1.4 秒
+17:13:05 [classroom] T1_lecture 第 268/576 帧 1.4 秒
+17:13:07 [classroom] T1_lecture 第 269/576 帧 1.4 秒
+17:13:08 [classroom] T1_lecture 第 270/576 帧 1.4 秒
+17:13:10 [classroom] T1_lecture 第 271/576 帧 1.4 秒
+17:13:11 [classroom] T1_lecture 第 272/576 帧 1.4 秒
+17:13:13 [classroom] T1_lecture 第 273/576 帧 1.3 秒
+17:13:14 [classroom] T1_lecture 第 274/576 帧 1.4 秒
+17:13:16 [classroom] T1_lecture 第 275/576 帧 1.4 秒
+17:13:17 [classroom] T1_lecture 第 276/576 帧 1.4 秒
+17:13:19 [classroom] T1_lecture 第 277/576 帧 1.3 秒
+17:13:20 [classroom] T1_lecture 第 278/576 帧 1.4 秒
+17:13:22 [classroom] T1_lecture 第 279/576 帧 1.4 秒
+17:13:23 [classroom] T1_lecture 第 280/576 帧 1.4 秒
+17:13:25 [classroom] T1_lecture 第 281/576 帧 1.4 秒
+17:13:26 [classroom] T1_lecture 第 282/576 帧 1.4 秒
+17:13:28 [classroom] T1_lecture 第 283/576 帧 1.3 秒
+17:13:29 [classroom] T1_lecture 第 284/576 帧 1.4 秒
+17:13:31 [classroom] T1_lecture 第 285/576 帧 1.4 秒
+17:13:32 [classroom] T1_lecture 第 286/576 帧 1.4 秒
+17:13:34 [classroom] T1_lecture 第 287/576 帧 1.4 秒
+17:13:35 [classroom] T1_lecture 第 288/576 帧 1.4 秒
+17:13:37 [classroom] T1_lecture 第 289/576 帧 1.4 秒
+17:13:38 [classroom] T1_lecture 第 290/576 帧 1.4 秒
+17:13:40 [classroom] T1_lecture 第 291/576 帧 1.4 秒
+17:13:41 [classroom] T1_lecture 第 292/576 帧 1.4 秒
+17:13:43 [classroom] T1_lecture 第 293/576 帧 1.4 秒
+17:13:44 [classroom] T1_lecture 第 294/576 帧 1.4 秒
+17:13:46 [classroom] T1_lecture 第 295/576 帧 1.4 秒
+17:13:47 [classroom] T1_lecture 第 296/576 帧 1.4 秒
+17:13:49 [classroom] T1_lecture 第 297/576 帧 1.4 秒
+17:13:50 [classroom] T1_lecture 第 298/576 帧 1.4 秒
+17:13:52 [classroom] T1_lecture 第 299/576 帧 1.5 秒
+17:13:53 [classroom] T1_lecture 第 300/576 帧 1.4 秒
+17:13:55 [classroom] T1_lecture 第 301/576 帧 1.4 秒
+17:13:56 [classroom] T1_lecture 第 302/576 帧 1.4 秒
+17:13:58 [classroom] T1_lecture 第 303/576 帧 1.4 秒
+17:13:59 [classroom] T1_lecture 第 304/576 帧 1.4 秒
+17:14:01 [classroom] T1_lecture 第 305/576 帧 1.4 秒
+17:14:02 [classroom] T1_lecture 第 306/576 帧 1.4 秒
+17:14:04 [classroom] T1_lecture 第 307/576 帧 1.3 秒
+17:14:05 [classroom] T1_lecture 第 308/576 帧 1.4 秒
+17:14:07 [classroom] T1_lecture 第 309/576 帧 1.4 秒
+17:14:08 [classroom] T1_lecture 第 310/576 帧 1.4 秒
+17:14:10 [classroom] T1_lecture 第 311/576 帧 1.4 秒
+17:14:11 [classroom] T1_lecture 第 312/576 帧 1.4 秒
+17:14:13 [classroom] T1_lecture 第 313/576 帧 1.4 秒
+17:14:14 [classroom] T1_lecture 第 314/576 帧 1.4 秒
+17:14:16 [classroom] T1_lecture 第 315/576 帧 1.4 秒
+17:14:17 [classroom] T1_lecture 第 316/576 帧 1.4 秒
+17:14:19 [classroom] T1_lecture 第 317/576 帧 1.3 秒
+17:14:20 [classroom] T1_lecture 第 318/576 帧 1.3 秒
+17:14:22 [classroom] T1_lecture 第 319/576 帧 1.4 秒
+17:14:23 [classroom] T1_lecture 第 320/576 帧 1.4 秒
+17:14:25 [classroom] T1_lecture 第 321/576 帧 1.3 秒
+17:14:26 [classroom] T1_lecture 第 322/576 帧 1.4 秒
+17:14:27 [classroom] T1_lecture 第 323/576 帧 1.4 秒
+17:14:29 [classroom] T1_lecture 第 324/576 帧 1.4 秒
+17:14:30 [classroom] T1_lecture 第 325/576 帧 1.4 秒
+17:14:32 [classroom] T1_lecture 第 326/576 帧 1.4 秒
+17:14:33 [classroom] T1_lecture 第 327/576 帧 1.3 秒
+17:14:35 [classroom] T1_lecture 第 328/576 帧 1.4 秒
+17:14:36 [classroom] T1_lecture 第 329/576 帧 1.4 秒
+17:14:38 [classroom] T1_lecture 第 330/576 帧 1.4 秒
+17:14:39 [classroom] T1_lecture 第 331/576 帧 1.4 秒
+17:14:41 [classroom] T1_lecture 第 332/576 帧 1.4 秒
+17:14:42 [classroom] T1_lecture 第 333/576 帧 1.4 秒
+17:14:44 [classroom] T1_lecture 第 334/576 帧 1.4 秒
+17:14:45 [classroom] T1_lecture 第 335/576 帧 1.3 秒
+17:14:47 [classroom] T1_lecture 第 336/576 帧 1.5 秒
+17:14:48 [classroom] T1_lecture 第 337/576 帧 1.4 秒
+17:14:50 [classroom] T1_lecture 第 338/576 帧 1.4 秒
+17:14:51 [classroom] T1_lecture 第 339/576 帧 1.4 秒
+17:14:53 [classroom] T1_lecture 第 340/576 帧 1.4 秒
+17:14:54 [classroom] T1_lecture 第 341/576 帧 1.4 秒
+17:14:56 [classroom] T1_lecture 第 342/576 帧 1.4 秒
+17:14:57 [classroom] T1_lecture 第 343/576 帧 1.3 秒
+17:14:59 [classroom] T1_lecture 第 344/576 帧 1.4 秒
+17:15:00 [classroom] T1_lecture 第 345/576 帧 1.4 秒
+17:15:02 [classroom] T1_lecture 第 346/576 帧 1.4 秒
+17:15:03 [classroom] T1_lecture 第 347/576 帧 1.4 秒
+17:15:05 [classroom] T1_lecture 第 348/576 帧 1.3 秒
+17:15:06 [classroom] T1_lecture 第 349/576 帧 1.3 秒
+17:15:08 [classroom] T1_lecture 第 350/576 帧 1.4 秒
+17:15:09 [classroom] T1_lecture 第 351/576 帧 1.4 秒
+17:15:11 [classroom] T1_lecture 第 352/576 帧 1.4 秒
+17:15:12 [classroom] T1_lecture 第 353/576 帧 1.4 秒
+17:15:14 [classroom] T1_lecture 第 354/576 帧 1.4 秒
+17:15:15 [classroom] T1_lecture 第 355/576 帧 1.3 秒
+17:15:17 [classroom] T1_lecture 第 356/576 帧 1.4 秒
+17:15:18 [classroom] T1_lecture 第 357/576 帧 1.4 秒
+17:15:20 [classroom] T1_lecture 第 358/576 帧 1.4 秒
+17:15:21 [classroom] T1_lecture 第 359/576 帧 1.4 秒
+17:15:23 [classroom] T1_lecture 第 360/576 帧 1.4 秒
+17:15:24 [classroom] T1_lecture 第 361/576 帧 1.4 秒
+17:15:26 [classroom] T1_lecture 第 362/576 帧 1.4 秒
+17:15:27 [classroom] T1_lecture 第 363/576 帧 1.4 秒
+17:15:29 [classroom] T1_lecture 第 364/576 帧 1.4 秒
+17:15:30 [classroom] T1_lecture 第 365/576 帧 1.4 秒
+17:15:32 [classroom] T1_lecture 第 366/576 帧 1.4 秒
+17:15:33 [classroom] T1_lecture 第 367/576 帧 1.4 秒
+17:15:35 [classroom] T1_lecture 第 368/576 帧 1.4 秒
+17:15:36 [classroom] T1_lecture 第 369/576 帧 1.4 秒
+17:15:38 [classroom] T1_lecture 第 370/576 帧 1.4 秒
+17:15:39 [classroom] T1_lecture 第 371/576 帧 1.3 秒
+17:15:40 [classroom] T1_lecture 第 372/576 帧 1.3 秒
+17:15:42 [classroom] T1_lecture 第 373/576 帧 1.5 秒
+17:15:43 [classroom] T1_lecture 第 374/576 帧 1.4 秒
+17:15:45 [classroom] T1_lecture 第 375/576 帧 1.4 秒
+17:15:46 [classroom] T1_lecture 第 376/576 帧 1.4 秒
+17:15:48 [classroom] T1_lecture 第 377/576 帧 1.4 秒
+17:15:49 [classroom] T1_lecture 第 378/576 帧 1.4 秒
+17:15:51 [classroom] T1_lecture 第 379/576 帧 1.4 秒
+17:15:52 [classroom] T1_lecture 第 380/576 帧 1.4 秒
+17:15:54 [classroom] T1_lecture 第 381/576 帧 1.4 秒
+17:15:55 [classroom] T1_lecture 第 382/576 帧 1.4 秒
+17:15:57 [classroom] T1_lecture 第 383/576 帧 1.4 秒
+17:15:58 [classroom] T1_lecture 第 384/576 帧 1.4 秒
+17:16:00 [classroom] T1_lecture 第 385/576 帧 1.4 秒
+17:16:01 [classroom] T1_lecture 第 386/576 帧 1.4 秒
+17:16:03 [classroom] T1_lecture 第 387/576 帧 1.4 秒
+17:16:05 [classroom] T1_lecture 第 388/576 帧 1.5 秒
+17:16:06 [classroom] T1_lecture 第 389/576 帧 1.4 秒
+17:16:08 [classroom] T1_lecture 第 390/576 帧 1.4 秒
+17:16:09 [classroom] T1_lecture 第 391/576 帧 1.4 秒
+17:16:11 [classroom] T1_lecture 第 392/576 帧 1.3 秒
+17:16:12 [classroom] T1_lecture 第 393/576 帧 1.4 秒
+17:16:14 [classroom] T1_lecture 第 394/576 帧 1.4 秒
+17:16:15 [classroom] T1_lecture 第 395/576 帧 1.4 秒
+17:16:17 [classroom] T1_lecture 第 396/576 帧 1.4 秒
+17:16:18 [classroom] T1_lecture 第 397/576 帧 1.4 秒
+17:16:20 [classroom] T1_lecture 第 398/576 帧 1.4 秒
+17:16:21 [classroom] T1_lecture 第 399/576 帧 1.4 秒
+17:16:23 [classroom] T1_lecture 第 400/576 帧 1.4 秒
+17:16:24 [classroom] T1_lecture 第 401/576 帧 1.4 秒
+17:16:26 [classroom] T1_lecture 第 402/576 帧 1.4 秒
+17:16:27 [classroom] T1_lecture 第 403/576 帧 1.3 秒
+17:16:28 [classroom] T1_lecture 第 404/576 帧 1.4 秒
+17:16:30 [classroom] T1_lecture 第 405/576 帧 1.4 秒
+17:16:31 [classroom] T1_lecture 第 406/576 帧 1.3 秒
+17:16:33 [classroom] T1_lecture 第 407/576 帧 1.4 秒
+17:16:34 [classroom] T1_lecture 第 408/576 帧 1.4 秒
+17:16:36 [classroom] T1_lecture 第 409/576 帧 1.4 秒
+17:16:37 [classroom] T1_lecture 第 410/576 帧 1.4 秒
+17:16:39 [classroom] T1_lecture 第 411/576 帧 1.4 秒
+17:16:40 [classroom] T1_lecture 第 412/576 帧 1.3 秒
+17:16:42 [classroom] T1_lecture 第 413/576 帧 1.4 秒
+17:16:43 [classroom] T1_lecture 第 414/576 帧 1.4 秒
+17:16:45 [classroom] T1_lecture 第 415/576 帧 1.4 秒
+17:16:46 [classroom] T1_lecture 第 416/576 帧 1.4 秒
+17:16:48 [classroom] T1_lecture 第 417/576 帧 1.4 秒
+17:16:49 [classroom] T1_lecture 第 418/576 帧 1.4 秒
+17:16:51 [classroom] T1_lecture 第 419/576 帧 1.4 秒
+17:16:53 [classroom] T1_lecture 第 420/576 帧 1.5 秒
+17:16:54 [classroom] T1_lecture 第 421/576 帧 1.4 秒
+17:16:56 [classroom] T1_lecture 第 422/576 帧 1.4 秒
+17:16:57 [classroom] T1_lecture 第 423/576 帧 1.4 秒
+17:16:59 [classroom] T1_lecture 第 424/576 帧 1.4 秒
+17:17:00 [classroom] T1_lecture 第 425/576 帧 1.4 秒
+17:17:02 [classroom] T1_lecture 第 426/576 帧 1.4 秒
+17:17:03 [classroom] T1_lecture 第 427/576 帧 1.4 秒
+17:17:05 [classroom] T1_lecture 第 428/576 帧 1.5 秒
+17:17:06 [classroom] T1_lecture 第 429/576 帧 1.4 秒
+17:17:08 [classroom] T1_lecture 第 430/576 帧 1.4 秒
+17:17:09 [classroom] T1_lecture 第 431/576 帧 1.5 秒
+17:17:11 [classroom] T1_lecture 第 432/576 帧 1.4 秒
+17:17:12 [classroom] T1_lecture 第 433/576 帧 1.4 秒
+17:17:14 [classroom] T1_lecture 第 434/576 帧 1.4 秒
+17:17:15 [classroom] T1_lecture 第 435/576 帧 1.4 秒
+17:17:17 [classroom] T1_lecture 第 436/576 帧 1.5 秒
+17:17:18 [classroom] T1_lecture 第 437/576 帧 1.4 秒
+17:17:20 [classroom] T1_lecture 第 438/576 帧 1.4 秒
+17:17:21 [classroom] T1_lecture 第 439/576 帧 1.4 秒
+17:17:23 [classroom] T1_lecture 第 440/576 帧 1.4 秒
+17:17:24 [classroom] T1_lecture 第 441/576 帧 1.4 秒
+17:17:26 [classroom] T1_lecture 第 442/576 帧 1.4 秒
+17:17:27 [classroom] T1_lecture 第 443/576 帧 1.4 秒
+17:17:29 [classroom] T1_lecture 第 444/576 帧 1.4 秒
+17:17:30 [classroom] T1_lecture 第 445/576 帧 1.3 秒
+17:17:32 [classroom] T1_lecture 第 446/576 帧 1.4 秒
+17:17:33 [classroom] T1_lecture 第 447/576 帧 1.4 秒
+17:17:35 [classroom] T1_lecture 第 448/576 帧 1.4 秒
+17:17:36 [classroom] T1_lecture 第 449/576 帧 1.4 秒
+17:17:38 [classroom] T1_lecture 第 450/576 帧 1.3 秒
+17:17:39 [classroom] T1_lecture 第 451/576 帧 1.4 秒
+17:17:41 [classroom] T1_lecture 第 452/576 帧 1.4 秒
+17:17:42 [classroom] T1_lecture 第 453/576 帧 1.4 秒
+17:17:44 [classroom] T1_lecture 第 454/576 帧 1.4 秒
+17:17:45 [classroom] T1_lecture 第 455/576 帧 1.3 秒
+17:17:47 [classroom] T1_lecture 第 456/576 帧 1.5 秒
+17:17:48 [classroom] T1_lecture 第 457/576 帧 1.4 秒
+17:17:50 [classroom] T1_lecture 第 458/576 帧 1.4 秒
+17:17:51 [classroom] T1_lecture 第 459/576 帧 1.4 秒
+17:17:53 [classroom] T1_lecture 第 460/576 帧 1.4 秒
+17:17:54 [classroom] T1_lecture 第 461/576 帧 1.5 秒
+17:17:56 [classroom] T1_lecture 第 462/576 帧 1.4 秒
+17:17:57 [classroom] T1_lecture 第 463/576 帧 1.4 秒
+17:17:59 [classroom] T1_lecture 第 464/576 帧 1.4 秒
+17:18:00 [classroom] T1_lecture 第 465/576 帧 1.4 秒
+17:18:02 [classroom] T1_lecture 第 466/576 帧 1.5 秒
+17:18:04 [classroom] T1_lecture 第 467/576 帧 1.4 秒
+17:18:05 [classroom] T1_lecture 第 468/576 帧 1.4 秒
+17:18:07 [classroom] T1_lecture 第 469/576 帧 1.4 秒
+17:18:08 [classroom] T1_lecture 第 470/576 帧 1.4 秒
+17:18:10 [classroom] T1_lecture 第 471/576 帧 1.4 秒
+17:18:11 [classroom] T1_lecture 第 472/576 帧 1.4 秒
+17:18:13 [classroom] T1_lecture 第 473/576 帧 1.4 秒
+17:18:14 [classroom] T1_lecture 第 474/576 帧 1.4 秒
+17:18:16 [classroom] T1_lecture 第 475/576 帧 1.4 秒
+17:18:17 [classroom] T1_lecture 第 476/576 帧 1.4 秒
+17:18:19 [classroom] T1_lecture 第 477/576 帧 1.4 秒
+17:18:20 [classroom] T1_lecture 第 478/576 帧 1.4 秒
+17:18:22 [classroom] T1_lecture 第 479/576 帧 1.4 秒
+17:18:23 [classroom] T1_lecture 第 480/576 帧 1.4 秒
+17:18:24 [classroom] T1_lecture 第 481/576 帧 1.4 秒
+17:18:26 [classroom] T1_lecture 第 482/576 帧 1.3 秒
+17:18:27 [classroom] T1_lecture 第 483/576 帧 1.4 秒
+17:18:29 [classroom] T1_lecture 第 484/576 帧 1.3 秒
+17:18:30 [classroom] T1_lecture 第 485/576 帧 1.4 秒
+17:18:32 [classroom] T1_lecture 第 486/576 帧 1.4 秒
+17:18:33 [classroom] T1_lecture 第 487/576 帧 1.3 秒
+17:18:35 [classroom] T1_lecture 第 488/576 帧 1.4 秒
+17:18:36 [classroom] T1_lecture 第 489/576 帧 1.4 秒
+17:18:38 [classroom] T1_lecture 第 490/576 帧 1.4 秒
+17:18:39 [classroom] T1_lecture 第 491/576 帧 1.4 秒
+17:18:41 [classroom] T1_lecture 第 492/576 帧 1.3 秒
+17:18:42 [classroom] T1_lecture 第 493/576 帧 1.4 秒
+17:18:44 [classroom] T1_lecture 第 494/576 帧 1.4 秒
+17:18:45 [classroom] T1_lecture 第 495/576 帧 1.4 秒
+17:18:47 [classroom] T1_lecture 第 496/576 帧 1.4 秒
+17:18:48 [classroom] T1_lecture 第 497/576 帧 1.4 秒
+17:18:50 [classroom] T1_lecture 第 498/576 帧 1.4 秒
+17:18:51 [classroom] T1_lecture 第 499/576 帧 1.4 秒
+17:18:53 [classroom] T1_lecture 第 500/576 帧 1.4 秒
+17:18:54 [classroom] T1_lecture 第 501/576 帧 1.4 秒
+17:18:56 [classroom] T1_lecture 第 502/576 帧 1.4 秒
+17:18:57 [classroom] T1_lecture 第 503/576 帧 1.4 秒
+17:18:59 [classroom] T1_lecture 第 504/576 帧 1.4 秒
+17:19:00 [classroom] T1_lecture 第 505/576 帧 1.4 秒
+17:19:02 [classroom] T1_lecture 第 506/576 帧 1.5 秒
+17:19:03 [classroom] T1_lecture 第 507/576 帧 1.4 秒
+17:19:05 [classroom] T1_lecture 第 508/576 帧 1.4 秒
+17:19:06 [classroom] T1_lecture 第 509/576 帧 1.4 秒
+17:19:08 [classroom] T1_lecture 第 510/576 帧 1.4 秒
+17:19:09 [classroom] T1_lecture 第 511/576 帧 1.4 秒
+17:19:11 [classroom] T1_lecture 第 512/576 帧 1.4 秒
+17:19:12 [classroom] T1_lecture 第 513/576 帧 1.4 秒
+17:19:14 [classroom] T1_lecture 第 514/576 帧 1.4 秒
+17:19:15 [classroom] T1_lecture 第 515/576 帧 1.4 秒
+17:19:17 [classroom] T1_lecture 第 516/576 帧 1.4 秒
+17:19:18 [classroom] T1_lecture 第 517/576 帧 1.4 秒
+17:19:20 [classroom] T1_lecture 第 518/576 帧 1.4 秒
+17:19:21 [classroom] T1_lecture 第 519/576 帧 1.4 秒
+17:19:23 [classroom] T1_lecture 第 520/576 帧 1.3 秒
+17:19:24 [classroom] T1_lecture 第 521/576 帧 1.4 秒
+17:19:26 [classroom] T1_lecture 第 522/576 帧 1.4 秒
+17:19:27 [classroom] T1_lecture 第 523/576 帧 1.3 秒
+17:19:29 [classroom] T1_lecture 第 524/576 帧 1.4 秒
+17:19:30 [classroom] T1_lecture 第 525/576 帧 1.4 秒
+17:19:32 [classroom] T1_lecture 第 526/576 帧 1.4 秒
+17:19:33 [classroom] T1_lecture 第 527/576 帧 1.4 秒
+17:19:35 [classroom] T1_lecture 第 528/576 帧 1.4 秒
+17:19:36 [classroom] T1_lecture 第 529/576 帧 1.4 秒
+17:19:38 [classroom] T1_lecture 第 530/576 帧 1.4 秒
+17:19:39 [classroom] T1_lecture 第 531/576 帧 1.4 秒
+17:19:41 [classroom] T1_lecture 第 532/576 帧 1.4 秒
+17:19:42 [classroom] T1_lecture 第 533/576 帧 1.4 秒
+17:19:44 [classroom] T1_lecture 第 534/576 帧 1.4 秒
+17:19:45 [classroom] T1_lecture 第 535/576 帧 1.4 秒
+17:19:47 [classroom] T1_lecture 第 536/576 帧 1.4 秒
+17:19:48 [classroom] T1_lecture 第 537/576 帧 1.4 秒
+17:19:50 [classroom] T1_lecture 第 538/576 帧 1.3 秒
+17:19:51 [classroom] T1_lecture 第 539/576 帧 1.4 秒
+17:19:53 [classroom] T1_lecture 第 540/576 帧 1.4 秒
+17:19:54 [classroom] T1_lecture 第 541/576 帧 1.4 秒
+17:19:56 [classroom] T1_lecture 第 542/576 帧 1.4 秒
+17:19:57 [classroom] T1_lecture 第 543/576 帧 1.4 秒
+17:19:59 [classroom] T1_lecture 第 544/576 帧 1.4 秒
+17:20:00 [classroom] T1_lecture 第 545/576 帧 1.4 秒
+17:20:02 [classroom] T1_lecture 第 546/576 帧 1.4 秒
+17:20:03 [classroom] T1_lecture 第 547/576 帧 1.4 秒
+17:20:05 [classroom] T1_lecture 第 548/576 帧 1.4 秒
+17:20:06 [classroom] T1_lecture 第 549/576 帧 1.4 秒
+17:20:08 [classroom] T1_lecture 第 550/576 帧 1.3 秒
+17:20:09 [classroom] T1_lecture 第 551/576 帧 1.3 秒
+17:20:11 [classroom] T1_lecture 第 552/576 帧 1.4 秒
+17:20:12 [classroom] T1_lecture 第 553/576 帧 1.4 秒
+17:20:14 [classroom] T1_lecture 第 554/576 帧 1.4 秒
+17:20:15 [classroom] T1_lecture 第 555/576 帧 1.4 秒
+17:20:17 [classroom] T1_lecture 第 556/576 帧 1.4 秒
+17:20:18 [classroom] T1_lecture 第 557/576 帧 1.4 秒
+17:20:20 [classroom] T1_lecture 第 558/576 帧 1.4 秒
+17:20:21 [classroom] T1_lecture 第 559/576 帧 1.4 秒
+17:20:23 [classroom] T1_lecture 第 560/576 帧 1.4 秒
+17:20:24 [classroom] T1_lecture 第 561/576 帧 1.4 秒
+17:20:26 [classroom] T1_lecture 第 562/576 帧 1.4 秒
+17:20:27 [classroom] T1_lecture 第 563/576 帧 1.4 秒
+17:20:29 [classroom] T1_lecture 第 564/576 帧 1.4 秒
+17:20:30 [classroom] T1_lecture 第 565/576 帧 1.4 秒
+17:20:32 [classroom] T1_lecture 第 566/576 帧 1.4 秒
+17:20:33 [classroom] T1_lecture 第 567/576 帧 1.4 秒
+17:20:35 [classroom] T1_lecture 第 568/576 帧 1.4 秒
+17:20:36 [classroom] T1_lecture 第 569/576 帧 1.4 秒
+17:20:38 [classroom] T1_lecture 第 570/576 帧 1.4 秒
+17:20:39 [classroom] T1_lecture 第 571/576 帧 1.3 秒
+17:20:41 [classroom] T1_lecture 第 572/576 帧 1.4 秒
+17:20:42 [classroom] T1_lecture 第 573/576 帧 1.4 秒
+17:20:44 [classroom] T1_lecture 第 574/576 帧 1.4 秒
+17:20:45 [classroom] T1_lecture 第 575/576 帧 1.4 秒
+17:20:47 [classroom] T1_lecture 第 576/576 帧 1.4 秒
+17:20:49 [classroom] T2_pace 第 2/441 帧 1.7 秒
+17:20:51 [classroom] T2_pace 第 3/441 帧 1.7 秒
+17:20:52 [classroom] T2_pace 第 4/441 帧 1.7 秒
+17:20:54 [classroom] T2_pace 第 5/441 帧 1.8 秒
+17:20:56 [classroom] T2_pace 第 6/441 帧 1.7 秒
+17:20:58 [classroom] T2_pace 第 7/441 帧 1.7 秒
+17:21:00 [classroom] T2_pace 第 8/441 帧 1.7 秒
+17:21:02 [classroom] T2_pace 第 9/441 帧 1.7 秒
+17:21:03 [classroom] T2_pace 第 10/441 帧 1.8 秒
+17:21:05 [classroom] T2_pace 第 11/441 帧 1.7 秒
+17:21:07 [classroom] T2_pace 第 12/441 帧 1.7 秒
+17:21:09 [classroom] T2_pace 第 13/441 帧 1.7 秒
+17:21:11 [classroom] T2_pace 第 14/441 帧 1.7 秒
+17:21:12 [classroom] T2_pace 第 15/441 帧 1.7 秒
+17:21:14 [classroom] T2_pace 第 16/441 帧 1.7 秒
+17:21:16 [classroom] T2_pace 第 17/441 帧 1.7 秒
+17:21:18 [classroom] T2_pace 第 18/441 帧 1.7 秒
+17:21:20 [classroom] T2_pace 第 19/441 帧 1.7 秒
+17:21:22 [classroom] T2_pace 第 20/441 帧 1.7 秒
+17:21:23 [classroom] T2_pace 第 21/441 帧 1.7 秒
+17:21:25 [classroom] T2_pace 第 22/441 帧 1.7 秒
+17:21:27 [classroom] T2_pace 第 23/441 帧 1.7 秒
+17:21:29 [classroom] T2_pace 第 24/441 帧 1.7 秒
+17:21:31 [classroom] T2_pace 第 25/441 帧 1.7 秒
+17:21:32 [classroom] T2_pace 第 26/441 帧 1.7 秒
+17:21:34 [classroom] T2_pace 第 27/441 帧 1.7 秒
+17:21:36 [classroom] T2_pace 第 28/441 帧 1.7 秒
+17:21:38 [classroom] T2_pace 第 29/441 帧 1.7 秒
+17:21:40 [classroom] T2_pace 第 30/441 帧 1.7 秒
+17:21:41 [classroom] T2_pace 第 31/441 帧 1.7 秒
+17:21:43 [classroom] T2_pace 第 32/441 帧 1.7 秒
+17:21:45 [classroom] T2_pace 第 33/441 帧 1.7 秒
+17:21:47 [classroom] T2_pace 第 34/441 帧 1.7 秒
+17:21:49 [classroom] T2_pace 第 35/441 帧 1.8 秒
+17:21:51 [classroom] T2_pace 第 36/441 帧 1.7 秒
+17:21:52 [classroom] T2_pace 第 37/441 帧 1.7 秒
+17:21:54 [classroom] T2_pace 第 38/441 帧 1.7 秒
+17:21:56 [classroom] T2_pace 第 39/441 帧 1.7 秒
+17:21:58 [classroom] T2_pace 第 40/441 帧 1.7 秒
+17:22:00 [classroom] T2_pace 第 41/441 帧 1.7 秒
+17:22:01 [classroom] T2_pace 第 42/441 帧 1.8 秒
+17:22:03 [classroom] T2_pace 第 43/441 帧 1.7 秒
+17:22:05 [classroom] T2_pace 第 44/441 帧 1.7 秒
+17:22:07 [classroom] T2_pace 第 45/441 帧 1.7 秒
+17:22:09 [classroom] T2_pace 第 46/441 帧 1.7 秒
+17:22:10 [classroom] T2_pace 第 47/441 帧 1.7 秒
+17:22:12 [classroom] T2_pace 第 48/441 帧 1.6 秒
+17:22:14 [classroom] T2_pace 第 49/441 帧 1.6 秒
+17:22:16 [classroom] T2_pace 第 50/441 帧 1.7 秒
+17:22:17 [classroom] T2_pace 第 51/441 帧 1.7 秒
+17:22:19 [classroom] T2_pace 第 52/441 帧 1.6 秒
+17:22:21 [classroom] T2_pace 第 53/441 帧 1.7 秒
+17:22:23 [classroom] T2_pace 第 54/441 帧 1.7 秒
+17:22:25 [classroom] T2_pace 第 55/441 帧 1.6 秒
+17:22:26 [classroom] T2_pace 第 56/441 帧 1.7 秒
+17:22:28 [classroom] T2_pace 第 57/441 帧 1.7 秒
+17:22:30 [classroom] T2_pace 第 58/441 帧 1.7 秒
+17:22:32 [classroom] T2_pace 第 59/441 帧 1.6 秒
+17:22:34 [classroom] T2_pace 第 60/441 帧 1.7 秒
+17:22:35 [classroom] T2_pace 第 61/441 帧 1.6 秒
+17:22:37 [classroom] T2_pace 第 62/441 帧 1.7 秒
+17:22:39 [classroom] T2_pace 第 63/441 帧 1.7 秒
+17:22:41 [classroom] T2_pace 第 64/441 帧 1.7 秒
+17:22:43 [classroom] T2_pace 第 65/441 帧 1.6 秒
+17:22:44 [classroom] T2_pace 第 66/441 帧 1.7 秒
+17:22:46 [classroom] T2_pace 第 67/441 帧 1.7 秒
+17:22:48 [classroom] T2_pace 第 68/441 帧 1.6 秒
+17:22:50 [classroom] T2_pace 第 69/441 帧 1.6 秒
+17:22:51 [classroom] T2_pace 第 70/441 帧 1.7 秒
+17:22:53 [classroom] T2_pace 第 71/441 帧 1.6 秒
+17:22:55 [classroom] T2_pace 第 72/441 帧 1.7 秒
+17:22:57 [classroom] T2_pace 第 73/441 帧 1.7 秒
+17:22:59 [classroom] T2_pace 第 74/441 帧 1.6 秒
+17:23:00 [classroom] T2_pace 第 75/441 帧 1.6 秒
+17:23:02 [classroom] T2_pace 第 76/441 帧 1.6 秒
+17:23:04 [classroom] T2_pace 第 77/441 帧 1.6 秒
+17:23:06 [classroom] T2_pace 第 78/441 帧 1.7 秒
+17:23:07 [classroom] T2_pace 第 79/441 帧 1.7 秒
+17:23:09 [classroom] T2_pace 第 80/441 帧 1.7 秒
+17:23:11 [classroom] T2_pace 第 81/441 帧 1.7 秒
+17:23:13 [classroom] T2_pace 第 82/441 帧 1.6 秒
+17:23:14 [classroom] T2_pace 第 83/441 帧 1.6 秒
+17:23:16 [classroom] T2_pace 第 84/441 帧 1.7 秒
+17:23:18 [classroom] T2_pace 第 85/441 帧 1.6 秒
+17:23:20 [classroom] T2_pace 第 86/441 帧 1.6 秒
+17:23:21 [classroom] T2_pace 第 87/441 帧 1.7 秒
+17:23:23 [classroom] T2_pace 第 88/441 帧 1.6 秒
+17:23:25 [classroom] T2_pace 第 89/441 帧 1.6 秒
+17:23:27 [classroom] T2_pace 第 90/441 帧 1.6 秒
+17:23:28 [classroom] T2_pace 第 91/441 帧 1.7 秒
+17:23:30 [classroom] T2_pace 第 92/441 帧 1.7 秒
+17:23:32 [classroom] T2_pace 第 93/441 帧 1.7 秒
+17:23:34 [classroom] T2_pace 第 94/441 帧 1.6 秒
+17:23:35 [classroom] T2_pace 第 95/441 帧 1.6 秒
+17:23:37 [classroom] T2_pace 第 96/441 帧 1.7 秒
+17:23:39 [classroom] T2_pace 第 97/441 帧 1.6 秒
+17:23:41 [classroom] T2_pace 第 98/441 帧 1.6 秒
+17:23:42 [classroom] T2_pace 第 99/441 帧 1.6 秒
+17:23:44 [classroom] T2_pace 第 100/441 帧 1.6 秒
+17:23:46 [classroom] T2_pace 第 101/441 帧 1.6 秒
+17:23:48 [classroom] T2_pace 第 102/441 帧 1.7 秒
+17:23:49 [classroom] T2_pace 第 103/441 帧 1.7 秒
+17:23:51 [classroom] T2_pace 第 104/441 帧 1.7 秒
+17:23:53 [classroom] T2_pace 第 105/441 帧 1.7 秒
+17:23:55 [classroom] T2_pace 第 106/441 帧 1.7 秒
+17:23:57 [classroom] T2_pace 第 107/441 帧 1.7 秒
+17:23:58 [classroom] T2_pace 第 108/441 帧 1.7 秒
+17:24:00 [classroom] T2_pace 第 109/441 帧 1.6 秒
+17:24:02 [classroom] T2_pace 第 110/441 帧 1.7 秒
+17:24:04 [classroom] T2_pace 第 111/441 帧 1.6 秒
+17:24:05 [classroom] T2_pace 第 112/441 帧 1.6 秒
+17:24:07 [classroom] T2_pace 第 113/441 帧 1.6 秒
+17:24:09 [classroom] T2_pace 第 114/441 帧 1.6 秒
+17:24:11 [classroom] T2_pace 第 115/441 帧 1.6 秒
+17:24:12 [classroom] T2_pace 第 116/441 帧 1.6 秒
+17:24:14 [classroom] T2_pace 第 117/441 帧 1.6 秒
+17:24:16 [classroom] T2_pace 第 118/441 帧 1.6 秒
+17:24:17 [classroom] T2_pace 第 119/441 帧 1.6 秒
+17:24:19 [classroom] T2_pace 第 120/441 帧 1.6 秒
+17:24:21 [classroom] T2_pace 第 121/441 帧 1.7 秒
+17:24:23 [classroom] T2_pace 第 122/441 帧 1.6 秒
+17:24:25 [classroom] T2_pace 第 123/441 帧 1.6 秒
+17:24:26 [classroom] T2_pace 第 124/441 帧 1.6 秒
+17:24:28 [classroom] T2_pace 第 125/441 帧 1.6 秒
+17:24:30 [classroom] T2_pace 第 126/441 帧 1.6 秒
+17:24:31 [classroom] T2_pace 第 127/441 帧 1.6 秒
+17:24:33 [classroom] T2_pace 第 128/441 帧 1.6 秒
+17:24:35 [classroom] T2_pace 第 129/441 帧 1.6 秒
+17:24:37 [classroom] T2_pace 第 130/441 帧 1.7 秒
+17:24:38 [classroom] T2_pace 第 131/441 帧 1.7 秒
+17:24:40 [classroom] T2_pace 第 132/441 帧 1.6 秒
+17:24:42 [classroom] T2_pace 第 133/441 帧 1.6 秒
+17:24:44 [classroom] T2_pace 第 134/441 帧 1.6 秒
+17:24:45 [classroom] T2_pace 第 135/441 帧 1.6 秒
+17:24:47 [classroom] T2_pace 第 136/441 帧 1.6 秒
+17:24:49 [classroom] T2_pace 第 137/441 帧 1.7 秒
+17:24:51 [classroom] T2_pace 第 138/441 帧 1.6 秒
+17:24:52 [classroom] T2_pace 第 139/441 帧 1.6 秒
+17:24:54 [classroom] T2_pace 第 140/441 帧 1.6 秒
+17:24:56 [classroom] T2_pace 第 141/441 帧 1.6 秒
+17:24:58 [classroom] T2_pace 第 142/441 帧 1.6 秒
+17:24:59 [classroom] T2_pace 第 143/441 帧 1.7 秒
+17:25:01 [classroom] T2_pace 第 144/441 帧 1.6 秒
+17:25:03 [classroom] T2_pace 第 145/441 帧 1.6 秒
+17:25:05 [classroom] T2_pace 第 146/441 帧 1.7 秒
+17:25:06 [classroom] T2_pace 第 147/441 帧 1.6 秒
+17:25:08 [classroom] T2_pace 第 148/441 帧 1.6 秒
+17:25:10 [classroom] T2_pace 第 149/441 帧 1.6 秒
+17:25:11 [classroom] T2_pace 第 150/441 帧 1.6 秒
+17:25:13 [classroom] T2_pace 第 151/441 帧 1.7 秒
+17:25:15 [classroom] T2_pace 第 152/441 帧 1.6 秒
+17:25:17 [classroom] T2_pace 第 153/441 帧 1.6 秒
+17:25:18 [classroom] T2_pace 第 154/441 帧 1.6 秒
+17:25:20 [classroom] T2_pace 第 155/441 帧 1.6 秒
+17:25:22 [classroom] T2_pace 第 156/441 帧 1.6 秒
+17:25:23 [classroom] T2_pace 第 157/441 帧 1.6 秒
+17:25:25 [classroom] T2_pace 第 158/441 帧 1.8 秒
+17:25:27 [classroom] T2_pace 第 159/441 帧 1.6 秒
+17:25:29 [classroom] T2_pace 第 160/441 帧 1.6 秒
+17:25:31 [classroom] T2_pace 第 161/441 帧 1.6 秒
+17:25:32 [classroom] T2_pace 第 162/441 帧 1.6 秒
+17:25:34 [classroom] T2_pace 第 163/441 帧 1.6 秒
+17:25:36 [classroom] T2_pace 第 164/441 帧 1.6 秒
+17:25:37 [classroom] T2_pace 第 165/441 帧 1.6 秒
+17:25:39 [classroom] T2_pace 第 166/441 帧 1.6 秒
+17:25:41 [classroom] T2_pace 第 167/441 帧 1.6 秒
+17:25:43 [classroom] T2_pace 第 168/441 帧 1.6 秒
+17:25:44 [classroom] T2_pace 第 169/441 帧 1.6 秒
+17:25:46 [classroom] T2_pace 第 170/441 帧 1.6 秒
+17:25:48 [classroom] T2_pace 第 171/441 帧 1.6 秒
+17:25:49 [classroom] T2_pace 第 172/441 帧 1.6 秒
+17:25:51 [classroom] T2_pace 第 173/441 帧 1.6 秒
+17:25:53 [classroom] T2_pace 第 174/441 帧 1.6 秒
+17:25:55 [classroom] T2_pace 第 175/441 帧 1.7 秒
+17:25:56 [classroom] T2_pace 第 176/441 帧 1.6 秒
+17:25:58 [classroom] T2_pace 第 177/441 帧 1.6 秒
+17:26:00 [classroom] T2_pace 第 178/441 帧 1.6 秒
+17:26:01 [classroom] T2_pace 第 179/441 帧 1.6 秒
+17:26:03 [classroom] T2_pace 第 180/441 帧 1.6 秒
+17:26:05 [classroom] T2_pace 第 181/441 帧 1.6 秒
+17:26:07 [classroom] T2_pace 第 182/441 帧 1.6 秒
+17:26:08 [classroom] T2_pace 第 183/441 帧 1.7 秒
+17:26:10 [classroom] T2_pace 第 184/441 帧 1.6 秒
+17:26:12 [classroom] T2_pace 第 185/441 帧 1.6 秒
+17:26:14 [classroom] T2_pace 第 186/441 帧 1.6 秒
+17:26:15 [classroom] T2_pace 第 187/441 帧 1.6 秒
+17:26:17 [classroom] T2_pace 第 188/441 帧 1.6 秒
+17:26:19 [classroom] T2_pace 第 189/441 帧 1.6 秒
+17:26:20 [classroom] T2_pace 第 190/441 帧 1.6 秒
+17:26:22 [classroom] T2_pace 第 191/441 帧 1.6 秒
+17:26:24 [classroom] T2_pace 第 192/441 帧 1.6 秒
+17:26:26 [classroom] T2_pace 第 193/441 帧 1.6 秒
+17:26:27 [classroom] T2_pace 第 194/441 帧 1.6 秒
+17:26:29 [classroom] T2_pace 第 195/441 帧 1.6 秒
+17:26:31 [classroom] T2_pace 第 196/441 帧 1.6 秒
+17:26:32 [classroom] T2_pace 第 197/441 帧 1.6 秒
+17:26:34 [classroom] T2_pace 第 198/441 帧 1.6 秒
+17:26:36 [classroom] T2_pace 第 199/441 帧 1.6 秒
+17:26:38 [classroom] T2_pace 第 200/441 帧 1.6 秒
+17:26:39 [classroom] T2_pace 第 201/441 帧 1.6 秒
+17:26:41 [classroom] T2_pace 第 202/441 帧 1.6 秒
+17:26:43 [classroom] T2_pace 第 203/441 帧 1.6 秒
+17:26:44 [classroom] T2_pace 第 204/441 帧 1.6 秒
+17:26:46 [classroom] T2_pace 第 205/441 帧 1.6 秒
+17:26:48 [classroom] T2_pace 第 206/441 帧 1.6 秒
+17:26:49 [classroom] T2_pace 第 207/441 帧 1.6 秒
+17:26:51 [classroom] T2_pace 第 208/441 帧 1.6 秒
+17:26:53 [classroom] T2_pace 第 209/441 帧 1.7 秒
+17:26:55 [classroom] T2_pace 第 210/441 帧 1.6 秒
+17:26:56 [classroom] T2_pace 第 211/441 帧 1.6 秒
+17:26:58 [classroom] T2_pace 第 212/441 帧 1.6 秒
+17:27:00 [classroom] T2_pace 第 213/441 帧 1.7 秒
+17:27:02 [classroom] T2_pace 第 214/441 帧 1.6 秒
+17:27:03 [classroom] T2_pace 第 215/441 帧 1.6 秒
+17:27:05 [classroom] T2_pace 第 216/441 帧 1.6 秒
+17:27:07 [classroom] T2_pace 第 217/441 帧 1.6 秒
+17:27:08 [classroom] T2_pace 第 218/441 帧 1.6 秒
+17:27:10 [classroom] T2_pace 第 219/441 帧 1.6 秒
+17:27:12 [classroom] T2_pace 第 220/441 帧 1.6 秒
+17:27:14 [classroom] T2_pace 第 221/441 帧 1.6 秒
+17:27:15 [classroom] T2_pace 第 222/441 帧 1.6 秒
+17:27:17 [classroom] T2_pace 第 223/441 帧 1.6 秒
+17:27:19 [classroom] T2_pace 第 224/441 帧 1.6 秒
+17:27:20 [classroom] T2_pace 第 225/441 帧 1.6 秒
+17:27:22 [classroom] T2_pace 第 226/441 帧 1.6 秒
+17:27:24 [classroom] T2_pace 第 227/441 帧 1.6 秒
+17:27:25 [classroom] T2_pace 第 228/441 帧 1.5 秒
+17:27:27 [classroom] T2_pace 第 229/441 帧 1.6 秒
+17:27:29 [classroom] T2_pace 第 230/441 帧 1.5 秒
+17:27:30 [classroom] T2_pace 第 231/441 帧 1.6 秒
+17:27:32 [classroom] T2_pace 第 232/441 帧 1.6 秒
+17:27:34 [classroom] T2_pace 第 233/441 帧 1.6 秒
+17:27:35 [classroom] T2_pace 第 234/441 帧 1.5 秒
+17:27:37 [classroom] T2_pace 第 235/441 帧 1.5 秒
+17:27:39 [classroom] T2_pace 第 236/441 帧 1.6 秒
+17:27:41 [classroom] T2_pace 第 237/441 帧 1.6 秒
+17:27:43 [classroom] T2_pace 第 238/441 帧 1.6 秒
+17:27:45 [classroom] T2_pace 第 239/441 帧 1.6 秒
+17:27:46 [classroom] T2_pace 第 240/441 帧 1.5 秒
+17:27:48 [classroom] T2_pace 第 241/441 帧 1.6 秒
+17:27:50 [classroom] T2_pace 第 242/441 帧 1.6 秒
+17:27:52 [classroom] T2_pace 第 243/441 帧 1.7 秒
+17:27:53 [classroom] T2_pace 第 244/441 帧 1.6 秒
+17:27:55 [classroom] T2_pace 第 245/441 帧 1.6 秒
+17:27:57 [classroom] T2_pace 第 246/441 帧 1.6 秒
+17:27:59 [classroom] T2_pace 第 247/441 帧 1.6 秒
+17:28:00 [classroom] T2_pace 第 248/441 帧 1.7 秒
+17:28:02 [classroom] T2_pace 第 249/441 帧 1.6 秒
+17:28:04 [classroom] T2_pace 第 250/441 帧 1.6 秒
+17:28:06 [classroom] T2_pace 第 251/441 帧 1.6 秒
+17:28:07 [classroom] T2_pace 第 252/441 帧 1.7 秒
+17:28:09 [classroom] T2_pace 第 253/441 帧 1.6 秒
+17:28:11 [classroom] T2_pace 第 254/441 帧 1.6 秒
+17:28:13 [classroom] T2_pace 第 255/441 帧 1.7 秒
+17:28:15 [classroom] T2_pace 第 256/441 帧 1.6 秒
+17:28:16 [classroom] T2_pace 第 257/441 帧 1.7 秒
+17:28:19 [classroom] T2_pace 第 258/441 帧 1.9 秒
+17:28:21 [classroom] T2_pace 第 259/441 帧 1.7 秒
+17:28:23 [classroom] T2_pace 第 260/441 帧 1.6 秒
+17:28:25 [classroom] T2_pace 第 261/441 帧 1.6 秒
+17:28:27 [classroom] T2_pace 第 262/441 帧 1.6 秒
+17:28:29 [classroom] T2_pace 第 263/441 帧 1.7 秒
+17:28:31 [classroom] T2_pace 第 264/441 帧 1.6 秒
+17:28:33 [classroom] T2_pace 第 265/441 帧 1.7 秒
+17:28:34 [classroom] T2_pace 第 266/441 帧 1.7 秒
+17:28:37 [classroom] T2_pace 第 267/441 帧 2.0 秒
+17:28:39 [classroom] T2_pace 第 268/441 帧 2.2 秒
+17:28:42 [classroom] T2_pace 第 269/441 帧 1.7 秒
+17:28:44 [classroom] T2_pace 第 270/441 帧 1.7 秒
+17:28:46 [classroom] T2_pace 第 271/441 帧 1.8 秒
+17:28:48 [classroom] T2_pace 第 272/441 帧 1.7 秒
+17:28:49 [classroom] T2_pace 第 273/441 帧 1.7 秒
+17:28:51 [classroom] T2_pace 第 274/441 帧 1.9 秒
+17:28:53 [classroom] T2_pace 第 275/441 帧 1.8 秒
+17:28:56 [classroom] T2_pace 第 276/441 帧 2.3 秒
+17:28:59 [classroom] T2_pace 第 277/441 帧 2.3 秒
+17:29:01 [classroom] T2_pace 第 278/441 帧 2.7 秒
+17:29:04 [classroom] T2_pace 第 279/441 帧 1.9 秒
+17:29:05 [classroom] T2_pace 第 280/441 帧 1.7 秒
+17:29:09 [classroom] T2_pace 第 281/441 帧 3.0 秒
+17:29:11 [classroom] T2_pace 第 282/441 帧 1.7 秒
+17:29:13 [classroom] T2_pace 第 283/441 帧 1.7 秒
+17:29:14 [classroom] T2_pace 第 284/441 帧 1.6 秒
+17:29:16 [classroom] T2_pace 第 285/441 帧 2.0 秒
+17:29:19 [classroom] T2_pace 第 286/441 帧 2.0 秒
+17:29:20 [classroom] T2_pace 第 287/441 帧 1.6 秒
+17:29:22 [classroom] T2_pace 第 288/441 帧 1.7 秒
+17:29:25 [classroom] T2_pace 第 289/441 帧 2.1 秒
+17:29:27 [classroom] T2_pace 第 290/441 帧 1.8 秒
+17:29:29 [classroom] T2_pace 第 291/441 帧 1.7 秒
+17:29:31 [classroom] T2_pace 第 292/441 帧 1.9 秒
+17:29:33 [classroom] T2_pace 第 293/441 帧 1.8 秒
+17:29:35 [classroom] T2_pace 第 294/441 帧 2.1 秒
+17:29:37 [classroom] T2_pace 第 295/441 帧 2.0 秒
+17:29:40 [classroom] T2_pace 第 296/441 帧 1.8 秒
+17:29:42 [classroom] T2_pace 第 297/441 帧 2.0 秒
+17:29:44 [classroom] T2_pace 第 298/441 帧 2.0 秒
+17:29:47 [classroom] T2_pace 第 299/441 帧 2.2 秒
+17:29:52 [classroom] T2_pace 第 300/441 帧 3.7 秒
+17:29:54 [classroom] T2_pace 第 301/441 帧 1.7 秒
+17:29:56 [classroom] T2_pace 第 302/441 帧 2.0 秒
+17:29:58 [classroom] T2_pace 第 303/441 帧 1.8 秒
+17:30:00 [classroom] T2_pace 第 304/441 帧 2.1 秒
+17:30:03 [classroom] T2_pace 第 305/441 帧 2.1 秒
+17:30:05 [classroom] T2_pace 第 306/441 帧 1.8 秒
+17:30:07 [classroom] T2_pace 第 307/441 帧 1.7 秒
+17:30:09 [classroom] T2_pace 第 308/441 帧 1.9 秒
+17:30:11 [classroom] T2_pace 第 309/441 帧 1.7 秒
+17:30:13 [classroom] T2_pace 第 310/441 帧 1.8 秒
+17:30:15 [classroom] T2_pace 第 311/441 帧 2.0 秒
+17:30:18 [classroom] T2_pace 第 312/441 帧 2.2 秒
+17:30:20 [classroom] T2_pace 第 313/441 帧 2.0 秒
+17:30:23 [classroom] T2_pace 第 314/441 帧 2.1 秒
+17:30:26 [classroom] T2_pace 第 315/441 帧 2.1 秒
+17:30:28 [classroom] T2_pace 第 316/441 帧 2.2 秒
+17:30:42 [classroom] T2_pace 第 317/441 帧 13.4 秒
+17:30:45 [classroom] T2_pace 第 318/441 帧 3.0 秒
+17:30:48 [classroom] T2_pace 第 319/441 帧 2.2 秒
+17:30:50 [classroom] T2_pace 第 320/441 帧 1.9 秒
+17:30:52 [classroom] T2_pace 第 321/441 帧 1.8 秒
+17:31:01 [classroom] T2_pace 第 322/441 帧 8.5 秒
+17:31:03 [classroom] T2_pace 第 323/441 帧 1.8 秒
+17:31:05 [classroom] T2_pace 第 324/441 帧 1.8 秒
+17:31:08 [classroom] T2_pace 第 325/441 帧 2.7 秒
+17:31:10 [classroom] T2_pace 第 326/441 帧 1.6 秒
+17:31:11 [classroom] T2_pace 第 327/441 帧 1.6 秒
+17:31:13 [classroom] T2_pace 第 328/441 帧 1.6 秒
+17:31:15 [classroom] T2_pace 第 329/441 帧 1.6 秒
+17:31:17 [classroom] T2_pace 第 330/441 帧 1.6 秒
+17:31:18 [classroom] T2_pace 第 331/441 帧 1.6 秒
+17:31:20 [classroom] T2_pace 第 332/441 帧 1.6 秒
+17:31:22 [classroom] T2_pace 第 333/441 帧 1.6 秒
+17:31:24 [classroom] T2_pace 第 334/441 帧 1.6 秒
+17:31:25 [classroom] T2_pace 第 335/441 帧 1.6 秒
+17:31:27 [classroom] T2_pace 第 336/441 帧 1.6 秒
+17:31:29 [classroom] T2_pace 第 337/441 帧 1.6 秒
+17:31:30 [classroom] T2_pace 第 338/441 帧 1.6 秒
+17:31:32 [classroom] T2_pace 第 339/441 帧 1.6 秒
+17:31:34 [classroom] T2_pace 第 340/441 帧 1.6 秒
+17:31:36 [classroom] T2_pace 第 341/441 帧 1.6 秒
+17:31:37 [classroom] T2_pace 第 342/441 帧 1.6 秒
+17:31:39 [classroom] T2_pace 第 343/441 帧 1.6 秒
+17:31:41 [classroom] T2_pace 第 344/441 帧 1.6 秒
+17:31:42 [classroom] T2_pace 第 345/441 帧 1.6 秒
+17:31:44 [classroom] T2_pace 第 346/441 帧 1.6 秒
+17:31:46 [classroom] T2_pace 第 347/441 帧 1.6 秒
+17:31:47 [classroom] T2_pace 第 348/441 帧 1.6 秒
+17:31:49 [classroom] T2_pace 第 349/441 帧 1.6 秒
+17:31:51 [classroom] T2_pace 第 350/441 帧 1.6 秒
+17:31:53 [classroom] T2_pace 第 351/441 帧 1.6 秒
+17:31:54 [classroom] T2_pace 第 352/441 帧 1.6 秒
+17:31:56 [classroom] T2_pace 第 353/441 帧 1.6 秒
+17:31:58 [classroom] T2_pace 第 354/441 帧 1.6 秒
+17:31:59 [classroom] T2_pace 第 355/441 帧 1.6 秒
+17:32:01 [classroom] T2_pace 第 356/441 帧 1.6 秒
+17:32:03 [classroom] T2_pace 第 357/441 帧 1.7 秒
+17:32:05 [classroom] T2_pace 第 358/441 帧 1.6 秒
+17:32:06 [classroom] T2_pace 第 359/441 帧 1.6 秒
+17:32:08 [classroom] T2_pace 第 360/441 帧 1.6 秒
+17:32:10 [classroom] T2_pace 第 361/441 帧 1.6 秒
+17:32:11 [classroom] T2_pace 第 362/441 帧 1.6 秒
+17:32:13 [classroom] T2_pace 第 363/441 帧 1.6 秒
+17:32:15 [classroom] T2_pace 第 364/441 帧 1.6 秒
+17:32:16 [classroom] T2_pace 第 365/441 帧 1.6 秒
+17:32:18 [classroom] T2_pace 第 366/441 帧 1.6 秒
+17:32:20 [classroom] T2_pace 第 367/441 帧 1.6 秒
+17:32:22 [classroom] T2_pace 第 368/441 帧 1.7 秒
+17:32:23 [classroom] T2_pace 第 369/441 帧 1.6 秒
+17:32:25 [classroom] T2_pace 第 370/441 帧 1.6 秒
+17:32:27 [classroom] T2_pace 第 371/441 帧 1.6 秒
+17:32:28 [classroom] T2_pace 第 372/441 帧 1.6 秒
+17:32:30 [classroom] T2_pace 第 373/441 帧 1.6 秒
+17:32:32 [classroom] T2_pace 第 374/441 帧 1.6 秒
+17:32:34 [classroom] T2_pace 第 375/441 帧 1.6 秒
+17:32:35 [classroom] T2_pace 第 376/441 帧 1.6 秒
+17:32:37 [classroom] T2_pace 第 377/441 帧 1.6 秒
+17:32:39 [classroom] T2_pace 第 378/441 帧 1.6 秒
+17:32:40 [classroom] T2_pace 第 379/441 帧 1.6 秒
+17:32:42 [classroom] T2_pace 第 380/441 帧 1.6 秒
+17:32:44 [classroom] T2_pace 第 381/441 帧 1.6 秒
+17:32:46 [classroom] T2_pace 第 382/441 帧 1.6 秒
+17:32:47 [classroom] T2_pace 第 383/441 帧 1.6 秒
+17:32:49 [classroom] T2_pace 第 384/441 帧 1.6 秒
+17:32:51 [classroom] T2_pace 第 385/441 帧 1.6 秒
+17:32:52 [classroom] T2_pace 第 386/441 帧 1.6 秒
+17:32:54 [classroom] T2_pace 第 387/441 帧 1.6 秒
+17:32:56 [classroom] T2_pace 第 388/441 帧 1.6 秒
+17:32:58 [classroom] T2_pace 第 389/441 帧 1.6 秒
+17:32:59 [classroom] T2_pace 第 390/441 帧 1.7 秒
+17:33:01 [classroom] T2_pace 第 391/441 帧 1.6 秒
+17:33:03 [classroom] T2_pace 第 392/441 帧 1.6 秒
+17:33:04 [classroom] T2_pace 第 393/441 帧 1.6 秒
+17:33:06 [classroom] T2_pace 第 394/441 帧 1.6 秒
+17:33:08 [classroom] T2_pace 第 395/441 帧 1.6 秒
+17:33:10 [classroom] T2_pace 第 396/441 帧 1.6 秒
+17:33:11 [classroom] T2_pace 第 397/441 帧 1.6 秒
+17:33:13 [classroom] T2_pace 第 398/441 帧 1.6 秒
+17:33:15 [classroom] T2_pace 第 399/441 帧 1.6 秒
+17:33:16 [classroom] T2_pace 第 400/441 帧 1.6 秒
+17:33:18 [classroom] T2_pace 第 401/441 帧 1.6 秒
+17:33:20 [classroom] T2_pace 第 402/441 帧 1.6 秒
+17:33:21 [classroom] T2_pace 第 403/441 帧 1.6 秒
+17:33:23 [classroom] T2_pace 第 404/441 帧 1.6 秒
+17:33:25 [classroom] T2_pace 第 405/441 帧 1.6 秒
+17:33:27 [classroom] T2_pace 第 406/441 帧 1.6 秒
+17:33:28 [classroom] T2_pace 第 407/441 帧 1.6 秒
+17:33:30 [classroom] T2_pace 第 408/441 帧 1.6 秒
+17:33:32 [classroom] T2_pace 第 409/441 帧 1.6 秒
+17:33:33 [classroom] T2_pace 第 410/441 帧 1.6 秒
+17:33:35 [classroom] T2_pace 第 411/441 帧 1.6 秒
+17:33:37 [classroom] T2_pace 第 412/441 帧 1.6 秒
+17:33:38 [classroom] T2_pace 第 413/441 帧 1.6 秒
+17:33:40 [classroom] T2_pace 第 414/441 帧 1.6 秒
+17:33:42 [classroom] T2_pace 第 415/441 帧 1.6 秒
+17:33:44 [classroom] T2_pace 第 416/441 帧 1.6 秒
+17:33:45 [classroom] T2_pace 第 417/441 帧 1.6 秒
+17:33:47 [classroom] T2_pace 第 418/441 帧 1.7 秒
+17:33:49 [classroom] T2_pace 第 419/441 帧 1.6 秒
+17:33:50 [classroom] T2_pace 第 420/441 帧 1.6 秒
+17:33:52 [classroom] T2_pace 第 421/441 帧 1.6 秒
+17:33:54 [classroom] T2_pace 第 422/441 帧 1.6 秒
+17:33:56 [classroom] T2_pace 第 423/441 帧 1.6 秒
+17:33:57 [classroom] T2_pace 第 424/441 帧 1.6 秒
+17:33:59 [classroom] T2_pace 第 425/441 帧 1.6 秒
+17:34:01 [classroom] T2_pace 第 426/441 帧 1.6 秒
+17:34:03 [classroom] T2_pace 第 427/441 帧 1.6 秒
+17:34:04 [classroom] T2_pace 第 428/441 帧 1.6 秒
+17:34:06 [classroom] T2_pace 第 429/441 帧 1.6 秒
+17:34:08 [classroom] T2_pace 第 430/441 帧 1.6 秒
+17:34:09 [classroom] T2_pace 第 431/441 帧 1.6 秒
+17:34:11 [classroom] T2_pace 第 432/441 帧 1.6 秒
+17:34:13 [classroom] T2_pace 第 433/441 帧 1.6 秒
+17:34:14 [classroom] T2_pace 第 434/441 帧 1.6 秒
+17:34:16 [classroom] T2_pace 第 435/441 帧 1.6 秒
+17:34:18 [classroom] T2_pace 第 436/441 帧 1.6 秒
+17:34:20 [classroom] T2_pace 第 437/441 帧 1.6 秒
+17:34:21 [classroom] T2_pace 第 438/441 帧 1.6 秒
+17:34:23 [classroom] T2_pace 第 439/441 帧 1.6 秒
+17:34:25 [classroom] T2_pace 第 440/441 帧 1.6 秒
+17:34:26 [classroom] T2_pace 第 441/441 帧 1.6 秒
+17:34:27 [classroom] B5_listen 遮罩 第 2/192 帧 0.6 秒
+17:34:28 [classroom] B5_listen 遮罩 第 3/192 帧 0.5 秒
+17:34:29 [classroom] B5_listen 遮罩 第 4/192 帧 0.5 秒
+17:34:29 [classroom] B5_listen 遮罩 第 5/192 帧 0.5 秒
+17:34:30 [classroom] B5_listen 遮罩 第 6/192 帧 0.5 秒
+17:34:31 [classroom] B5_listen 遮罩 第 7/192 帧 0.5 秒
+17:34:31 [classroom] B5_listen 遮罩 第 8/192 帧 0.5 秒
+17:34:32 [classroom] B5_listen 遮罩 第 9/192 帧 0.6 秒
+17:34:33 [classroom] B5_listen 遮罩 第 10/192 帧 0.5 秒
+17:34:33 [classroom] B5_listen 遮罩 第 11/192 帧 0.5 秒
+17:34:34 [classroom] B5_listen 遮罩 第 12/192 帧 0.6 秒
+17:34:35 [classroom] B5_listen 遮罩 第 13/192 帧 0.5 秒
+17:34:35 [classroom] B5_listen 遮罩 第 14/192 帧 0.5 秒
+17:34:36 [classroom] B5_listen 遮罩 第 15/192 帧 0.5 秒
+17:34:37 [classroom] B5_listen 遮罩 第 16/192 帧 0.5 秒
+17:34:37 [classroom] B5_listen 遮罩 第 17/192 帧 0.5 秒
+17:34:38 [classroom] B5_listen 遮罩 第 18/192 帧 0.5 秒
+17:34:38 [classroom] B5_listen 遮罩 第 19/192 帧 0.5 秒
+17:34:39 [classroom] B5_listen 遮罩 第 20/192 帧 0.5 秒
+17:34:40 [classroom] B5_listen 遮罩 第 21/192 帧 0.5 秒
+17:34:40 [classroom] B5_listen 遮罩 第 22/192 帧 0.5 秒
+17:34:41 [classroom] B5_listen 遮罩 第 23/192 帧 0.5 秒
+17:34:42 [classroom] B5_listen 遮罩 第 24/192 帧 0.5 秒
+17:34:42 [classroom] B5_listen 遮罩 第 25/192 帧 0.6 秒
+17:34:43 [classroom] B5_listen 遮罩 第 26/192 帧 0.5 秒
+17:34:44 [classroom] B5_listen 遮罩 第 27/192 帧 0.5 秒
+17:34:44 [classroom] B5_listen 遮罩 第 28/192 帧 0.5 秒
+17:34:45 [classroom] B5_listen 遮罩 第 29/192 帧 0.6 秒
+17:34:46 [classroom] B5_listen 遮罩 第 30/192 帧 0.5 秒
+17:34:46 [classroom] B5_listen 遮罩 第 31/192 帧 0.5 秒
+17:34:47 [classroom] B5_listen 遮罩 第 32/192 帧 0.5 秒
+17:34:48 [classroom] B5_listen 遮罩 第 33/192 帧 0.6 秒
+17:34:48 [classroom] B5_listen 遮罩 第 34/192 帧 0.5 秒
+17:34:49 [classroom] B5_listen 遮罩 第 35/192 帧 0.6 秒
+17:34:50 [classroom] B5_listen 遮罩 第 36/192 帧 0.5 秒
+17:34:50 [classroom] B5_listen 遮罩 第 37/192 帧 0.5 秒
+17:34:51 [classroom] B5_listen 遮罩 第 38/192 帧 0.5 秒
+17:34:51 [classroom] B5_listen 遮罩 第 39/192 帧 0.5 秒
+17:34:52 [classroom] B5_listen 遮罩 第 40/192 帧 0.6 秒
+17:34:53 [classroom] B5_listen 遮罩 第 41/192 帧 0.6 秒
+17:34:53 [classroom] B5_listen 遮罩 第 42/192 帧 0.5 秒
+17:34:54 [classroom] B5_listen 遮罩 第 43/192 帧 0.5 秒
+17:34:55 [classroom] B5_listen 遮罩 第 44/192 帧 0.5 秒
+17:34:55 [classroom] B5_listen 遮罩 第 45/192 帧 0.5 秒
+17:34:56 [classroom] B5_listen 遮罩 第 46/192 帧 0.5 秒
+17:34:57 [classroom] B5_listen 遮罩 第 47/192 帧 0.5 秒
+17:34:57 [classroom] B5_listen 遮罩 第 48/192 帧 0.5 秒
+17:34:58 [classroom] B5_listen 遮罩 第 49/192 帧 0.5 秒
+17:34:59 [classroom] B5_listen 遮罩 第 50/192 帧 0.5 秒
+17:34:59 [classroom] B5_listen 遮罩 第 51/192 帧 0.5 秒
+17:35:00 [classroom] B5_listen 遮罩 第 52/192 帧 0.5 秒
+17:35:01 [classroom] B5_listen 遮罩 第 53/192 帧 0.5 秒
+17:35:01 [classroom] B5_listen 遮罩 第 54/192 帧 0.5 秒
+17:35:02 [classroom] B5_listen 遮罩 第 55/192 帧 0.5 秒
+17:35:02 [classroom] B5_listen 遮罩 第 56/192 帧 0.5 秒
+17:35:03 [classroom] B5_listen 遮罩 第 57/192 帧 0.5 秒
+17:35:04 [classroom] B5_listen 遮罩 第 58/192 帧 0.5 秒
+17:35:04 [classroom] B5_listen 遮罩 第 59/192 帧 0.5 秒
+17:35:05 [classroom] B5_listen 遮罩 第 60/192 帧 0.6 秒
+17:35:06 [classroom] B5_listen 遮罩 第 61/192 帧 0.6 秒
+17:35:06 [classroom] B5_listen 遮罩 第 62/192 帧 0.5 秒
+17:35:07 [classroom] B5_listen 遮罩 第 63/192 帧 0.5 秒
+17:35:08 [classroom] B5_listen 遮罩 第 64/192 帧 0.5 秒
+17:35:08 [classroom] B5_listen 遮罩 第 65/192 帧 0.5 秒
+17:35:09 [classroom] B5_listen 遮罩 第 66/192 帧 0.5 秒
+17:35:09 [classroom] B5_listen 遮罩 第 67/192 帧 0.5 秒
+17:35:10 [classroom] B5_listen 遮罩 第 68/192 帧 0.5 秒
+17:35:11 [classroom] B5_listen 遮罩 第 69/192 帧 0.5 秒
+17:35:11 [classroom] B5_listen 遮罩 第 70/192 帧 0.5 秒
+17:35:12 [classroom] B5_listen 遮罩 第 71/192 帧 0.5 秒
+17:35:13 [classroom] B5_listen 遮罩 第 72/192 帧 0.5 秒
+17:35:13 [classroom] B5_listen 遮罩 第 73/192 帧 0.5 秒
+17:35:14 [classroom] B5_listen 遮罩 第 74/192 帧 0.5 秒
+17:35:15 [classroom] B5_listen 遮罩 第 75/192 帧 0.5 秒
+17:35:15 [classroom] B5_listen 遮罩 第 76/192 帧 0.5 秒
+17:35:16 [classroom] B5_listen 遮罩 第 77/192 帧 0.6 秒
+17:35:17 [classroom] B5_listen 遮罩 第 78/192 帧 0.5 秒
+17:35:17 [classroom] B5_listen 遮罩 第 79/192 帧 0.5 秒
+17:35:18 [classroom] B5_listen 遮罩 第 80/192 帧 0.6 秒
+17:35:18 [classroom] B5_listen 遮罩 第 81/192 帧 0.5 秒
+17:35:19 [classroom] B5_listen 遮罩 第 82/192 帧 0.5 秒
+17:35:20 [classroom] B5_listen 遮罩 第 83/192 帧 0.5 秒
+17:35:20 [classroom] B5_listen 遮罩 第 84/192 帧 0.5 秒
+17:35:21 [classroom] B5_listen 遮罩 第 85/192 帧 0.5 秒
+17:35:22 [classroom] B5_listen 遮罩 第 86/192 帧 0.5 秒
+17:35:22 [classroom] B5_listen 遮罩 第 87/192 帧 0.5 秒
+17:35:23 [classroom] B5_listen 遮罩 第 88/192 帧 0.5 秒
+17:35:24 [classroom] B5_listen 遮罩 第 89/192 帧 0.5 秒
+17:35:24 [classroom] B5_listen 遮罩 第 90/192 帧 0.5 秒
+17:35:25 [classroom] B5_listen 遮罩 第 91/192 帧 0.5 秒
+17:35:25 [classroom] B5_listen 遮罩 第 92/192 帧 0.5 秒
+17:35:26 [classroom] B5_listen 遮罩 第 93/192 帧 0.5 秒
+17:35:27 [classroom] B5_listen 遮罩 第 94/192 帧 0.5 秒
+17:35:27 [classroom] B5_listen 遮罩 第 95/192 帧 0.5 秒
+17:35:28 [classroom] B5_listen 遮罩 第 96/192 帧 0.5 秒
+17:35:29 [classroom] B5_listen 遮罩 第 97/192 帧 0.5 秒
+17:35:29 [classroom] B5_listen 遮罩 第 98/192 帧 0.5 秒
+17:35:30 [classroom] B5_listen 遮罩 第 99/192 帧 0.5 秒
+17:35:31 [classroom] B5_listen 遮罩 第 100/192 帧 0.5 秒
+17:35:31 [classroom] B5_listen 遮罩 第 101/192 帧 0.5 秒
+17:35:32 [classroom] B5_listen 遮罩 第 102/192 帧 0.5 秒
+17:35:32 [classroom] B5_listen 遮罩 第 103/192 帧 0.5 秒
+17:35:33 [classroom] B5_listen 遮罩 第 104/192 帧 0.5 秒
+17:35:34 [classroom] B5_listen 遮罩 第 105/192 帧 0.5 秒
+17:35:34 [classroom] B5_listen 遮罩 第 106/192 帧 0.5 秒
+17:35:35 [classroom] B5_listen 遮罩 第 107/192 帧 0.5 秒
+17:35:36 [classroom] B5_listen 遮罩 第 108/192 帧 0.6 秒
+17:35:36 [classroom] B5_listen 遮罩 第 109/192 帧 0.5 秒
+17:35:37 [classroom] B5_listen 遮罩 第 110/192 帧 0.6 秒
+17:35:38 [classroom] B5_listen 遮罩 第 111/192 帧 0.5 秒
+17:35:38 [classroom] B5_listen 遮罩 第 112/192 帧 0.5 秒
+17:35:39 [classroom] B5_listen 遮罩 第 113/192 帧 0.6 秒
+17:35:40 [classroom] B5_listen 遮罩 第 114/192 帧 0.5 秒
+17:35:40 [classroom] B5_listen 遮罩 第 115/192 帧 0.6 秒
+17:35:41 [classroom] B5_listen 遮罩 第 116/192 帧 0.5 秒
+17:35:42 [classroom] B5_listen 遮罩 第 117/192 帧 0.5 秒
+17:35:42 [classroom] B5_listen 遮罩 第 118/192 帧 0.5 秒
+17:35:43 [classroom] B5_listen 遮罩 第 119/192 帧 0.5 秒
+17:35:44 [classroom] B5_listen 遮罩 第 120/192 帧 0.5 秒
+17:35:44 [classroom] B5_listen 遮罩 第 121/192 帧 0.6 秒
+17:35:45 [classroom] B5_listen 遮罩 第 122/192 帧 0.6 秒
+17:35:46 [classroom] B5_listen 遮罩 第 123/192 帧 0.6 秒
+17:35:46 [classroom] B5_listen 遮罩 第 124/192 帧 0.5 秒
+17:35:47 [classroom] B5_listen 遮罩 第 125/192 帧 0.5 秒
+17:35:48 [classroom] B5_listen 遮罩 第 126/192 帧 0.5 秒
+17:35:48 [classroom] B5_listen 遮罩 第 127/192 帧 0.5 秒
+17:35:49 [classroom] B5_listen 遮罩 第 128/192 帧 0.5 秒
+17:35:50 [classroom] B5_listen 遮罩 第 129/192 帧 0.5 秒
+17:35:50 [classroom] B5_listen 遮罩 第 130/192 帧 0.5 秒
+17:35:51 [classroom] B5_listen 遮罩 第 131/192 帧 0.5 秒
+17:35:52 [classroom] B5_listen 遮罩 第 132/192 帧 0.6 秒
+17:35:52 [classroom] B5_listen 遮罩 第 133/192 帧 0.6 秒
+17:35:53 [classroom] B5_listen 遮罩 第 134/192 帧 0.5 秒
+17:35:53 [classroom] B5_listen 遮罩 第 135/192 帧 0.5 秒
+17:35:54 [classroom] B5_listen 遮罩 第 136/192 帧 0.5 秒
+17:35:55 [classroom] B5_listen 遮罩 第 137/192 帧 0.5 秒
+17:35:55 [classroom] B5_listen 遮罩 第 138/192 帧 0.5 秒
+17:35:56 [classroom] B5_listen 遮罩 第 139/192 帧 0.6 秒
+17:35:57 [classroom] B5_listen 遮罩 第 140/192 帧 0.5 秒
+17:35:57 [classroom] B5_listen 遮罩 第 141/192 帧 0.5 秒
+17:35:58 [classroom] B5_listen 遮罩 第 142/192 帧 0.5 秒
+17:35:59 [classroom] B5_listen 遮罩 第 143/192 帧 0.5 秒
+17:35:59 [classroom] B5_listen 遮罩 第 144/192 帧 0.5 秒
+17:36:00 [classroom] B5_listen 遮罩 第 145/192 帧 0.6 秒
+17:36:01 [classroom] B5_listen 遮罩 第 146/192 帧 0.6 秒
+17:36:01 [classroom] B5_listen 遮罩 第 147/192 帧 0.6 秒
+17:36:02 [classroom] B5_listen 遮罩 第 148/192 帧 0.5 秒
+17:36:02 [classroom] B5_listen 遮罩 第 149/192 帧 0.5 秒
+17:36:03 [classroom] B5_listen 遮罩 第 150/192 帧 0.5 秒
+17:36:04 [classroom] B5_listen 遮罩 第 151/192 帧 0.5 秒
+17:36:04 [classroom] B5_listen 遮罩 第 152/192 帧 0.5 秒
+17:36:05 [classroom] B5_listen 遮罩 第 153/192 帧 0.5 秒
+17:36:06 [classroom] B5_listen 遮罩 第 154/192 帧 0.5 秒
+17:36:06 [classroom] B5_listen 遮罩 第 155/192 帧 0.5 秒
+17:36:07 [classroom] B5_listen 遮罩 第 156/192 帧 0.5 秒
+17:36:08 [classroom] B5_listen 遮罩 第 157/192 帧 0.5 秒
+17:36:08 [classroom] B5_listen 遮罩 第 158/192 帧 0.5 秒
+17:36:09 [classroom] B5_listen 遮罩 第 159/192 帧 0.6 秒
+17:36:10 [classroom] B5_listen 遮罩 第 160/192 帧 0.5 秒
+17:36:10 [classroom] B5_listen 遮罩 第 161/192 帧 0.6 秒
+17:36:11 [classroom] B5_listen 遮罩 第 162/192 帧 0.6 秒
+17:36:11 [classroom] B5_listen 遮罩 第 163/192 帧 0.5 秒
+17:36:12 [classroom] B5_listen 遮罩 第 164/192 帧 0.5 秒
+17:36:13 [classroom] B5_listen 遮罩 第 165/192 帧 0.5 秒
+17:36:13 [classroom] B5_listen 遮罩 第 166/192 帧 0.5 秒
+17:36:14 [classroom] B5_listen 遮罩 第 167/192 帧 0.5 秒
+17:36:15 [classroom] B5_listen 遮罩 第 168/192 帧 0.5 秒
+17:36:15 [classroom] B5_listen 遮罩 第 169/192 帧 0.5 秒
+17:36:16 [classroom] B5_listen 遮罩 第 170/192 帧 0.5 秒
+17:36:17 [classroom] B5_listen 遮罩 第 171/192 帧 0.6 秒
+17:36:17 [classroom] B5_listen 遮罩 第 172/192 帧 0.5 秒
+17:36:18 [classroom] B5_listen 遮罩 第 173/192 帧 0.5 秒
+17:36:18 [classroom] B5_listen 遮罩 第 174/192 帧 0.5 秒
+17:36:19 [classroom] B5_listen 遮罩 第 175/192 帧 0.5 秒
+17:36:20 [classroom] B5_listen 遮罩 第 176/192 帧 0.5 秒
+17:36:20 [classroom] B5_listen 遮罩 第 177/192 帧 0.5 秒
+17:36:21 [classroom] B5_listen 遮罩 第 178/192 帧 0.5 秒
+17:36:22 [classroom] B5_listen 遮罩 第 179/192 帧 0.5 秒
+17:36:22 [classroom] B5_listen 遮罩 第 180/192 帧 0.5 秒
+17:36:23 [classroom] B5_listen 遮罩 第 181/192 帧 0.5 秒
+17:36:23 [classroom] B5_listen 遮罩 第 182/192 帧 0.5 秒
+17:36:24 [classroom] B5_listen 遮罩 第 183/192 帧 0.5 秒
+17:36:25 [classroom] B5_listen 遮罩 第 184/192 帧 0.5 秒
+17:36:25 [classroom] B5_listen 遮罩 第 185/192 帧 0.5 秒
+17:36:26 [classroom] B5_listen 遮罩 第 186/192 帧 0.5 秒
+17:36:27 [classroom] B5_listen 遮罩 第 187/192 帧 0.5 秒
+17:36:27 [classroom] B5_listen 遮罩 第 188/192 帧 0.5 秒
+17:36:28 [classroom] B5_listen 遮罩 第 189/192 帧 0.6 秒
+17:36:29 [classroom] B5_listen 遮罩 第 190/192 帧 0.5 秒
+17:36:29 [classroom] B5_listen 遮罩 第 191/192 帧 0.5 秒
+17:36:30 [classroom] B5_listen 遮罩 第 192/192 帧 0.5 秒
+17:36:31 [classroom] T1_lecture 遮罩 第 2/576 帧 0.4 秒
+17:36:31 [classroom] T1_lecture 遮罩 第 3/576 帧 0.5 秒
+17:36:32 [classroom] T1_lecture 遮罩 第 4/576 帧 0.5 秒
+17:36:33 [classroom] T1_lecture 遮罩 第 5/576 帧 0.5 秒
+17:36:33 [classroom] T1_lecture 遮罩 第 6/576 帧 0.4 秒
+17:36:34 [classroom] T1_lecture 遮罩 第 7/576 帧 0.4 秒
+17:36:34 [classroom] T1_lecture 遮罩 第 8/576 帧 0.4 秒
+17:36:35 [classroom] T1_lecture 遮罩 第 9/576 帧 0.5 秒
+17:36:35 [classroom] T1_lecture 遮罩 第 10/576 帧 0.5 秒
+17:36:36 [classroom] T1_lecture 遮罩 第 11/576 帧 0.4 秒
+17:36:36 [classroom] T1_lecture 遮罩 第 12/576 帧 0.4 秒
+17:36:37 [classroom] T1_lecture 遮罩 第 13/576 帧 0.4 秒
+17:36:38 [classroom] T1_lecture 遮罩 第 14/576 帧 0.5 秒
+17:36:38 [classroom] T1_lecture 遮罩 第 15/576 帧 0.5 秒
+17:36:39 [classroom] T1_lecture 遮罩 第 16/576 帧 0.5 秒
+17:36:39 [classroom] T1_lecture 遮罩 第 17/576 帧 0.5 秒
+17:36:40 [classroom] T1_lecture 遮罩 第 18/576 帧 0.5 秒
+17:36:40 [classroom] T1_lecture 遮罩 第 19/576 帧 0.5 秒
+17:36:41 [classroom] T1_lecture 遮罩 第 20/576 帧 0.5 秒
+17:36:42 [classroom] T1_lecture 遮罩 第 21/576 帧 0.5 秒
+17:36:42 [classroom] T1_lecture 遮罩 第 22/576 帧 0.5 秒
+17:36:43 [classroom] T1_lecture 遮罩 第 23/576 帧 0.4 秒
+17:36:43 [classroom] T1_lecture 遮罩 第 24/576 帧 0.4 秒
+17:36:44 [classroom] T1_lecture 遮罩 第 25/576 帧 0.4 秒
+17:36:44 [classroom] T1_lecture 遮罩 第 26/576 帧 0.4 秒
+17:36:45 [classroom] T1_lecture 遮罩 第 27/576 帧 0.5 秒
+17:36:46 [classroom] T1_lecture 遮罩 第 28/576 帧 0.5 秒
+17:36:46 [classroom] T1_lecture 遮罩 第 29/576 帧 0.5 秒
+17:36:47 [classroom] T1_lecture 遮罩 第 30/576 帧 0.5 秒
+17:36:47 [classroom] T1_lecture 遮罩 第 31/576 帧 0.4 秒
+17:36:48 [classroom] T1_lecture 遮罩 第 32/576 帧 0.5 秒
+17:36:49 [classroom] T1_lecture 遮罩 第 33/576 帧 0.5 秒
+17:36:49 [classroom] T1_lecture 遮罩 第 34/576 帧 0.4 秒
+17:36:50 [classroom] T1_lecture 遮罩 第 35/576 帧 0.5 秒
+17:36:50 [classroom] T1_lecture 遮罩 第 36/576 帧 0.5 秒
+17:36:51 [classroom] T1_lecture 遮罩 第 37/576 帧 0.5 秒
+17:36:51 [classroom] T1_lecture 遮罩 第 38/576 帧 0.4 秒
+17:36:52 [classroom] T1_lecture 遮罩 第 39/576 帧 0.5 秒
+17:36:53 [classroom] T1_lecture 遮罩 第 40/576 帧 0.5 秒
+17:36:53 [classroom] T1_lecture 遮罩 第 41/576 帧 0.5 秒
+17:36:54 [classroom] T1_lecture 遮罩 第 42/576 帧 0.5 秒
+17:36:54 [classroom] T1_lecture 遮罩 第 43/576 帧 0.4 秒
+17:36:55 [classroom] T1_lecture 遮罩 第 44/576 帧 0.4 秒
+17:36:55 [classroom] T1_lecture 遮罩 第 45/576 帧 0.5 秒
+17:36:56 [classroom] T1_lecture 遮罩 第 46/576 帧 0.4 秒
+17:36:56 [classroom] T1_lecture 遮罩 第 47/576 帧 0.5 秒
+17:36:57 [classroom] T1_lecture 遮罩 第 48/576 帧 0.5 秒
+17:36:58 [classroom] T1_lecture 遮罩 第 49/576 帧 0.5 秒
+17:36:58 [classroom] T1_lecture 遮罩 第 50/576 帧 0.4 秒
+17:36:59 [classroom] T1_lecture 遮罩 第 51/576 帧 0.5 秒
+17:36:59 [classroom] T1_lecture 遮罩 第 52/576 帧 0.5 秒
+17:37:00 [classroom] T1_lecture 遮罩 第 53/576 帧 0.5 秒
+17:37:00 [classroom] T1_lecture 遮罩 第 54/576 帧 0.4 秒
+17:37:01 [classroom] T1_lecture 遮罩 第 55/576 帧 0.4 秒
+17:37:02 [classroom] T1_lecture 遮罩 第 56/576 帧 0.5 秒
+17:37:02 [classroom] T1_lecture 遮罩 第 57/576 帧 0.4 秒
+17:37:03 [classroom] T1_lecture 遮罩 第 58/576 帧 0.5 秒
+17:37:03 [classroom] T1_lecture 遮罩 第 59/576 帧 0.5 秒
+17:37:04 [classroom] T1_lecture 遮罩 第 60/576 帧 0.5 秒
+17:37:04 [classroom] T1_lecture 遮罩 第 61/576 帧 0.5 秒
+17:37:05 [classroom] T1_lecture 遮罩 第 62/576 帧 0.4 秒
+17:37:06 [classroom] T1_lecture 遮罩 第 63/576 帧 0.5 秒
+17:37:06 [classroom] T1_lecture 遮罩 第 64/576 帧 0.5 秒
+17:37:07 [classroom] T1_lecture 遮罩 第 65/576 帧 0.5 秒
+17:37:07 [classroom] T1_lecture 遮罩 第 66/576 帧 0.5 秒
+17:37:08 [classroom] T1_lecture 遮罩 第 67/576 帧 0.4 秒
+17:37:08 [classroom] T1_lecture 遮罩 第 68/576 帧 0.5 秒
+17:37:09 [classroom] T1_lecture 遮罩 第 69/576 帧 0.4 秒
+17:37:10 [classroom] T1_lecture 遮罩 第 70/576 帧 0.5 秒
+17:37:10 [classroom] T1_lecture 遮罩 第 71/576 帧 0.5 秒
+17:37:11 [classroom] T1_lecture 遮罩 第 72/576 帧 0.5 秒
+17:37:11 [classroom] T1_lecture 遮罩 第 73/576 帧 0.5 秒
+17:37:12 [classroom] T1_lecture 遮罩 第 74/576 帧 0.4 秒
+17:37:12 [classroom] T1_lecture 遮罩 第 75/576 帧 0.5 秒
+17:37:13 [classroom] T1_lecture 遮罩 第 76/576 帧 0.5 秒
+17:37:14 [classroom] T1_lecture 遮罩 第 77/576 帧 0.5 秒
+17:37:14 [classroom] T1_lecture 遮罩 第 78/576 帧 0.5 秒
+17:37:15 [classroom] T1_lecture 遮罩 第 79/576 帧 0.4 秒
+17:37:15 [classroom] T1_lecture 遮罩 第 80/576 帧 0.5 秒
+17:37:16 [classroom] T1_lecture 遮罩 第 81/576 帧 0.5 秒
+17:37:16 [classroom] T1_lecture 遮罩 第 82/576 帧 0.4 秒
+17:37:17 [classroom] T1_lecture 遮罩 第 83/576 帧 0.5 秒
+17:37:17 [classroom] T1_lecture 遮罩 第 84/576 帧 0.4 秒
+17:37:18 [classroom] T1_lecture 遮罩 第 85/576 帧 0.5 秒
+17:37:19 [classroom] T1_lecture 遮罩 第 86/576 帧 0.4 秒
+17:37:19 [classroom] T1_lecture 遮罩 第 87/576 帧 0.5 秒
+17:37:20 [classroom] T1_lecture 遮罩 第 88/576 帧 0.5 秒
+17:37:20 [classroom] T1_lecture 遮罩 第 89/576 帧 0.4 秒
+17:37:21 [classroom] T1_lecture 遮罩 第 90/576 帧 0.5 秒
+17:37:21 [classroom] T1_lecture 遮罩 第 91/576 帧 0.4 秒
+17:37:22 [classroom] T1_lecture 遮罩 第 92/576 帧 0.5 秒
+17:37:22 [classroom] T1_lecture 遮罩 第 93/576 帧 0.5 秒
+17:37:23 [classroom] T1_lecture 遮罩 第 94/576 帧 0.5 秒
+17:37:24 [classroom] T1_lecture 遮罩 第 95/576 帧 0.4 秒
+17:37:24 [classroom] T1_lecture 遮罩 第 96/576 帧 0.4 秒
+17:37:25 [classroom] T1_lecture 遮罩 第 97/576 帧 0.5 秒
+17:37:25 [classroom] T1_lecture 遮罩 第 98/576 帧 0.5 秒
+17:37:26 [classroom] T1_lecture 遮罩 第 99/576 帧 0.5 秒
+17:37:26 [classroom] T1_lecture 遮罩 第 100/576 帧 0.5 秒
+17:37:27 [classroom] T1_lecture 遮罩 第 101/576 帧 0.5 秒
+17:37:28 [classroom] T1_lecture 遮罩 第 102/576 帧 0.5 秒
+17:37:28 [classroom] T1_lecture 遮罩 第 103/576 帧 0.4 秒
+17:37:29 [classroom] T1_lecture 遮罩 第 104/576 帧 0.5 秒
+17:37:29 [classroom] T1_lecture 遮罩 第 105/576 帧 0.5 秒
+17:37:30 [classroom] T1_lecture 遮罩 第 106/576 帧 0.5 秒
+17:37:30 [classroom] T1_lecture 遮罩 第 107/576 帧 0.4 秒
+17:37:31 [classroom] T1_lecture 遮罩 第 108/576 帧 0.4 秒
+17:37:32 [classroom] T1_lecture 遮罩 第 109/576 帧 0.5 秒
+17:37:32 [classroom] T1_lecture 遮罩 第 110/576 帧 0.4 秒
+17:37:33 [classroom] T1_lecture 遮罩 第 111/576 帧 0.5 秒
+17:37:33 [classroom] T1_lecture 遮罩 第 112/576 帧 0.5 秒
+17:37:34 [classroom] T1_lecture 遮罩 第 113/576 帧 0.5 秒
+17:37:34 [classroom] T1_lecture 遮罩 第 114/576 帧 0.5 秒
+17:37:35 [classroom] T1_lecture 遮罩 第 115/576 帧 0.4 秒
+17:37:36 [classroom] T1_lecture 遮罩 第 116/576 帧 0.4 秒
+17:37:36 [classroom] T1_lecture 遮罩 第 117/576 帧 0.5 秒
+17:37:37 [classroom] T1_lecture 遮罩 第 118/576 帧 0.5 秒
+17:37:37 [classroom] T1_lecture 遮罩 第 119/576 帧 0.5 秒
+17:37:38 [classroom] T1_lecture 遮罩 第 120/576 帧 0.4 秒
+17:37:38 [classroom] T1_lecture 遮罩 第 121/576 帧 0.5 秒
+17:37:39 [classroom] T1_lecture 遮罩 第 122/576 帧 0.5 秒
+17:37:40 [classroom] T1_lecture 遮罩 第 123/576 帧 0.5 秒
+17:37:40 [classroom] T1_lecture 遮罩 第 124/576 帧 0.5 秒
+17:37:41 [classroom] T1_lecture 遮罩 第 125/576 帧 0.5 秒
+17:37:41 [classroom] T1_lecture 遮罩 第 126/576 帧 0.5 秒
+17:37:42 [classroom] T1_lecture 遮罩 第 127/576 帧 0.4 秒
+17:37:42 [classroom] T1_lecture 遮罩 第 128/576 帧 0.5 秒
+17:37:43 [classroom] T1_lecture 遮罩 第 129/576 帧 0.4 秒
+17:37:44 [classroom] T1_lecture 遮罩 第 130/576 帧 0.5 秒
+17:37:44 [classroom] T1_lecture 遮罩 第 131/576 帧 0.4 秒
+17:37:45 [classroom] T1_lecture 遮罩 第 132/576 帧 0.4 秒
+17:37:45 [classroom] T1_lecture 遮罩 第 133/576 帧 0.5 秒
+17:37:46 [classroom] T1_lecture 遮罩 第 134/576 帧 0.4 秒
+17:37:46 [classroom] T1_lecture 遮罩 第 135/576 帧 0.5 秒
+17:37:47 [classroom] T1_lecture 遮罩 第 136/576 帧 0.5 秒
+17:37:48 [classroom] T1_lecture 遮罩 第 137/576 帧 0.5 秒
+17:37:48 [classroom] T1_lecture 遮罩 第 138/576 帧 0.5 秒
+17:37:49 [classroom] T1_lecture 遮罩 第 139/576 帧 0.5 秒
+17:37:49 [classroom] T1_lecture 遮罩 第 140/576 帧 0.5 秒
+17:37:50 [classroom] T1_lecture 遮罩 第 141/576 帧 0.4 秒
+17:37:51 [classroom] T1_lecture 遮罩 第 142/576 帧 0.5 秒
+17:37:51 [classroom] T1_lecture 遮罩 第 143/576 帧 0.5 秒
+17:37:52 [classroom] T1_lecture 遮罩 第 144/576 帧 0.5 秒
+17:37:52 [classroom] T1_lecture 遮罩 第 145/576 帧 0.5 秒
+17:37:53 [classroom] T1_lecture 遮罩 第 146/576 帧 0.5 秒
+17:37:54 [classroom] T1_lecture 遮罩 第 147/576 帧 0.5 秒
+17:37:54 [classroom] T1_lecture 遮罩 第 148/576 帧 0.4 秒
+17:37:55 [classroom] T1_lecture 遮罩 第 149/576 帧 0.4 秒
+17:37:55 [classroom] T1_lecture 遮罩 第 150/576 帧 0.4 秒
+17:37:56 [classroom] T1_lecture 遮罩 第 151/576 帧 0.5 秒
+17:37:56 [classroom] T1_lecture 遮罩 第 152/576 帧 0.4 秒
+17:37:57 [classroom] T1_lecture 遮罩 第 153/576 帧 0.4 秒
+17:37:57 [classroom] T1_lecture 遮罩 第 154/576 帧 0.5 秒
+17:37:58 [classroom] T1_lecture 遮罩 第 155/576 帧 0.5 秒
+17:37:59 [classroom] T1_lecture 遮罩 第 156/576 帧 0.5 秒
+17:37:59 [classroom] T1_lecture 遮罩 第 157/576 帧 0.5 秒
+17:38:00 [classroom] T1_lecture 遮罩 第 158/576 帧 0.4 秒
+17:38:00 [classroom] T1_lecture 遮罩 第 159/576 帧 0.4 秒
+17:38:01 [classroom] T1_lecture 遮罩 第 160/576 帧 0.4 秒
+17:38:01 [classroom] T1_lecture 遮罩 第 161/576 帧 0.5 秒
+17:38:02 [classroom] T1_lecture 遮罩 第 162/576 帧 0.5 秒
+17:38:03 [classroom] T1_lecture 遮罩 第 163/576 帧 0.5 秒
+17:38:03 [classroom] T1_lecture 遮罩 第 164/576 帧 0.5 秒
+17:38:04 [classroom] T1_lecture 遮罩 第 165/576 帧 0.4 秒
+17:38:04 [classroom] T1_lecture 遮罩 第 166/576 帧 0.4 秒
+17:38:05 [classroom] T1_lecture 遮罩 第 167/576 帧 0.5 秒
+17:38:05 [classroom] T1_lecture 遮罩 第 168/576 帧 0.5 秒
+17:38:06 [classroom] T1_lecture 遮罩 第 169/576 帧 0.4 秒
+17:38:06 [classroom] T1_lecture 遮罩 第 170/576 帧 0.4 秒
+17:38:07 [classroom] T1_lecture 遮罩 第 171/576 帧 0.5 秒
+17:38:08 [classroom] T1_lecture 遮罩 第 172/576 帧 0.4 秒
+17:38:08 [classroom] T1_lecture 遮罩 第 173/576 帧 0.4 秒
+17:38:09 [classroom] T1_lecture 遮罩 第 174/576 帧 0.5 秒
+17:38:09 [classroom] T1_lecture 遮罩 第 175/576 帧 0.5 秒
+17:38:10 [classroom] T1_lecture 遮罩 第 176/576 帧 0.5 秒
+17:38:10 [classroom] T1_lecture 遮罩 第 177/576 帧 0.4 秒
+17:38:11 [classroom] T1_lecture 遮罩 第 178/576 帧 0.5 秒
+17:38:12 [classroom] T1_lecture 遮罩 第 179/576 帧 0.4 秒
+17:38:12 [classroom] T1_lecture 遮罩 第 180/576 帧 0.5 秒
+17:38:13 [classroom] T1_lecture 遮罩 第 181/576 帧 0.5 秒
+17:38:13 [classroom] T1_lecture 遮罩 第 182/576 帧 0.5 秒
+17:38:14 [classroom] T1_lecture 遮罩 第 183/576 帧 0.5 秒
+17:38:14 [classroom] T1_lecture 遮罩 第 184/576 帧 0.4 秒
+17:38:15 [classroom] T1_lecture 遮罩 第 185/576 帧 0.4 秒
+17:38:16 [classroom] T1_lecture 遮罩 第 186/576 帧 0.5 秒
+17:38:16 [classroom] T1_lecture 遮罩 第 187/576 帧 0.4 秒
+17:38:17 [classroom] T1_lecture 遮罩 第 188/576 帧 0.5 秒
+17:38:17 [classroom] T1_lecture 遮罩 第 189/576 帧 0.4 秒
+17:38:18 [classroom] T1_lecture 遮罩 第 190/576 帧 0.5 秒
+17:38:18 [classroom] T1_lecture 遮罩 第 191/576 帧 0.5 秒
+17:38:19 [classroom] T1_lecture 遮罩 第 192/576 帧 0.5 秒
+17:38:20 [classroom] T1_lecture 遮罩 第 193/576 帧 0.5 秒
+17:38:20 [classroom] T1_lecture 遮罩 第 194/576 帧 0.5 秒
+17:38:21 [classroom] T1_lecture 遮罩 第 195/576 帧 0.5 秒
+17:38:21 [classroom] T1_lecture 遮罩 第 196/576 帧 0.4 秒
+17:38:22 [classroom] T1_lecture 遮罩 第 197/576 帧 0.4 秒
+17:38:22 [classroom] T1_lecture 遮罩 第 198/576 帧 0.5 秒
+17:38:23 [classroom] T1_lecture 遮罩 第 199/576 帧 0.5 秒
+17:38:24 [classroom] T1_lecture 遮罩 第 200/576 帧 0.5 秒
+17:38:24 [classroom] T1_lecture 遮罩 第 201/576 帧 0.4 秒
+17:38:25 [classroom] T1_lecture 遮罩 第 202/576 帧 0.5 秒
+17:38:25 [classroom] T1_lecture 遮罩 第 203/576 帧 0.4 秒
+17:38:26 [classroom] T1_lecture 遮罩 第 204/576 帧 0.5 秒
+17:38:26 [classroom] T1_lecture 遮罩 第 205/576 帧 0.4 秒
+17:38:27 [classroom] T1_lecture 遮罩 第 206/576 帧 0.4 秒
+17:38:28 [classroom] T1_lecture 遮罩 第 207/576 帧 0.5 秒
+17:38:28 [classroom] T1_lecture 遮罩 第 208/576 帧 0.5 秒
+17:38:29 [classroom] T1_lecture 遮罩 第 209/576 帧 0.5 秒
+17:38:29 [classroom] T1_lecture 遮罩 第 210/576 帧 0.5 秒
+17:38:30 [classroom] T1_lecture 遮罩 第 211/576 帧 0.5 秒
+17:38:30 [classroom] T1_lecture 遮罩 第 212/576 帧 0.5 秒
+17:38:31 [classroom] T1_lecture 遮罩 第 213/576 帧 0.4 秒
+17:38:31 [classroom] T1_lecture 遮罩 第 214/576 帧 0.4 秒
+17:38:32 [classroom] T1_lecture 遮罩 第 215/576 帧 0.4 秒
+17:38:33 [classroom] T1_lecture 遮罩 第 216/576 帧 0.5 秒
+17:38:33 [classroom] T1_lecture 遮罩 第 217/576 帧 0.5 秒
+17:38:34 [classroom] T1_lecture 遮罩 第 218/576 帧 0.4 秒
+17:38:34 [classroom] T1_lecture 遮罩 第 219/576 帧 0.4 秒
+17:38:35 [classroom] T1_lecture 遮罩 第 220/576 帧 0.5 秒
+17:38:35 [classroom] T1_lecture 遮罩 第 221/576 帧 0.5 秒
+17:38:36 [classroom] T1_lecture 遮罩 第 222/576 帧 0.5 秒
+17:38:37 [classroom] T1_lecture 遮罩 第 223/576 帧 0.5 秒
+17:38:37 [classroom] T1_lecture 遮罩 第 224/576 帧 0.4 秒
+17:38:38 [classroom] T1_lecture 遮罩 第 225/576 帧 0.4 秒
+17:38:38 [classroom] T1_lecture 遮罩 第 226/576 帧 0.5 秒
+17:38:39 [classroom] T1_lecture 遮罩 第 227/576 帧 0.5 秒
+17:38:39 [classroom] T1_lecture 遮罩 第 228/576 帧 0.4 秒
+17:38:40 [classroom] T1_lecture 遮罩 第 229/576 帧 0.5 秒
+17:38:41 [classroom] T1_lecture 遮罩 第 230/576 帧 0.4 秒
+17:38:41 [classroom] T1_lecture 遮罩 第 231/576 帧 0.5 秒
+17:38:42 [classroom] T1_lecture 遮罩 第 232/576 帧 0.5 秒
+17:38:42 [classroom] T1_lecture 遮罩 第 233/576 帧 0.5 秒
+17:38:43 [classroom] T1_lecture 遮罩 第 234/576 帧 0.5 秒
+17:38:43 [classroom] T1_lecture 遮罩 第 235/576 帧 0.5 秒
+17:38:44 [classroom] T1_lecture 遮罩 第 236/576 帧 0.5 秒
+17:38:45 [classroom] T1_lecture 遮罩 第 237/576 帧 0.4 秒
+17:38:45 [classroom] T1_lecture 遮罩 第 238/576 帧 0.5 秒
+17:38:46 [classroom] T1_lecture 遮罩 第 239/576 帧 0.5 秒
+17:38:46 [classroom] T1_lecture 遮罩 第 240/576 帧 0.5 秒
+17:38:47 [classroom] T1_lecture 遮罩 第 241/576 帧 0.5 秒
+17:38:48 [classroom] T1_lecture 遮罩 第 242/576 帧 0.5 秒
+17:38:48 [classroom] T1_lecture 遮罩 第 243/576 帧 0.5 秒
+17:38:49 [classroom] T1_lecture 遮罩 第 244/576 帧 0.4 秒
+17:38:49 [classroom] T1_lecture 遮罩 第 245/576 帧 0.4 秒
+17:38:50 [classroom] T1_lecture 遮罩 第 246/576 帧 0.5 秒
+17:38:50 [classroom] T1_lecture 遮罩 第 247/576 帧 0.4 秒
+17:38:51 [classroom] T1_lecture 遮罩 第 248/576 帧 0.5 秒
+17:38:52 [classroom] T1_lecture 遮罩 第 249/576 帧 0.5 秒
+17:38:52 [classroom] T1_lecture 遮罩 第 250/576 帧 0.5 秒
+17:38:53 [classroom] T1_lecture 遮罩 第 251/576 帧 0.4 秒
+17:38:53 [classroom] T1_lecture 遮罩 第 252/576 帧 0.5 秒
+17:38:54 [classroom] T1_lecture 遮罩 第 253/576 帧 0.5 秒
+17:38:54 [classroom] T1_lecture 遮罩 第 254/576 帧 0.5 秒
+17:38:55 [classroom] T1_lecture 遮罩 第 255/576 帧 0.5 秒
+17:38:56 [classroom] T1_lecture 遮罩 第 256/576 帧 0.4 秒
+17:38:56 [classroom] T1_lecture 遮罩 第 257/576 帧 0.5 秒
+17:38:57 [classroom] T1_lecture 遮罩 第 258/576 帧 0.4 秒
+17:38:57 [classroom] T1_lecture 遮罩 第 259/576 帧 0.5 秒
+17:38:58 [classroom] T1_lecture 遮罩 第 260/576 帧 0.5 秒
+17:38:58 [classroom] T1_lecture 遮罩 第 261/576 帧 0.5 秒
+17:38:59 [classroom] T1_lecture 遮罩 第 262/576 帧 0.5 秒
+17:39:00 [classroom] T1_lecture 遮罩 第 263/576 帧 0.4 秒
+17:39:00 [classroom] T1_lecture 遮罩 第 264/576 帧 0.5 秒
+17:39:01 [classroom] T1_lecture 遮罩 第 265/576 帧 0.4 秒
+17:39:01 [classroom] T1_lecture 遮罩 第 266/576 帧 0.5 秒
+17:39:02 [classroom] T1_lecture 遮罩 第 267/576 帧 0.5 秒
+17:39:02 [classroom] T1_lecture 遮罩 第 268/576 帧 0.4 秒
+17:39:03 [classroom] T1_lecture 遮罩 第 269/576 帧 0.4 秒
+17:39:04 [classroom] T1_lecture 遮罩 第 270/576 帧 0.4 秒
+17:39:04 [classroom] T1_lecture 遮罩 第 271/576 帧 0.4 秒
+17:39:05 [classroom] T1_lecture 遮罩 第 272/576 帧 0.5 秒
+17:39:05 [classroom] T1_lecture 遮罩 第 273/576 帧 0.4 秒
+17:39:06 [classroom] T1_lecture 遮罩 第 274/576 帧 0.5 秒
+17:39:06 [classroom] T1_lecture 遮罩 第 275/576 帧 0.4 秒
+17:39:07 [classroom] T1_lecture 遮罩 第 276/576 帧 0.5 秒
+17:39:08 [classroom] T1_lecture 遮罩 第 277/576 帧 0.5 秒
+17:39:08 [classroom] T1_lecture 遮罩 第 278/576 帧 0.5 秒
+17:39:09 [classroom] T1_lecture 遮罩 第 279/576 帧 0.5 秒
+17:39:09 [classroom] T1_lecture 遮罩 第 280/576 帧 0.5 秒
+17:39:10 [classroom] T1_lecture 遮罩 第 281/576 帧 0.5 秒
+17:39:10 [classroom] T1_lecture 遮罩 第 282/576 帧 0.4 秒
+17:39:11 [classroom] T1_lecture 遮罩 第 283/576 帧 0.5 秒
+17:39:12 [classroom] T1_lecture 遮罩 第 284/576 帧 0.4 秒
+17:39:12 [classroom] T1_lecture 遮罩 第 285/576 帧 0.5 秒
+17:39:13 [classroom] T1_lecture 遮罩 第 286/576 帧 0.5 秒
+17:39:13 [classroom] T1_lecture 遮罩 第 287/576 帧 0.4 秒
+17:39:14 [classroom] T1_lecture 遮罩 第 288/576 帧 0.5 秒
+17:39:14 [classroom] T1_lecture 遮罩 第 289/576 帧 0.5 秒
+17:39:15 [classroom] T1_lecture 遮罩 第 290/576 帧 0.4 秒
+17:39:15 [classroom] T1_lecture 遮罩 第 291/576 帧 0.5 秒
+17:39:16 [classroom] T1_lecture 遮罩 第 292/576 帧 0.5 秒
+17:39:17 [classroom] T1_lecture 遮罩 第 293/576 帧 0.5 秒
+17:39:17 [classroom] T1_lecture 遮罩 第 294/576 帧 0.4 秒
+17:39:18 [classroom] T1_lecture 遮罩 第 295/576 帧 0.5 秒
+17:39:18 [classroom] T1_lecture 遮罩 第 296/576 帧 0.5 秒
+17:39:19 [classroom] T1_lecture 遮罩 第 297/576 帧 0.5 秒
+17:39:20 [classroom] T1_lecture 遮罩 第 298/576 帧 0.4 秒
+17:39:20 [classroom] T1_lecture 遮罩 第 299/576 帧 0.4 秒
+17:39:21 [classroom] T1_lecture 遮罩 第 300/576 帧 0.4 秒
+17:39:21 [classroom] T1_lecture 遮罩 第 301/576 帧 0.5 秒
+17:39:22 [classroom] T1_lecture 遮罩 第 302/576 帧 0.5 秒
+17:39:22 [classroom] T1_lecture 遮罩 第 303/576 帧 0.5 秒
+17:39:23 [classroom] T1_lecture 遮罩 第 304/576 帧 0.4 秒
+17:39:23 [classroom] T1_lecture 遮罩 第 305/576 帧 0.4 秒
+17:39:24 [classroom] T1_lecture 遮罩 第 306/576 帧 0.5 秒
+17:39:25 [classroom] T1_lecture 遮罩 第 307/576 帧 0.4 秒
+17:39:25 [classroom] T1_lecture 遮罩 第 308/576 帧 0.5 秒
+17:39:26 [classroom] T1_lecture 遮罩 第 309/576 帧 0.5 秒
+17:39:26 [classroom] T1_lecture 遮罩 第 310/576 帧 0.5 秒
+17:39:27 [classroom] T1_lecture 遮罩 第 311/576 帧 0.4 秒
+17:39:27 [classroom] T1_lecture 遮罩 第 312/576 帧 0.5 秒
+17:39:28 [classroom] T1_lecture 遮罩 第 313/576 帧 0.5 秒
+17:39:29 [classroom] T1_lecture 遮罩 第 314/576 帧 0.5 秒
+17:39:29 [classroom] T1_lecture 遮罩 第 315/576 帧 0.5 秒
+17:39:30 [classroom] T1_lecture 遮罩 第 316/576 帧 0.5 秒
+17:39:30 [classroom] T1_lecture 遮罩 第 317/576 帧 0.5 秒
+17:39:31 [classroom] T1_lecture 遮罩 第 318/576 帧 0.4 秒
+17:39:31 [classroom] T1_lecture 遮罩 第 319/576 帧 0.5 秒
+17:39:32 [classroom] T1_lecture 遮罩 第 320/576 帧 0.5 秒
+17:39:33 [classroom] T1_lecture 遮罩 第 321/576 帧 0.4 秒
+17:39:33 [classroom] T1_lecture 遮罩 第 322/576 帧 0.5 秒
+17:39:34 [classroom] T1_lecture 遮罩 第 323/576 帧 0.4 秒
+17:39:34 [classroom] T1_lecture 遮罩 第 324/576 帧 0.4 秒
+17:39:35 [classroom] T1_lecture 遮罩 第 325/576 帧 0.4 秒
+17:39:35 [classroom] T1_lecture 遮罩 第 326/576 帧 0.5 秒
+17:39:36 [classroom] T1_lecture 遮罩 第 327/576 帧 0.5 秒
+17:39:37 [classroom] T1_lecture 遮罩 第 328/576 帧 0.5 秒
+17:39:37 [classroom] T1_lecture 遮罩 第 329/576 帧 0.5 秒
+17:39:38 [classroom] T1_lecture 遮罩 第 330/576 帧 0.4 秒
+17:39:38 [classroom] T1_lecture 遮罩 第 331/576 帧 0.5 秒
+17:39:39 [classroom] T1_lecture 遮罩 第 332/576 帧 0.5 秒
+17:39:39 [classroom] T1_lecture 遮罩 第 333/576 帧 0.5 秒
+17:39:40 [classroom] T1_lecture 遮罩 第 334/576 帧 0.4 秒
+17:39:41 [classroom] T1_lecture 遮罩 第 335/576 帧 0.4 秒
+17:39:41 [classroom] T1_lecture 遮罩 第 336/576 帧 0.5 秒
+17:39:42 [classroom] T1_lecture 遮罩 第 337/576 帧 0.4 秒
+17:39:42 [classroom] T1_lecture 遮罩 第 338/576 帧 0.5 秒
+17:39:43 [classroom] T1_lecture 遮罩 第 339/576 帧 0.5 秒
+17:39:44 [classroom] T1_lecture 遮罩 第 340/576 帧 0.5 秒
+17:39:44 [classroom] T1_lecture 遮罩 第 341/576 帧 0.5 秒
+17:39:45 [classroom] T1_lecture 遮罩 第 342/576 帧 0.4 秒
+17:39:45 [classroom] T1_lecture 遮罩 第 343/576 帧 0.5 秒
+17:39:46 [classroom] T1_lecture 遮罩 第 344/576 帧 0.4 秒
+17:39:46 [classroom] T1_lecture 遮罩 第 345/576 帧 0.5 秒
+17:39:47 [classroom] T1_lecture 遮罩 第 346/576 帧 0.5 秒
+17:39:48 [classroom] T1_lecture 遮罩 第 347/576 帧 0.5 秒
+17:39:48 [classroom] T1_lecture 遮罩 第 348/576 帧 0.5 秒
+17:39:49 [classroom] T1_lecture 遮罩 第 349/576 帧 0.4 秒
+17:39:49 [classroom] T1_lecture 遮罩 第 350/576 帧 0.5 秒
+17:39:50 [classroom] T1_lecture 遮罩 第 351/576 帧 0.5 秒
+17:39:50 [classroom] T1_lecture 遮罩 第 352/576 帧 0.5 秒
+17:39:51 [classroom] T1_lecture 遮罩 第 353/576 帧 0.5 秒
+17:39:52 [classroom] T1_lecture 遮罩 第 354/576 帧 0.5 秒
+17:39:52 [classroom] T1_lecture 遮罩 第 355/576 帧 0.5 秒
+17:39:53 [classroom] T1_lecture 遮罩 第 356/576 帧 0.4 秒
+17:39:53 [classroom] T1_lecture 遮罩 第 357/576 帧 0.5 秒
+17:39:54 [classroom] T1_lecture 遮罩 第 358/576 帧 0.5 秒
+17:39:54 [classroom] T1_lecture 遮罩 第 359/576 帧 0.4 秒
+17:39:55 [classroom] T1_lecture 遮罩 第 360/576 帧 0.4 秒
+17:39:56 [classroom] T1_lecture 遮罩 第 361/576 帧 0.4 秒
+17:39:56 [classroom] T1_lecture 遮罩 第 362/576 帧 0.5 秒
+17:39:57 [classroom] T1_lecture 遮罩 第 363/576 帧 0.4 秒
+17:39:57 [classroom] T1_lecture 遮罩 第 364/576 帧 0.5 秒
+17:39:58 [classroom] T1_lecture 遮罩 第 365/576 帧 0.5 秒
+17:39:58 [classroom] T1_lecture 遮罩 第 366/576 帧 0.5 秒
+17:39:59 [classroom] T1_lecture 遮罩 第 367/576 帧 0.5 秒
+17:40:00 [classroom] T1_lecture 遮罩 第 368/576 帧 0.4 秒
+17:40:00 [classroom] T1_lecture 遮罩 第 369/576 帧 0.5 秒
+17:40:01 [classroom] T1_lecture 遮罩 第 370/576 帧 0.5 秒
+17:40:01 [classroom] T1_lecture 遮罩 第 371/576 帧 0.5 秒
+17:40:02 [classroom] T1_lecture 遮罩 第 372/576 帧 0.5 秒
+17:40:02 [classroom] T1_lecture 遮罩 第 373/576 帧 0.5 秒
+17:40:03 [classroom] T1_lecture 遮罩 第 374/576 帧 0.5 秒
+17:40:04 [classroom] T1_lecture 遮罩 第 375/576 帧 0.4 秒
+17:40:04 [classroom] T1_lecture 遮罩 第 376/576 帧 0.4 秒
+17:40:05 [classroom] T1_lecture 遮罩 第 377/576 帧 0.4 秒
+17:40:05 [classroom] T1_lecture 遮罩 第 378/576 帧 0.5 秒
+17:40:06 [classroom] T1_lecture 遮罩 第 379/576 帧 0.5 秒
+17:40:06 [classroom] T1_lecture 遮罩 第 380/576 帧 0.4 秒
+17:40:07 [classroom] T1_lecture 遮罩 第 381/576 帧 0.5 秒
+17:40:08 [classroom] T1_lecture 遮罩 第 382/576 帧 0.4 秒
+17:40:08 [classroom] T1_lecture 遮罩 第 383/576 帧 0.5 秒
+17:40:09 [classroom] T1_lecture 遮罩 第 384/576 帧 0.4 秒
+17:40:09 [classroom] T1_lecture 遮罩 第 385/576 帧 0.5 秒
+17:40:10 [classroom] T1_lecture 遮罩 第 386/576 帧 0.4 秒
+17:40:10 [classroom] T1_lecture 遮罩 第 387/576 帧 0.4 秒
+17:40:11 [classroom] T1_lecture 遮罩 第 388/576 帧 0.5 秒
+17:40:12 [classroom] T1_lecture 遮罩 第 389/576 帧 0.4 秒
+17:40:12 [classroom] T1_lecture 遮罩 第 390/576 帧 0.5 秒
+17:40:13 [classroom] T1_lecture 遮罩 第 391/576 帧 0.5 秒
+17:40:13 [classroom] T1_lecture 遮罩 第 392/576 帧 0.4 秒
+17:40:14 [classroom] T1_lecture 遮罩 第 393/576 帧 0.5 秒
+17:40:14 [classroom] T1_lecture 遮罩 第 394/576 帧 0.5 秒
+17:40:15 [classroom] T1_lecture 遮罩 第 395/576 帧 0.4 秒
+17:40:16 [classroom] T1_lecture 遮罩 第 396/576 帧 0.5 秒
+17:40:16 [classroom] T1_lecture 遮罩 第 397/576 帧 0.5 秒
+17:40:17 [classroom] T1_lecture 遮罩 第 398/576 帧 0.5 秒
+17:40:17 [classroom] T1_lecture 遮罩 第 399/576 帧 0.4 秒
+17:40:18 [classroom] T1_lecture 遮罩 第 400/576 帧 0.5 秒
+17:40:18 [classroom] T1_lecture 遮罩 第 401/576 帧 0.5 秒
+17:40:19 [classroom] T1_lecture 遮罩 第 402/576 帧 0.5 秒
+17:40:20 [classroom] T1_lecture 遮罩 第 403/576 帧 0.5 秒
+17:40:20 [classroom] T1_lecture 遮罩 第 404/576 帧 0.4 秒
+17:40:21 [classroom] T1_lecture 遮罩 第 405/576 帧 0.5 秒
+17:40:21 [classroom] T1_lecture 遮罩 第 406/576 帧 0.4 秒
+17:40:22 [classroom] T1_lecture 遮罩 第 407/576 帧 0.5 秒
+17:40:22 [classroom] T1_lecture 遮罩 第 408/576 帧 0.5 秒
+17:40:23 [classroom] T1_lecture 遮罩 第 409/576 帧 0.5 秒
+17:40:24 [classroom] T1_lecture 遮罩 第 410/576 帧 0.5 秒
+17:40:24 [classroom] T1_lecture 遮罩 第 411/576 帧 0.4 秒
+17:40:25 [classroom] T1_lecture 遮罩 第 412/576 帧 0.5 秒
+17:40:25 [classroom] T1_lecture 遮罩 第 413/576 帧 0.4 秒
+17:40:26 [classroom] T1_lecture 遮罩 第 414/576 帧 0.5 秒
+17:40:26 [classroom] T1_lecture 遮罩 第 415/576 帧 0.5 秒
+17:40:27 [classroom] T1_lecture 遮罩 第 416/576 帧 0.4 秒
+17:40:27 [classroom] T1_lecture 遮罩 第 417/576 帧 0.5 秒
+17:40:28 [classroom] T1_lecture 遮罩 第 418/576 帧 0.4 秒
+17:40:29 [classroom] T1_lecture 遮罩 第 419/576 帧 0.5 秒
+17:40:29 [classroom] T1_lecture 遮罩 第 420/576 帧 0.5 秒
+17:40:30 [classroom] T1_lecture 遮罩 第 421/576 帧 0.5 秒
+17:40:30 [classroom] T1_lecture 遮罩 第 422/576 帧 0.5 秒
+17:40:31 [classroom] T1_lecture 遮罩 第 423/576 帧 0.4 秒
+17:40:31 [classroom] T1_lecture 遮罩 第 424/576 帧 0.4 秒
+17:40:32 [classroom] T1_lecture 遮罩 第 425/576 帧 0.5 秒
+17:40:33 [classroom] T1_lecture 遮罩 第 426/576 帧 0.5 秒
+17:40:33 [classroom] T1_lecture 遮罩 第 427/576 帧 0.5 秒
+17:40:34 [classroom] T1_lecture 遮罩 第 428/576 帧 0.4 秒
+17:40:34 [classroom] T1_lecture 遮罩 第 429/576 帧 0.4 秒
+17:40:35 [classroom] T1_lecture 遮罩 第 430/576 帧 0.4 秒
+17:40:35 [classroom] T1_lecture 遮罩 第 431/576 帧 0.4 秒
+17:40:36 [classroom] T1_lecture 遮罩 第 432/576 帧 0.5 秒
+17:40:37 [classroom] T1_lecture 遮罩 第 433/576 帧 0.5 秒
+17:40:37 [classroom] T1_lecture 遮罩 第 434/576 帧 0.5 秒
+17:40:38 [classroom] T1_lecture 遮罩 第 435/576 帧 0.4 秒
+17:40:38 [classroom] T1_lecture 遮罩 第 436/576 帧 0.5 秒
+17:40:39 [classroom] T1_lecture 遮罩 第 437/576 帧 0.5 秒
+17:40:39 [classroom] T1_lecture 遮罩 第 438/576 帧 0.5 秒
+17:40:40 [classroom] T1_lecture 遮罩 第 439/576 帧 0.5 秒
+17:40:41 [classroom] T1_lecture 遮罩 第 440/576 帧 0.5 秒
+17:40:41 [classroom] T1_lecture 遮罩 第 441/576 帧 0.4 秒
+17:40:42 [classroom] T1_lecture 遮罩 第 442/576 帧 0.4 秒
+17:40:42 [classroom] T1_lecture 遮罩 第 443/576 帧 0.5 秒
+17:40:43 [classroom] T1_lecture 遮罩 第 444/576 帧 0.5 秒
+17:40:43 [classroom] T1_lecture 遮罩 第 445/576 帧 0.5 秒
+17:40:44 [classroom] T1_lecture 遮罩 第 446/576 帧 0.4 秒
+17:40:45 [classroom] T1_lecture 遮罩 第 447/576 帧 0.4 秒
+17:40:45 [classroom] T1_lecture 遮罩 第 448/576 帧 0.5 秒
+17:40:46 [classroom] T1_lecture 遮罩 第 449/576 帧 0.5 秒
+17:40:46 [classroom] T1_lecture 遮罩 第 450/576 帧 0.4 秒
+17:40:47 [classroom] T1_lecture 遮罩 第 451/576 帧 0.5 秒
+17:40:47 [classroom] T1_lecture 遮罩 第 452/576 帧 0.5 秒
+17:40:48 [classroom] T1_lecture 遮罩 第 453/576 帧 0.5 秒
+17:40:49 [classroom] T1_lecture 遮罩 第 454/576 帧 0.5 秒
+17:40:49 [classroom] T1_lecture 遮罩 第 455/576 帧 0.5 秒
+17:40:50 [classroom] T1_lecture 遮罩 第 456/576 帧 0.5 秒
+17:40:50 [classroom] T1_lecture 遮罩 第 457/576 帧 0.5 秒
+17:40:51 [classroom] T1_lecture 遮罩 第 458/576 帧 0.4 秒
+17:40:52 [classroom] T1_lecture 遮罩 第 459/576 帧 0.5 秒
+17:40:52 [classroom] T1_lecture 遮罩 第 460/576 帧 0.5 秒
+17:40:53 [classroom] T1_lecture 遮罩 第 461/576 帧 0.4 秒
+17:40:53 [classroom] T1_lecture 遮罩 第 462/576 帧 0.5 秒
+17:40:54 [classroom] T1_lecture 遮罩 第 463/576 帧 0.4 秒
+17:40:54 [classroom] T1_lecture 遮罩 第 464/576 帧 0.5 秒
+17:40:55 [classroom] T1_lecture 遮罩 第 465/576 帧 0.4 秒
+17:40:55 [classroom] T1_lecture 遮罩 第 466/576 帧 0.4 秒
+17:40:56 [classroom] T1_lecture 遮罩 第 467/576 帧 0.5 秒
+17:40:57 [classroom] T1_lecture 遮罩 第 468/576 帧 0.5 秒
+17:40:57 [classroom] T1_lecture 遮罩 第 469/576 帧 0.5 秒
+17:40:58 [classroom] T1_lecture 遮罩 第 470/576 帧 0.5 秒
+17:40:58 [classroom] T1_lecture 遮罩 第 471/576 帧 0.5 秒
+17:40:59 [classroom] T1_lecture 遮罩 第 472/576 帧 0.5 秒
+17:40:59 [classroom] T1_lecture 遮罩 第 473/576 帧 0.4 秒
+17:41:00 [classroom] T1_lecture 遮罩 第 474/576 帧 0.5 秒
+17:41:01 [classroom] T1_lecture 遮罩 第 475/576 帧 0.5 秒
+17:41:01 [classroom] T1_lecture 遮罩 第 476/576 帧 0.4 秒
+17:41:02 [classroom] T1_lecture 遮罩 第 477/576 帧 0.5 秒
+17:41:02 [classroom] T1_lecture 遮罩 第 478/576 帧 0.4 秒
+17:41:03 [classroom] T1_lecture 遮罩 第 479/576 帧 0.4 秒
+17:41:03 [classroom] T1_lecture 遮罩 第 480/576 帧 0.5 秒
+17:41:04 [classroom] T1_lecture 遮罩 第 481/576 帧 0.5 秒
+17:41:05 [classroom] T1_lecture 遮罩 第 482/576 帧 0.5 秒
+17:41:05 [classroom] T1_lecture 遮罩 第 483/576 帧 0.5 秒
+17:41:06 [classroom] T1_lecture 遮罩 第 484/576 帧 0.5 秒
+17:41:06 [classroom] T1_lecture 遮罩 第 485/576 帧 0.4 秒
+17:41:07 [classroom] T1_lecture 遮罩 第 486/576 帧 0.5 秒
+17:41:07 [classroom] T1_lecture 遮罩 第 487/576 帧 0.5 秒
+17:41:08 [classroom] T1_lecture 遮罩 第 488/576 帧 0.5 秒
+17:41:09 [classroom] T1_lecture 遮罩 第 489/576 帧 0.5 秒
+17:41:09 [classroom] T1_lecture 遮罩 第 490/576 帧 0.4 秒
+17:41:10 [classroom] T1_lecture 遮罩 第 491/576 帧 0.5 秒
+17:41:10 [classroom] T1_lecture 遮罩 第 492/576 帧 0.5 秒
+17:41:11 [classroom] T1_lecture 遮罩 第 493/576 帧 0.5 秒
+17:41:11 [classroom] T1_lecture 遮罩 第 494/576 帧 0.4 秒
+17:41:12 [classroom] T1_lecture 遮罩 第 495/576 帧 0.4 秒
+17:41:13 [classroom] T1_lecture 遮罩 第 496/576 帧 0.5 秒
+17:41:13 [classroom] T1_lecture 遮罩 第 497/576 帧 0.4 秒
+17:41:14 [classroom] T1_lecture 遮罩 第 498/576 帧 0.5 秒
+17:41:14 [classroom] T1_lecture 遮罩 第 499/576 帧 0.5 秒
+17:41:15 [classroom] T1_lecture 遮罩 第 500/576 帧 0.5 秒
+17:41:15 [classroom] T1_lecture 遮罩 第 501/576 帧 0.5 秒
+17:41:16 [classroom] T1_lecture 遮罩 第 502/576 帧 0.4 秒
+17:41:17 [classroom] T1_lecture 遮罩 第 503/576 帧 0.5 秒
+17:41:17 [classroom] T1_lecture 遮罩 第 504/576 帧 0.4 秒
+17:41:18 [classroom] T1_lecture 遮罩 第 505/576 帧 0.5 秒
+17:41:18 [classroom] T1_lecture 遮罩 第 506/576 帧 0.4 秒
+17:41:19 [classroom] T1_lecture 遮罩 第 507/576 帧 0.5 秒
+17:41:19 [classroom] T1_lecture 遮罩 第 508/576 帧 0.5 秒
+17:41:20 [classroom] T1_lecture 遮罩 第 509/576 帧 0.4 秒
+17:41:21 [classroom] T1_lecture 遮罩 第 510/576 帧 0.5 秒
+17:41:21 [classroom] T1_lecture 遮罩 第 511/576 帧 0.4 秒
+17:41:22 [classroom] T1_lecture 遮罩 第 512/576 帧 0.5 秒
+17:41:22 [classroom] T1_lecture 遮罩 第 513/576 帧 0.5 秒
+17:41:23 [classroom] T1_lecture 遮罩 第 514/576 帧 0.4 秒
+17:41:23 [classroom] T1_lecture 遮罩 第 515/576 帧 0.5 秒
+17:41:24 [classroom] T1_lecture 遮罩 第 516/576 帧 0.4 秒
+17:41:24 [classroom] T1_lecture 遮罩 第 517/576 帧 0.5 秒
+17:41:25 [classroom] T1_lecture 遮罩 第 518/576 帧 0.5 秒
+17:41:26 [classroom] T1_lecture 遮罩 第 519/576 帧 0.5 秒
+17:41:26 [classroom] T1_lecture 遮罩 第 520/576 帧 0.5 秒
+17:41:27 [classroom] T1_lecture 遮罩 第 521/576 帧 0.4 秒
+17:41:27 [classroom] T1_lecture 遮罩 第 522/576 帧 0.5 秒
+17:41:28 [classroom] T1_lecture 遮罩 第 523/576 帧 0.4 秒
+17:41:29 [classroom] T1_lecture 遮罩 第 524/576 帧 0.5 秒
+17:41:29 [classroom] T1_lecture 遮罩 第 525/576 帧 0.5 秒
+17:41:30 [classroom] T1_lecture 遮罩 第 526/576 帧 0.5 秒
+17:41:30 [classroom] T1_lecture 遮罩 第 527/576 帧 0.5 秒
+17:41:31 [classroom] T1_lecture 遮罩 第 528/576 帧 0.4 秒
+17:41:32 [classroom] T1_lecture 遮罩 第 529/576 帧 0.5 秒
+17:41:32 [classroom] T1_lecture 遮罩 第 530/576 帧 0.5 秒
+17:41:33 [classroom] T1_lecture 遮罩 第 531/576 帧 0.4 秒
+17:41:33 [classroom] T1_lecture 遮罩 第 532/576 帧 0.5 秒
+17:41:34 [classroom] T1_lecture 遮罩 第 533/576 帧 0.5 秒
+17:41:34 [classroom] T1_lecture 遮罩 第 534/576 帧 0.5 秒
+17:41:35 [classroom] T1_lecture 遮罩 第 535/576 帧 0.4 秒
+17:41:36 [classroom] T1_lecture 遮罩 第 536/576 帧 0.5 秒
+17:41:36 [classroom] T1_lecture 遮罩 第 537/576 帧 0.6 秒
+17:41:37 [classroom] T1_lecture 遮罩 第 538/576 帧 0.5 秒
+17:41:37 [classroom] T1_lecture 遮罩 第 539/576 帧 0.5 秒
+17:41:38 [classroom] T1_lecture 遮罩 第 540/576 帧 0.4 秒
+17:41:38 [classroom] T1_lecture 遮罩 第 541/576 帧 0.5 秒
+17:41:39 [classroom] T1_lecture 遮罩 第 542/576 帧 0.4 秒
+17:41:40 [classroom] T1_lecture 遮罩 第 543/576 帧 0.5 秒
+17:41:40 [classroom] T1_lecture 遮罩 第 544/576 帧 0.5 秒
+17:41:41 [classroom] T1_lecture 遮罩 第 545/576 帧 0.5 秒
+17:41:41 [classroom] T1_lecture 遮罩 第 546/576 帧 0.5 秒
+17:41:42 [classroom] T1_lecture 遮罩 第 547/576 帧 0.5 秒
+17:41:43 [classroom] T1_lecture 遮罩 第 548/576 帧 0.4 秒
+17:41:43 [classroom] T1_lecture 遮罩 第 549/576 帧 0.4 秒
+17:41:44 [classroom] T1_lecture 遮罩 第 550/576 帧 0.5 秒
+17:41:44 [classroom] T1_lecture 遮罩 第 551/576 帧 0.5 秒
+17:41:45 [classroom] T1_lecture 遮罩 第 552/576 帧 0.5 秒
+17:41:45 [classroom] T1_lecture 遮罩 第 553/576 帧 0.5 秒
+17:41:46 [classroom] T1_lecture 遮罩 第 554/576 帧 0.4 秒
+17:41:47 [classroom] T1_lecture 遮罩 第 555/576 帧 0.5 秒
+17:41:47 [classroom] T1_lecture 遮罩 第 556/576 帧 0.4 秒
+17:41:48 [classroom] T1_lecture 遮罩 第 557/576 帧 0.5 秒
+17:41:48 [classroom] T1_lecture 遮罩 第 558/576 帧 0.4 秒
+17:41:49 [classroom] T1_lecture 遮罩 第 559/576 帧 0.5 秒
+17:41:49 [classroom] T1_lecture 遮罩 第 560/576 帧 0.5 秒
+17:41:50 [classroom] T1_lecture 遮罩 第 561/576 帧 0.4 秒
+17:41:51 [classroom] T1_lecture 遮罩 第 562/576 帧 0.5 秒
+17:41:51 [classroom] T1_lecture 遮罩 第 563/576 帧 0.5 秒
+17:41:52 [classroom] T1_lecture 遮罩 第 564/576 帧 0.5 秒
+17:41:52 [classroom] T1_lecture 遮罩 第 565/576 帧 0.5 秒
+17:41:53 [classroom] T1_lecture 遮罩 第 566/576 帧 0.4 秒
+17:41:53 [classroom] T1_lecture 遮罩 第 567/576 帧 0.4 秒
+17:41:54 [classroom] T1_lecture 遮罩 第 568/576 帧 0.4 秒
+17:41:55 [classroom] T1_lecture 遮罩 第 569/576 帧 0.5 秒
+17:41:55 [classroom] T1_lecture 遮罩 第 570/576 帧 0.4 秒
+17:41:56 [classroom] T1_lecture 遮罩 第 571/576 帧 0.5 秒
+17:41:56 [classroom] T1_lecture 遮罩 第 572/576 帧 0.5 秒
+17:41:57 [classroom] T1_lecture 遮罩 第 573/576 帧 0.4 秒
+17:41:57 [classroom] T1_lecture 遮罩 第 574/576 帧 0.5 秒
+17:41:58 [classroom] T1_lecture 遮罩 第 575/576 帧 0.5 秒
+17:41:58 [classroom] T1_lecture 遮罩 第 576/576 帧 0.4 秒
+17:41:59 [classroom] T2_pace 遮罩 第 2/441 帧 0.5 秒
+17:42:00 [classroom] T2_pace 遮罩 第 3/441 帧 0.5 秒
+17:42:01 [classroom] T2_pace 遮罩 第 4/441 帧 0.5 秒
+17:42:01 [classroom] T2_pace 遮罩 第 5/441 帧 0.5 秒
+17:42:02 [classroom] T2_pace 遮罩 第 6/441 帧 0.5 秒
+17:42:02 [classroom] T2_pace 遮罩 第 7/441 帧 0.5 秒
+17:42:03 [classroom] T2_pace 遮罩 第 8/441 帧 0.5 秒
+17:42:04 [classroom] T2_pace 遮罩 第 9/441 帧 0.5 秒
+17:42:04 [classroom] T2_pace 遮罩 第 10/441 帧 0.5 秒
+17:42:05 [classroom] T2_pace 遮罩 第 11/441 帧 0.5 秒
+17:42:05 [classroom] T2_pace 遮罩 第 12/441 帧 0.5 秒
+17:42:06 [classroom] T2_pace 遮罩 第 13/441 帧 0.5 秒
+17:42:07 [classroom] T2_pace 遮罩 第 14/441 帧 0.5 秒
+17:42:07 [classroom] T2_pace 遮罩 第 15/441 帧 0.5 秒
+17:42:08 [classroom] T2_pace 遮罩 第 16/441 帧 0.5 秒
+17:42:08 [classroom] T2_pace 遮罩 第 17/441 帧 0.5 秒
+17:42:09 [classroom] T2_pace 遮罩 第 18/441 帧 0.5 秒
+17:42:10 [classroom] T2_pace 遮罩 第 19/441 帧 0.5 秒
+17:42:10 [classroom] T2_pace 遮罩 第 20/441 帧 0.5 秒
+17:42:11 [classroom] T2_pace 遮罩 第 21/441 帧 0.5 秒
+17:42:11 [classroom] T2_pace 遮罩 第 22/441 帧 0.5 秒
+17:42:12 [classroom] T2_pace 遮罩 第 23/441 帧 0.5 秒
+17:42:13 [classroom] T2_pace 遮罩 第 24/441 帧 0.5 秒
+17:42:13 [classroom] T2_pace 遮罩 第 25/441 帧 0.5 秒
+17:42:14 [classroom] T2_pace 遮罩 第 26/441 帧 0.5 秒
+17:42:14 [classroom] T2_pace 遮罩 第 27/441 帧 0.5 秒
+17:42:15 [classroom] T2_pace 遮罩 第 28/441 帧 0.5 秒
+17:42:16 [classroom] T2_pace 遮罩 第 29/441 帧 0.5 秒
+17:42:16 [classroom] T2_pace 遮罩 第 30/441 帧 0.5 秒
+17:42:17 [classroom] T2_pace 遮罩 第 31/441 帧 0.5 秒
+17:42:17 [classroom] T2_pace 遮罩 第 32/441 帧 0.5 秒
+17:42:18 [classroom] T2_pace 遮罩 第 33/441 帧 0.5 秒
+17:42:19 [classroom] T2_pace 遮罩 第 34/441 帧 0.5 秒
+17:42:19 [classroom] T2_pace 遮罩 第 35/441 帧 0.5 秒
+17:42:20 [classroom] T2_pace 遮罩 第 36/441 帧 0.5 秒
+17:42:20 [classroom] T2_pace 遮罩 第 37/441 帧 0.5 秒
+17:42:21 [classroom] T2_pace 遮罩 第 38/441 帧 0.5 秒
+17:42:22 [classroom] T2_pace 遮罩 第 39/441 帧 0.5 秒
+17:42:22 [classroom] T2_pace 遮罩 第 40/441 帧 0.5 秒
+17:42:23 [classroom] T2_pace 遮罩 第 41/441 帧 0.5 秒
+17:42:23 [classroom] T2_pace 遮罩 第 42/441 帧 0.5 秒
+17:42:24 [classroom] T2_pace 遮罩 第 43/441 帧 0.5 秒
+17:42:25 [classroom] T2_pace 遮罩 第 44/441 帧 0.5 秒
+17:42:25 [classroom] T2_pace 遮罩 第 45/441 帧 0.5 秒
+17:42:26 [classroom] T2_pace 遮罩 第 46/441 帧 0.5 秒
+17:42:26 [classroom] T2_pace 遮罩 第 47/441 帧 0.5 秒
+17:42:27 [classroom] T2_pace 遮罩 第 48/441 帧 0.5 秒
+17:42:28 [classroom] T2_pace 遮罩 第 49/441 帧 0.5 秒
+17:42:28 [classroom] T2_pace 遮罩 第 50/441 帧 0.5 秒
+17:42:29 [classroom] T2_pace 遮罩 第 51/441 帧 0.5 秒
+17:42:29 [classroom] T2_pace 遮罩 第 52/441 帧 0.5 秒
+17:42:30 [classroom] T2_pace 遮罩 第 53/441 帧 0.5 秒
+17:42:31 [classroom] T2_pace 遮罩 第 54/441 帧 0.6 秒
+17:42:31 [classroom] T2_pace 遮罩 第 55/441 帧 0.6 秒
+17:42:32 [classroom] T2_pace 遮罩 第 56/441 帧 0.5 秒
+17:42:33 [classroom] T2_pace 遮罩 第 57/441 帧 0.5 秒
+17:42:33 [classroom] T2_pace 遮罩 第 58/441 帧 0.5 秒
+17:42:34 [classroom] T2_pace 遮罩 第 59/441 帧 0.5 秒
+17:42:34 [classroom] T2_pace 遮罩 第 60/441 帧 0.5 秒
+17:42:35 [classroom] T2_pace 遮罩 第 61/441 帧 0.5 秒
+17:42:35 [classroom] T2_pace 遮罩 第 62/441 帧 0.5 秒
+17:42:36 [classroom] T2_pace 遮罩 第 63/441 帧 0.5 秒
+17:42:37 [classroom] T2_pace 遮罩 第 64/441 帧 0.5 秒
+17:42:37 [classroom] T2_pace 遮罩 第 65/441 帧 0.5 秒
+17:42:38 [classroom] T2_pace 遮罩 第 66/441 帧 0.5 秒
+17:42:39 [classroom] T2_pace 遮罩 第 67/441 帧 0.5 秒
+17:42:39 [classroom] T2_pace 遮罩 第 68/441 帧 0.5 秒
+17:42:40 [classroom] T2_pace 遮罩 第 69/441 帧 0.5 秒
+17:42:40 [classroom] T2_pace 遮罩 第 70/441 帧 0.5 秒
+17:42:41 [classroom] T2_pace 遮罩 第 71/441 帧 0.5 秒
+17:42:42 [classroom] T2_pace 遮罩 第 72/441 帧 0.5 秒
+17:42:42 [classroom] T2_pace 遮罩 第 73/441 帧 0.5 秒
+17:42:43 [classroom] T2_pace 遮罩 第 74/441 帧 0.5 秒
+17:42:43 [classroom] T2_pace 遮罩 第 75/441 帧 0.5 秒
+17:42:44 [classroom] T2_pace 遮罩 第 76/441 帧 0.5 秒
+17:42:45 [classroom] T2_pace 遮罩 第 77/441 帧 0.5 秒
+17:42:45 [classroom] T2_pace 遮罩 第 78/441 帧 0.5 秒
+17:42:46 [classroom] T2_pace 遮罩 第 79/441 帧 0.5 秒
+17:42:46 [classroom] T2_pace 遮罩 第 80/441 帧 0.5 秒
+17:42:47 [classroom] T2_pace 遮罩 第 81/441 帧 0.5 秒
+17:42:48 [classroom] T2_pace 遮罩 第 82/441 帧 0.5 秒
+17:42:48 [classroom] T2_pace 遮罩 第 83/441 帧 0.5 秒
+17:42:49 [classroom] T2_pace 遮罩 第 84/441 帧 0.5 秒
+17:42:49 [classroom] T2_pace 遮罩 第 85/441 帧 0.5 秒
+17:42:50 [classroom] T2_pace 遮罩 第 86/441 帧 0.5 秒
+17:42:51 [classroom] T2_pace 遮罩 第 87/441 帧 0.5 秒
+17:42:51 [classroom] T2_pace 遮罩 第 88/441 帧 0.5 秒
+17:42:52 [classroom] T2_pace 遮罩 第 89/441 帧 0.5 秒
+17:42:52 [classroom] T2_pace 遮罩 第 90/441 帧 0.5 秒
+17:42:53 [classroom] T2_pace 遮罩 第 91/441 帧 0.5 秒
+17:42:54 [classroom] T2_pace 遮罩 第 92/441 帧 0.5 秒
+17:42:54 [classroom] T2_pace 遮罩 第 93/441 帧 0.5 秒
+17:42:55 [classroom] T2_pace 遮罩 第 94/441 帧 0.5 秒
+17:42:55 [classroom] T2_pace 遮罩 第 95/441 帧 0.5 秒
+17:42:56 [classroom] T2_pace 遮罩 第 96/441 帧 0.5 秒
+17:42:57 [classroom] T2_pace 遮罩 第 97/441 帧 0.5 秒
+17:42:57 [classroom] T2_pace 遮罩 第 98/441 帧 0.5 秒
+17:42:58 [classroom] T2_pace 遮罩 第 99/441 帧 0.5 秒
+17:42:58 [classroom] T2_pace 遮罩 第 100/441 帧 0.5 秒
+17:42:59 [classroom] T2_pace 遮罩 第 101/441 帧 0.5 秒
+17:43:00 [classroom] T2_pace 遮罩 第 102/441 帧 0.5 秒
+17:43:00 [classroom] T2_pace 遮罩 第 103/441 帧 0.5 秒
+17:43:01 [classroom] T2_pace 遮罩 第 104/441 帧 0.5 秒
+17:43:01 [classroom] T2_pace 遮罩 第 105/441 帧 0.5 秒
+17:43:02 [classroom] T2_pace 遮罩 第 106/441 帧 0.5 秒
+17:43:03 [classroom] T2_pace 遮罩 第 107/441 帧 0.5 秒
+17:43:03 [classroom] T2_pace 遮罩 第 108/441 帧 0.5 秒
+17:43:04 [classroom] T2_pace 遮罩 第 109/441 帧 0.5 秒
+17:43:04 [classroom] T2_pace 遮罩 第 110/441 帧 0.5 秒
+17:43:05 [classroom] T2_pace 遮罩 第 111/441 帧 0.5 秒
+17:43:06 [classroom] T2_pace 遮罩 第 112/441 帧 0.5 秒
+17:43:06 [classroom] T2_pace 遮罩 第 113/441 帧 0.5 秒
+17:43:07 [classroom] T2_pace 遮罩 第 114/441 帧 0.5 秒
+17:43:07 [classroom] T2_pace 遮罩 第 115/441 帧 0.5 秒
+17:43:08 [classroom] T2_pace 遮罩 第 116/441 帧 0.5 秒
+17:43:09 [classroom] T2_pace 遮罩 第 117/441 帧 0.5 秒
+17:43:09 [classroom] T2_pace 遮罩 第 118/441 帧 0.5 秒
+17:43:10 [classroom] T2_pace 遮罩 第 119/441 帧 0.5 秒
+17:43:10 [classroom] T2_pace 遮罩 第 120/441 帧 0.5 秒
+17:43:11 [classroom] T2_pace 遮罩 第 121/441 帧 0.5 秒
+17:43:12 [classroom] T2_pace 遮罩 第 122/441 帧 0.5 秒
+17:43:12 [classroom] T2_pace 遮罩 第 123/441 帧 0.5 秒
+17:43:13 [classroom] T2_pace 遮罩 第 124/441 帧 0.5 秒
+17:43:13 [classroom] T2_pace 遮罩 第 125/441 帧 0.5 秒
+17:43:14 [classroom] T2_pace 遮罩 第 126/441 帧 0.5 秒
+17:43:15 [classroom] T2_pace 遮罩 第 127/441 帧 0.5 秒
+17:43:15 [classroom] T2_pace 遮罩 第 128/441 帧 0.5 秒
+17:43:16 [classroom] T2_pace 遮罩 第 129/441 帧 0.5 秒
+17:43:16 [classroom] T2_pace 遮罩 第 130/441 帧 0.5 秒
+17:43:17 [classroom] T2_pace 遮罩 第 131/441 帧 0.5 秒
+17:43:18 [classroom] T2_pace 遮罩 第 132/441 帧 0.5 秒
+17:43:18 [classroom] T2_pace 遮罩 第 133/441 帧 0.5 秒
+17:43:19 [classroom] T2_pace 遮罩 第 134/441 帧 0.5 秒
+17:43:19 [classroom] T2_pace 遮罩 第 135/441 帧 0.5 秒
+17:43:20 [classroom] T2_pace 遮罩 第 136/441 帧 0.5 秒
+17:43:21 [classroom] T2_pace 遮罩 第 137/441 帧 0.5 秒
+17:43:21 [classroom] T2_pace 遮罩 第 138/441 帧 0.5 秒
+17:43:22 [classroom] T2_pace 遮罩 第 139/441 帧 0.5 秒
+17:43:22 [classroom] T2_pace 遮罩 第 140/441 帧 0.5 秒
+17:43:23 [classroom] T2_pace 遮罩 第 141/441 帧 0.5 秒
+17:43:24 [classroom] T2_pace 遮罩 第 142/441 帧 0.5 秒
+17:43:24 [classroom] T2_pace 遮罩 第 143/441 帧 0.5 秒
+17:43:25 [classroom] T2_pace 遮罩 第 144/441 帧 0.5 秒
+17:43:25 [classroom] T2_pace 遮罩 第 145/441 帧 0.5 秒
+17:43:26 [classroom] T2_pace 遮罩 第 146/441 帧 0.5 秒
+17:43:27 [classroom] T2_pace 遮罩 第 147/441 帧 0.5 秒
+17:43:27 [classroom] T2_pace 遮罩 第 148/441 帧 0.5 秒
+17:43:28 [classroom] T2_pace 遮罩 第 149/441 帧 0.5 秒
+17:43:28 [classroom] T2_pace 遮罩 第 150/441 帧 0.5 秒
+17:43:29 [classroom] T2_pace 遮罩 第 151/441 帧 0.5 秒
+17:43:30 [classroom] T2_pace 遮罩 第 152/441 帧 0.5 秒
+17:43:30 [classroom] T2_pace 遮罩 第 153/441 帧 0.5 秒
+17:43:31 [classroom] T2_pace 遮罩 第 154/441 帧 0.5 秒
+17:43:31 [classroom] T2_pace 遮罩 第 155/441 帧 0.5 秒
+17:43:32 [classroom] T2_pace 遮罩 第 156/441 帧 0.5 秒
+17:43:33 [classroom] T2_pace 遮罩 第 157/441 帧 0.5 秒
+17:43:33 [classroom] T2_pace 遮罩 第 158/441 帧 0.5 秒
+17:43:34 [classroom] T2_pace 遮罩 第 159/441 帧 0.5 秒
+17:43:34 [classroom] T2_pace 遮罩 第 160/441 帧 0.5 秒
+17:43:35 [classroom] T2_pace 遮罩 第 161/441 帧 0.5 秒
+17:43:36 [classroom] T2_pace 遮罩 第 162/441 帧 0.5 秒
+17:43:36 [classroom] T2_pace 遮罩 第 163/441 帧 0.5 秒
+17:43:37 [classroom] T2_pace 遮罩 第 164/441 帧 0.5 秒
+17:43:37 [classroom] T2_pace 遮罩 第 165/441 帧 0.5 秒
+17:43:38 [classroom] T2_pace 遮罩 第 166/441 帧 0.6 秒
+17:43:39 [classroom] T2_pace 遮罩 第 167/441 帧 0.5 秒
+17:43:39 [classroom] T2_pace 遮罩 第 168/441 帧 0.5 秒
+17:43:40 [classroom] T2_pace 遮罩 第 169/441 帧 0.5 秒
+17:43:40 [classroom] T2_pace 遮罩 第 170/441 帧 0.5 秒
+17:43:41 [classroom] T2_pace 遮罩 第 171/441 帧 0.5 秒
+17:43:42 [classroom] T2_pace 遮罩 第 172/441 帧 0.5 秒
+17:43:42 [classroom] T2_pace 遮罩 第 173/441 帧 0.5 秒
+17:43:43 [classroom] T2_pace 遮罩 第 174/441 帧 0.5 秒
+17:43:43 [classroom] T2_pace 遮罩 第 175/441 帧 0.5 秒
+17:43:44 [classroom] T2_pace 遮罩 第 176/441 帧 0.5 秒
+17:43:45 [classroom] T2_pace 遮罩 第 177/441 帧 0.5 秒
+17:43:45 [classroom] T2_pace 遮罩 第 178/441 帧 0.6 秒
+17:43:46 [classroom] T2_pace 遮罩 第 179/441 帧 0.5 秒
+17:43:47 [classroom] T2_pace 遮罩 第 180/441 帧 0.5 秒
+17:43:47 [classroom] T2_pace 遮罩 第 181/441 帧 0.5 秒
+17:43:48 [classroom] T2_pace 遮罩 第 182/441 帧 0.5 秒
+17:43:48 [classroom] T2_pace 遮罩 第 183/441 帧 0.5 秒
+17:43:49 [classroom] T2_pace 遮罩 第 184/441 帧 0.5 秒
+17:43:50 [classroom] T2_pace 遮罩 第 185/441 帧 0.5 秒
+17:43:50 [classroom] T2_pace 遮罩 第 186/441 帧 0.5 秒
+17:43:51 [classroom] T2_pace 遮罩 第 187/441 帧 0.5 秒
+17:43:51 [classroom] T2_pace 遮罩 第 188/441 帧 0.5 秒
+17:43:52 [classroom] T2_pace 遮罩 第 189/441 帧 0.5 秒
+17:43:53 [classroom] T2_pace 遮罩 第 190/441 帧 0.5 秒
+17:43:53 [classroom] T2_pace 遮罩 第 191/441 帧 0.6 秒
+17:43:54 [classroom] T2_pace 遮罩 第 192/441 帧 0.5 秒
+17:43:54 [classroom] T2_pace 遮罩 第 193/441 帧 0.5 秒
+17:43:55 [classroom] T2_pace 遮罩 第 194/441 帧 0.5 秒
+17:43:56 [classroom] T2_pace 遮罩 第 195/441 帧 0.5 秒
+17:43:56 [classroom] T2_pace 遮罩 第 196/441 帧 0.5 秒
+17:43:57 [classroom] T2_pace 遮罩 第 197/441 帧 0.5 秒
+17:43:57 [classroom] T2_pace 遮罩 第 198/441 帧 0.5 秒
+17:43:58 [classroom] T2_pace 遮罩 第 199/441 帧 0.5 秒
+17:43:59 [classroom] T2_pace 遮罩 第 200/441 帧 0.5 秒
+17:43:59 [classroom] T2_pace 遮罩 第 201/441 帧 0.5 秒
+17:44:00 [classroom] T2_pace 遮罩 第 202/441 帧 0.5 秒
+17:44:00 [classroom] T2_pace 遮罩 第 203/441 帧 0.5 秒
+17:44:01 [classroom] T2_pace 遮罩 第 204/441 帧 0.5 秒
+17:44:02 [classroom] T2_pace 遮罩 第 205/441 帧 0.5 秒
+17:44:02 [classroom] T2_pace 遮罩 第 206/441 帧 0.5 秒
+17:44:03 [classroom] T2_pace 遮罩 第 207/441 帧 0.5 秒
+17:44:03 [classroom] T2_pace 遮罩 第 208/441 帧 0.5 秒
+17:44:04 [classroom] T2_pace 遮罩 第 209/441 帧 0.5 秒
+17:44:05 [classroom] T2_pace 遮罩 第 210/441 帧 0.5 秒
+17:44:05 [classroom] T2_pace 遮罩 第 211/441 帧 0.5 秒
+17:44:06 [classroom] T2_pace 遮罩 第 212/441 帧 0.5 秒
+17:44:06 [classroom] T2_pace 遮罩 第 213/441 帧 0.5 秒
+17:44:07 [classroom] T2_pace 遮罩 第 214/441 帧 0.5 秒
+17:44:08 [classroom] T2_pace 遮罩 第 215/441 帧 0.5 秒
+17:44:08 [classroom] T2_pace 遮罩 第 216/441 帧 0.5 秒
+17:44:09 [classroom] T2_pace 遮罩 第 217/441 帧 0.5 秒
+17:44:09 [classroom] T2_pace 遮罩 第 218/441 帧 0.5 秒
+17:44:10 [classroom] T2_pace 遮罩 第 219/441 帧 0.5 秒
+17:44:11 [classroom] T2_pace 遮罩 第 220/441 帧 0.5 秒
+17:44:11 [classroom] T2_pace 遮罩 第 221/441 帧 0.5 秒
+17:44:12 [classroom] T2_pace 遮罩 第 222/441 帧 0.5 秒
+17:44:12 [classroom] T2_pace 遮罩 第 223/441 帧 0.5 秒
+17:44:13 [classroom] T2_pace 遮罩 第 224/441 帧 0.5 秒
+17:44:14 [classroom] T2_pace 遮罩 第 225/441 帧 0.5 秒
+17:44:14 [classroom] T2_pace 遮罩 第 226/441 帧 0.5 秒
+17:44:15 [classroom] T2_pace 遮罩 第 227/441 帧 0.5 秒
+17:44:15 [classroom] T2_pace 遮罩 第 228/441 帧 0.5 秒
+17:44:16 [classroom] T2_pace 遮罩 第 229/441 帧 0.5 秒
+17:44:17 [classroom] T2_pace 遮罩 第 230/441 帧 0.5 秒
+17:44:17 [classroom] T2_pace 遮罩 第 231/441 帧 0.5 秒
+17:44:18 [classroom] T2_pace 遮罩 第 232/441 帧 0.5 秒
+17:44:18 [classroom] T2_pace 遮罩 第 233/441 帧 0.5 秒
+17:44:19 [classroom] T2_pace 遮罩 第 234/441 帧 0.5 秒
+17:44:20 [classroom] T2_pace 遮罩 第 235/441 帧 0.5 秒
+17:44:20 [classroom] T2_pace 遮罩 第 236/441 帧 0.5 秒
+17:44:21 [classroom] T2_pace 遮罩 第 237/441 帧 0.5 秒
+17:44:21 [classroom] T2_pace 遮罩 第 238/441 帧 0.5 秒
+17:44:22 [classroom] T2_pace 遮罩 第 239/441 帧 0.5 秒
+17:44:23 [classroom] T2_pace 遮罩 第 240/441 帧 0.5 秒
+17:44:23 [classroom] T2_pace 遮罩 第 241/441 帧 0.5 秒
+17:44:24 [classroom] T2_pace 遮罩 第 242/441 帧 0.5 秒
+17:44:24 [classroom] T2_pace 遮罩 第 243/441 帧 0.5 秒
+17:44:25 [classroom] T2_pace 遮罩 第 244/441 帧 0.5 秒
+17:44:26 [classroom] T2_pace 遮罩 第 245/441 帧 0.5 秒
+17:44:26 [classroom] T2_pace 遮罩 第 246/441 帧 0.5 秒
+17:44:27 [classroom] T2_pace 遮罩 第 247/441 帧 0.5 秒
+17:44:27 [classroom] T2_pace 遮罩 第 248/441 帧 0.5 秒
+17:44:28 [classroom] T2_pace 遮罩 第 249/441 帧 0.5 秒
+17:44:29 [classroom] T2_pace 遮罩 第 250/441 帧 0.5 秒
+17:44:29 [classroom] T2_pace 遮罩 第 251/441 帧 0.5 秒
+17:44:30 [classroom] T2_pace 遮罩 第 252/441 帧 0.5 秒
+17:44:30 [classroom] T2_pace 遮罩 第 253/441 帧 0.5 秒
+17:44:31 [classroom] T2_pace 遮罩 第 254/441 帧 0.5 秒
+17:44:32 [classroom] T2_pace 遮罩 第 255/441 帧 0.5 秒
+17:44:32 [classroom] T2_pace 遮罩 第 256/441 帧 0.5 秒
+17:44:33 [classroom] T2_pace 遮罩 第 257/441 帧 0.5 秒
+17:44:33 [classroom] T2_pace 遮罩 第 258/441 帧 0.5 秒
+17:44:34 [classroom] T2_pace 遮罩 第 259/441 帧 0.5 秒
+17:44:35 [classroom] T2_pace 遮罩 第 260/441 帧 0.5 秒
+17:44:35 [classroom] T2_pace 遮罩 第 261/441 帧 0.5 秒
+17:44:36 [classroom] T2_pace 遮罩 第 262/441 帧 0.5 秒
+17:44:36 [classroom] T2_pace 遮罩 第 263/441 帧 0.5 秒
+17:44:37 [classroom] T2_pace 遮罩 第 264/441 帧 0.5 秒
+17:44:38 [classroom] T2_pace 遮罩 第 265/441 帧 0.5 秒
+17:44:38 [classroom] T2_pace 遮罩 第 266/441 帧 0.5 秒
+17:44:39 [classroom] T2_pace 遮罩 第 267/441 帧 0.5 秒
+17:44:39 [classroom] T2_pace 遮罩 第 268/441 帧 0.5 秒
+17:44:40 [classroom] T2_pace 遮罩 第 269/441 帧 0.5 秒
+17:44:41 [classroom] T2_pace 遮罩 第 270/441 帧 0.5 秒
+17:44:41 [classroom] T2_pace 遮罩 第 271/441 帧 0.5 秒
+17:44:42 [classroom] T2_pace 遮罩 第 272/441 帧 0.5 秒
+17:44:43 [classroom] T2_pace 遮罩 第 273/441 帧 0.5 秒
+17:44:43 [classroom] T2_pace 遮罩 第 274/441 帧 0.5 秒
+17:44:44 [classroom] T2_pace 遮罩 第 275/441 帧 0.5 秒
+17:44:44 [classroom] T2_pace 遮罩 第 276/441 帧 0.5 秒
+17:44:45 [classroom] T2_pace 遮罩 第 277/441 帧 0.5 秒
+17:44:46 [classroom] T2_pace 遮罩 第 278/441 帧 0.5 秒
+17:44:46 [classroom] T2_pace 遮罩 第 279/441 帧 0.5 秒
+17:44:47 [classroom] T2_pace 遮罩 第 280/441 帧 0.5 秒
+17:44:47 [classroom] T2_pace 遮罩 第 281/441 帧 0.5 秒
+17:44:48 [classroom] T2_pace 遮罩 第 282/441 帧 0.5 秒
+17:44:49 [classroom] T2_pace 遮罩 第 283/441 帧 0.5 秒
+17:44:49 [classroom] T2_pace 遮罩 第 284/441 帧 0.5 秒
+17:44:50 [classroom] T2_pace 遮罩 第 285/441 帧 0.5 秒
+17:44:50 [classroom] T2_pace 遮罩 第 286/441 帧 0.5 秒
+17:44:51 [classroom] T2_pace 遮罩 第 287/441 帧 0.5 秒
+17:44:52 [classroom] T2_pace 遮罩 第 288/441 帧 0.5 秒
+17:44:52 [classroom] T2_pace 遮罩 第 289/441 帧 0.5 秒
+17:44:53 [classroom] T2_pace 遮罩 第 290/441 帧 0.5 秒
+17:44:53 [classroom] T2_pace 遮罩 第 291/441 帧 0.5 秒
+17:44:54 [classroom] T2_pace 遮罩 第 292/441 帧 0.5 秒
+17:44:55 [classroom] T2_pace 遮罩 第 293/441 帧 0.5 秒
+17:44:55 [classroom] T2_pace 遮罩 第 294/441 帧 0.5 秒
+17:44:56 [classroom] T2_pace 遮罩 第 295/441 帧 0.5 秒
+17:44:56 [classroom] T2_pace 遮罩 第 296/441 帧 0.5 秒
+17:44:57 [classroom] T2_pace 遮罩 第 297/441 帧 0.5 秒
+17:44:58 [classroom] T2_pace 遮罩 第 298/441 帧 0.5 秒
+17:44:58 [classroom] T2_pace 遮罩 第 299/441 帧 0.5 秒
+17:44:59 [classroom] T2_pace 遮罩 第 300/441 帧 0.5 秒
+17:44:59 [classroom] T2_pace 遮罩 第 301/441 帧 0.5 秒
+17:45:00 [classroom] T2_pace 遮罩 第 302/441 帧 0.5 秒
+17:45:01 [classroom] T2_pace 遮罩 第 303/441 帧 0.5 秒
+17:45:01 [classroom] T2_pace 遮罩 第 304/441 帧 0.5 秒
+17:45:02 [classroom] T2_pace 遮罩 第 305/441 帧 0.5 秒
+17:45:02 [classroom] T2_pace 遮罩 第 306/441 帧 0.5 秒
+17:45:03 [classroom] T2_pace 遮罩 第 307/441 帧 0.5 秒
+17:45:04 [classroom] T2_pace 遮罩 第 308/441 帧 0.5 秒
+17:45:04 [classroom] T2_pace 遮罩 第 309/441 帧 0.5 秒
+17:45:05 [classroom] T2_pace 遮罩 第 310/441 帧 0.5 秒
+17:45:05 [classroom] T2_pace 遮罩 第 311/441 帧 0.5 秒
+17:45:06 [classroom] T2_pace 遮罩 第 312/441 帧 0.5 秒
+17:45:07 [classroom] T2_pace 遮罩 第 313/441 帧 0.5 秒
+17:45:07 [classroom] T2_pace 遮罩 第 314/441 帧 0.5 秒
+17:45:08 [classroom] T2_pace 遮罩 第 315/441 帧 0.5 秒
+17:45:08 [classroom] T2_pace 遮罩 第 316/441 帧 0.5 秒
+17:45:09 [classroom] T2_pace 遮罩 第 317/441 帧 0.5 秒
+17:45:09 [classroom] T2_pace 遮罩 第 318/441 帧 0.5 秒
+17:45:10 [classroom] T2_pace 遮罩 第 319/441 帧 0.5 秒
+17:45:11 [classroom] T2_pace 遮罩 第 320/441 帧 0.5 秒
+17:45:11 [classroom] T2_pace 遮罩 第 321/441 帧 0.5 秒
+17:45:12 [classroom] T2_pace 遮罩 第 322/441 帧 0.5 秒
+17:45:13 [classroom] T2_pace 遮罩 第 323/441 帧 0.5 秒
+17:45:13 [classroom] T2_pace 遮罩 第 324/441 帧 0.5 秒
+17:45:14 [classroom] T2_pace 遮罩 第 325/441 帧 0.5 秒
+17:45:14 [classroom] T2_pace 遮罩 第 326/441 帧 0.5 秒
+17:45:15 [classroom] T2_pace 遮罩 第 327/441 帧 0.5 秒
+17:45:16 [classroom] T2_pace 遮罩 第 328/441 帧 0.5 秒
+17:45:16 [classroom] T2_pace 遮罩 第 329/441 帧 0.5 秒
+17:45:17 [classroom] T2_pace 遮罩 第 330/441 帧 0.5 秒
+17:45:17 [classroom] T2_pace 遮罩 第 331/441 帧 0.5 秒
+17:45:18 [classroom] T2_pace 遮罩 第 332/441 帧 0.5 秒
+17:45:19 [classroom] T2_pace 遮罩 第 333/441 帧 0.5 秒
+17:45:19 [classroom] T2_pace 遮罩 第 334/441 帧 0.5 秒
+17:45:20 [classroom] T2_pace 遮罩 第 335/441 帧 0.5 秒
+17:45:20 [classroom] T2_pace 遮罩 第 336/441 帧 0.5 秒
+17:45:21 [classroom] T2_pace 遮罩 第 337/441 帧 0.5 秒
+17:45:22 [classroom] T2_pace 遮罩 第 338/441 帧 0.5 秒
+17:45:22 [classroom] T2_pace 遮罩 第 339/441 帧 0.5 秒
+17:45:23 [classroom] T2_pace 遮罩 第 340/441 帧 0.5 秒
+17:45:23 [classroom] T2_pace 遮罩 第 341/441 帧 0.5 秒
+17:45:24 [classroom] T2_pace 遮罩 第 342/441 帧 0.5 秒
+17:45:25 [classroom] T2_pace 遮罩 第 343/441 帧 0.5 秒
+17:45:25 [classroom] T2_pace 遮罩 第 344/441 帧 0.5 秒
+17:45:26 [classroom] T2_pace 遮罩 第 345/441 帧 0.5 秒
+17:45:26 [classroom] T2_pace 遮罩 第 346/441 帧 0.5 秒
+17:45:27 [classroom] T2_pace 遮罩 第 347/441 帧 0.5 秒
+17:45:28 [classroom] T2_pace 遮罩 第 348/441 帧 0.5 秒
+17:45:28 [classroom] T2_pace 遮罩 第 349/441 帧 0.5 秒
+17:45:29 [classroom] T2_pace 遮罩 第 350/441 帧 0.5 秒
+17:45:29 [classroom] T2_pace 遮罩 第 351/441 帧 0.5 秒
+17:45:30 [classroom] T2_pace 遮罩 第 352/441 帧 0.5 秒
+17:45:31 [classroom] T2_pace 遮罩 第 353/441 帧 0.5 秒
+17:45:31 [classroom] T2_pace 遮罩 第 354/441 帧 0.5 秒
+17:45:32 [classroom] T2_pace 遮罩 第 355/441 帧 0.5 秒
+17:45:32 [classroom] T2_pace 遮罩 第 356/441 帧 0.5 秒
+17:45:33 [classroom] T2_pace 遮罩 第 357/441 帧 0.5 秒
+17:45:34 [classroom] T2_pace 遮罩 第 358/441 帧 0.5 秒
+17:45:34 [classroom] T2_pace 遮罩 第 359/441 帧 0.5 秒
+17:45:35 [classroom] T2_pace 遮罩 第 360/441 帧 0.5 秒
+17:45:35 [classroom] T2_pace 遮罩 第 361/441 帧 0.5 秒
+17:45:36 [classroom] T2_pace 遮罩 第 362/441 帧 0.5 秒
+17:45:37 [classroom] T2_pace 遮罩 第 363/441 帧 0.5 秒
+17:45:37 [classroom] T2_pace 遮罩 第 364/441 帧 0.5 秒
+17:45:38 [classroom] T2_pace 遮罩 第 365/441 帧 0.5 秒
+17:45:38 [classroom] T2_pace 遮罩 第 366/441 帧 0.5 秒
+17:45:39 [classroom] T2_pace 遮罩 第 367/441 帧 0.5 秒
+17:45:40 [classroom] T2_pace 遮罩 第 368/441 帧 0.5 秒
+17:45:40 [classroom] T2_pace 遮罩 第 369/441 帧 0.5 秒
+17:45:41 [classroom] T2_pace 遮罩 第 370/441 帧 0.5 秒
+17:45:41 [classroom] T2_pace 遮罩 第 371/441 帧 0.5 秒
+17:45:42 [classroom] T2_pace 遮罩 第 372/441 帧 0.5 秒
+17:45:43 [classroom] T2_pace 遮罩 第 373/441 帧 0.5 秒
+17:45:43 [classroom] T2_pace 遮罩 第 374/441 帧 0.5 秒
+17:45:44 [classroom] T2_pace 遮罩 第 375/441 帧 0.5 秒
+17:45:44 [classroom] T2_pace 遮罩 第 376/441 帧 0.5 秒
+17:45:45 [classroom] T2_pace 遮罩 第 377/441 帧 0.5 秒
+17:45:46 [classroom] T2_pace 遮罩 第 378/441 帧 0.5 秒
+17:45:46 [classroom] T2_pace 遮罩 第 379/441 帧 0.5 秒
+17:45:47 [classroom] T2_pace 遮罩 第 380/441 帧 0.6 秒
+17:45:48 [classroom] T2_pace 遮罩 第 381/441 帧 0.5 秒
+17:45:48 [classroom] T2_pace 遮罩 第 382/441 帧 0.5 秒
+17:45:49 [classroom] T2_pace 遮罩 第 383/441 帧 0.5 秒
+17:45:49 [classroom] T2_pace 遮罩 第 384/441 帧 0.5 秒
+17:45:50 [classroom] T2_pace 遮罩 第 385/441 帧 0.5 秒
+17:45:51 [classroom] T2_pace 遮罩 第 386/441 帧 0.5 秒
+17:45:51 [classroom] T2_pace 遮罩 第 387/441 帧 0.5 秒
+17:45:52 [classroom] T2_pace 遮罩 第 388/441 帧 0.5 秒
+17:45:52 [classroom] T2_pace 遮罩 第 389/441 帧 0.5 秒
+17:45:53 [classroom] T2_pace 遮罩 第 390/441 帧 0.5 秒
+17:45:54 [classroom] T2_pace 遮罩 第 391/441 帧 0.5 秒
+17:45:54 [classroom] T2_pace 遮罩 第 392/441 帧 0.5 秒
+17:45:55 [classroom] T2_pace 遮罩 第 393/441 帧 0.5 秒
+17:45:55 [classroom] T2_pace 遮罩 第 394/441 帧 0.5 秒
+17:45:56 [classroom] T2_pace 遮罩 第 395/441 帧 0.5 秒
+17:45:57 [classroom] T2_pace 遮罩 第 396/441 帧 0.5 秒
+17:45:57 [classroom] T2_pace 遮罩 第 397/441 帧 0.5 秒
+17:45:58 [classroom] T2_pace 遮罩 第 398/441 帧 0.5 秒
+17:45:58 [classroom] T2_pace 遮罩 第 399/441 帧 0.5 秒
+17:45:59 [classroom] T2_pace 遮罩 第 400/441 帧 0.5 秒
+17:46:00 [classroom] T2_pace 遮罩 第 401/441 帧 0.5 秒
+17:46:00 [classroom] T2_pace 遮罩 第 402/441 帧 0.5 秒
+17:46:01 [classroom] T2_pace 遮罩 第 403/441 帧 0.5 秒
+17:46:01 [classroom] T2_pace 遮罩 第 404/441 帧 0.5 秒
+17:46:02 [classroom] T2_pace 遮罩 第 405/441 帧 0.5 秒
+17:46:03 [classroom] T2_pace 遮罩 第 406/441 帧 0.5 秒
+17:46:03 [classroom] T2_pace 遮罩 第 407/441 帧 0.5 秒
+17:46:04 [classroom] T2_pace 遮罩 第 408/441 帧 0.5 秒
+17:46:04 [classroom] T2_pace 遮罩 第 409/441 帧 0.5 秒
+17:46:05 [classroom] T2_pace 遮罩 第 410/441 帧 0.5 秒
+17:46:06 [classroom] T2_pace 遮罩 第 411/441 帧 0.5 秒
+17:46:06 [classroom] T2_pace 遮罩 第 412/441 帧 0.5 秒
+17:46:07 [classroom] T2_pace 遮罩 第 413/441 帧 0.5 秒
+17:46:07 [classroom] T2_pace 遮罩 第 414/441 帧 0.5 秒
+17:46:08 [classroom] T2_pace 遮罩 第 415/441 帧 0.5 秒
+17:46:09 [classroom] T2_pace 遮罩 第 416/441 帧 0.5 秒
+17:46:09 [classroom] T2_pace 遮罩 第 417/441 帧 0.5 秒
+17:46:10 [classroom] T2_pace 遮罩 第 418/441 帧 0.5 秒
+17:46:10 [classroom] T2_pace 遮罩 第 419/441 帧 0.5 秒
+17:46:11 [classroom] T2_pace 遮罩 第 420/441 帧 0.5 秒
+17:46:11 [classroom] T2_pace 遮罩 第 421/441 帧 0.5 秒
+17:46:12 [classroom] T2_pace 遮罩 第 422/441 帧 0.5 秒
+17:46:13 [classroom] T2_pace 遮罩 第 423/441 帧 0.5 秒
+17:46:13 [classroom] T2_pace 遮罩 第 424/441 帧 0.5 秒
+17:46:14 [classroom] T2_pace 遮罩 第 425/441 帧 0.5 秒
+17:46:14 [classroom] T2_pace 遮罩 第 426/441 帧 0.5 秒
+17:46:15 [classroom] T2_pace 遮罩 第 427/441 帧 0.5 秒
+17:46:16 [classroom] T2_pace 遮罩 第 428/441 帧 0.5 秒
+17:46:16 [classroom] T2_pace 遮罩 第 429/441 帧 0.5 秒
+17:46:17 [classroom] T2_pace 遮罩 第 430/441 帧 0.5 秒
+17:46:17 [classroom] T2_pace 遮罩 第 431/441 帧 0.5 秒
+17:46:18 [classroom] T2_pace 遮罩 第 432/441 帧 0.5 秒
+17:46:19 [classroom] T2_pace 遮罩 第 433/441 帧 0.5 秒
+17:46:19 [classroom] T2_pace 遮罩 第 434/441 帧 0.5 秒
+17:46:20 [classroom] T2_pace 遮罩 第 435/441 帧 0.5 秒
+17:46:20 [classroom] T2_pace 遮罩 第 436/441 帧 0.5 秒
+17:46:21 [classroom] T2_pace 遮罩 第 437/441 帧 0.5 秒
+17:46:22 [classroom] T2_pace 遮罩 第 438/441 帧 0.5 秒
+17:46:22 [classroom] T2_pace 遮罩 第 439/441 帧 0.5 秒
+17:46:23 [classroom] T2_pace 遮罩 第 440/441 帧 0.5 秒
+17:46:23 [classroom] T2_pace 遮罩 第 441/441 帧 0.5 秒
+17:46:23 ===== classroom 结束：all，用时 55.1 分钟

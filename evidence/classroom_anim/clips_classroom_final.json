@@ -1,0 +1,79 @@
+{
+ "time": "classroom",
+ "background": "bg_classroom.mp4",
+ "loop_frames": 192,
+ "fps": 24,
+ "resolution": [
+  2560,
+  1440
+ ],
+ "layers": [
+  "elaina",
+  "teacher"
+ ],
+ "positions": {
+  "seat": [
+   -2.099,
+   0.876,
+   -0.0
+  ],
+  "center": [
+   2.4,
+   2.343,
+   1.271
+  ]
+ },
+ "clips": [
+  {
+   "name": "B5_listen",
+   "layer": "elaina",
+   "time": "classroom",
+   "file": "B5_listen_classroom.webm",
+   "frames": 192,
+   "loop": true,
+   "from": "seat",
+   "to": "seat",
+   "pose_from": "seat",
+   "pose_to": "seat",
+   "x": 139,
+   "y": 751,
+   "w": 996,
+   "h": 688,
+   "fade_out": 0
+  },
+  {
+   "name": "T1_lecture",
+   "layer": "teacher",
+   "time": "classroom",
+   "file": "T1_lecture_classroom.webm",
+   "frames": 576,
+   "loop": true,
+   "from": "center",
+   "to": "center",
+   "pose_from": "stand",
+   "pose_to": "stand",
+   "x": 1188,
+   "y": 216,
+   "w": 930,
+   "h": 742,
+   "fade_out": 0
+  },
+  {
+   "name": "T2_pace",
+   "layer": "teacher",
+   "time": "classroom",
+   "file": "T2_pace_classroom.webm",
+   "frames": 441,
+   "loop": false,
+   "from": "center",
+   "to": "center",
+   "pose_from": "stand",
+   "pose_to": "stand",
+   "x": 671,
+   "y": 271,
+   "w": 1730,
+   "h": 692,
+   "fade_out": 0
+  }
+ ]
+}

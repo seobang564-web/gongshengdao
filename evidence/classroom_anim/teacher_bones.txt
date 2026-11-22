@@ -1,0 +1,565 @@
+操作中心	-	
+全ての親	-	
+センター	全ての親	
+グルーブ	センター	
+腰	グルーブ	
+下半身	腰	deform
+腰キャンセル.R	下半身	
+足.R	腰キャンセル.R	
+ひざ.R	足.R	
+足首.R	ひざ.R	
+つま先.R	足首.R	
+_dummy_足首D.R	足首.R	
+_dummy_ひざD.R	ひざ.R	
+_shadow_足首D.R	ひざ.R	
+_dummy_足D.R	足.R	
+_shadow_ひざD.R	足.R	
+足D.R	腰キャンセル.R	deform
+ひざD.R	足D.R	deform
+足首D.R	ひざD.R	deform
+足先EX.R	足首D.R	deform
+_shadow_足D.R	腰キャンセル.R	
+腰キャンセル.L	下半身	
+足.L	腰キャンセル.L	
+ひざ.L	足.L	
+足首.L	ひざ.L	
+つま先.L	足首.L	
+_dummy_足首D.L	足首.L	
+_dummy_ひざD.L	ひざ.L	
+_shadow_足首D.L	ひざ.L	
+_dummy_足D.L	足.L	
+_shadow_ひざD.L	足.L	
+足D.L	腰キャンセル.L	deform
+ひざD.L	足D.L	deform
+足首D.L	ひざD.L	deform
+足先EX.L	足首D.L	deform
+_shadow_足D.L	腰キャンセル.L	
+裙_0_0	下半身	deform
+裙_1_0	裙_0_0	deform
+裙_2_0	裙_1_0	deform
+裙_3_0	裙_2_0	deform
+裙_4_0	裙_3_0	deform
+裙_5_0	裙_4_0	deform
+裙_6_0	裙_5_0	
+裙_7_0	裙_6_0	
+裙_0_1	下半身	deform
+裙_1_1	裙_0_1	deform
+裙_2_1	裙_1_1	deform
+裙_3_1	裙_2_1	deform
+裙_4_1	裙_3_1	deform
+裙_5_1	裙_4_1	deform
+裙_6_1	裙_5_1	
+裙_7_1	裙_6_1	
+裙_0_2	下半身	deform
+裙_1_2	裙_0_2	deform
+裙_2_2	裙_1_2	deform
+裙_3_2	裙_2_2	deform
+裙_4_2	裙_3_2	deform
+裙_5_2	裙_4_2	deform
+裙_6_2	裙_5_2	
+裙_7_2	裙_6_2	
+裙_0_3	下半身	deform
+裙_1_3	裙_0_3	deform
+裙_2_3	裙_1_3	deform
+裙_3_3	裙_2_3	deform
+裙_4_3	裙_3_3	deform
+裙_5_3	裙_4_3	deform
+裙_6_3	裙_5_3	deform
+裙_7_3	裙_6_3	deform
+裙_8_3	裙_7_3	
+裙_0_4	下半身	deform
+裙_1_4	裙_0_4	deform
+裙_2_4	裙_1_4	deform
+裙_3_4	裙_2_4	deform
+裙_4_4	裙_3_4	deform
+裙_5_4	裙_4_4	deform
+裙_6_4	裙_5_4	deform
+裙_7_4	裙_6_4	deform
+裙_8_4	裙_7_4	deform
+裙_9_4	裙_8_4	deform
+裙_10_4	裙_9_4	deform
+裙_11_4	裙_10_4	
+裙结_0_1.L	裙_2_4	deform
+裙结_1_1.L	裙结_0_1.L	deform
+裙结_2_1.L	裙结_1_1.L	deform
+裙结_3_1.L	裙结_2_1.L	deform
+裙结_4_1.L	裙结_3_1.L	deform
+裙结_5_1.L	裙结_4_1.L	
+裙_0_5	下半身	deform
+裙_1_5	裙_0_5	deform
+裙_2_5	裙_1_5	deform
+裙_3_5	裙_2_5	deform
+裙_4_5	裙_3_5	deform
+裙_5_5	裙_4_5	deform
+裙_6_5	裙_5_5	deform
+裙_7_5	裙_6_5	deform
+裙_8_5	裙_7_5	deform
+裙_9_5	裙_8_5	deform
+裙_10_5	裙_9_5	deform
+裙_11_5	裙_10_5	deform
+裙_12_5	裙_11_5	deform
+裙_13_5	裙_12_5	
+裙_14_5	裙_13_5	
+裙_0_6	下半身	deform
+裙_1_6	裙_0_6	deform
+裙_2_6	裙_1_6	deform
+裙_3_6	裙_2_6	deform
+裙_4_6	裙_3_6	deform
+裙_5_6	裙_4_6	deform
+裙_6_6	裙_5_6	deform
+裙_7_6	裙_6_6	deform
+裙_8_6	裙_7_6	deform
+裙_9_6	裙_8_6	deform
+裙_10_6	裙_9_6	deform
+裙_11_6	裙_10_6	deform
+裙_12_6	裙_11_6	deform
+裙_13_6	裙_12_6	deform
+裙_14_6	裙_13_6	
+裙_0_7	下半身	deform
+裙_1_7	裙_0_7	deform
+裙_2_7	裙_1_7	deform
+裙_3_7	裙_2_7	deform
+裙_4_7	裙_3_7	deform
+裙_5_7	裙_4_7	deform
+裙_6_7	裙_5_7	deform
+裙_7_7	裙_6_7	deform
+裙_8_7	裙_7_7	deform
+裙_9_7	裙_8_7	deform
+裙_10_7	裙_9_7	deform
+裙_11_7	裙_10_7	deform
+裙_12_7	裙_11_7	deform
+裙_13_7	裙_12_7	deform
+裙_14_7	裙_13_7	
+裙_0_8	下半身	deform
+裙_1_8	裙_0_8	deform
+裙_2_8	裙_1_8	deform
+裙_3_8	裙_2_8	deform
+裙_4_8	裙_3_8	deform
+裙_5_8	裙_4_8	deform
+裙_6_8	裙_5_8	deform
+裙_7_8	裙_6_8	
+裙_8_8	裙_7_8	
+裙_9_8	裙_8_8	deform
+裙_10_8	裙_9_8	
+裙_11_8	裙_10_8	
+裙_12_8	裙_11_8	
+裙_13_8	裙_12_8	
+裙_14_8	裙_13_8	
+后结带_0_1	裙_1_8	deform
+后结带_1_1	后结带_0_1	
+后结带_2_1	后结带_1_1	deform
+后结带_3_1	后结带_2_1	deform
+后结带_4_1	后结带_3_1	deform
+后结带_5_1	后结带_4_1	deform
+后结带_6_1	后结带_5_1	deform
+后结带_7_1	后结带_6_1	deform
+后结带_8_1	后结带_7_1	deform
+后结带_9_1	后结带_8_1	deform
+后结带_10_1	后结带_9_1	deform
+后结带_11_1	后结带_10_1	deform
+后结带_12_1	后结带_11_1	deform
+后结带_13_1	后结带_12_1	deform
+后结带_14_1	后结带_13_1	
+裙_0_9	下半身	deform
+裙_1_9	裙_0_9	deform
+裙_2_9	裙_1_9	deform
+裙_3_9	裙_2_9	deform
+裙_4_9	裙_3_9	deform
+裙_5_9	裙_4_9	deform
+裙_6_9	裙_5_9	deform
+裙_7_9	裙_6_9	deform
+裙_8_9	裙_7_9	deform
+裙_9_9	裙_8_9	deform
+裙_10_9	裙_9_9	deform
+裙_11_9	裙_10_9	deform
+裙_12_9	裙_11_9	deform
+裙_13_9	裙_12_9	deform
+裙_14_9	裙_13_9	
+裙_0_10	下半身	deform
+裙_1_10	裙_0_10	deform
+裙_2_10	裙_1_10	deform
+裙_3_10	裙_2_10	deform
+裙_4_10	裙_3_10	deform
+裙_5_10	裙_4_10	deform
+裙_6_10	裙_5_10	deform
+裙_7_10	裙_6_10	deform
+裙_8_10	裙_7_10	deform
+裙_9_10	裙_8_10	deform
+裙_10_10	裙_9_10	deform
+裙_11_10	裙_10_10	deform
+裙_12_10	裙_11_10	deform
+裙_13_10	裙_12_10	deform
+裙_14_10	裙_13_10	
+裙_0_11	下半身	deform
+裙_1_11	裙_0_11	deform
+裙_2_11	裙_1_11	deform
+裙_3_11	裙_2_11	deform
+裙_4_11	裙_3_11	deform
+裙_5_11	裙_4_11	deform
+裙_6_11	裙_5_11	deform
+裙_7_11	裙_6_11	deform
+裙_8_11	裙_7_11	deform
+裙_9_11	裙_8_11	deform
+裙_10_11	裙_9_11	deform
+裙_11_11	裙_10_11	deform
+裙_12_11	裙_11_11	
+裙_13_11	裙_12_11	
+裙_14_11	裙_13_11	
+裙_0_12	下半身	deform
+裙_1_12	裙_0_12	deform
+裙_2_12	裙_1_12	deform
+裙_3_12	裙_2_12	deform
+裙_4_12	裙_3_12	deform
+裙_5_12	裙_4_12	deform
+裙_6_12	裙_5_12	deform
+裙_7_12	裙_6_12	deform
+裙_8_12	裙_7_12	deform
+裙_9_12	裙_8_12	deform
+裙_10_12	裙_9_12	deform
+裙_11_12	裙_10_12	
+裙_0_13	下半身	deform
+裙_1_13	裙_0_13	deform
+裙_2_13	裙_1_13	deform
+裙_3_13	裙_2_13	deform
+裙_4_13	裙_3_13	deform
+裙_5_13	裙_4_13	deform
+裙_6_13	裙_5_13	deform
+裙_7_13	裙_6_13	deform
+裙_8_13	裙_7_13	
+裙_0_14	下半身	deform
+裙_1_14	裙_0_14	deform
+裙_2_14	裙_1_14	deform
+裙_3_14	裙_2_14	deform
+裙_4_14	裙_3_14	deform
+裙_5_14	裙_4_14	deform
+裙_6_14	裙_5_14	
+裙_7_14	裙_6_14	
+前裙带_0_1	裙_1_14	deform
+前裙带_1_1	前裙带_0_1	deform
+前裙带_2_1	前裙带_1_1	deform
+前裙带_3_1	前裙带_2_1	deform
+前裙带_4_1	前裙带_3_1	deform
+前裙带_5_1	前裙带_4_1	deform
+前裙带_6_1	前裙带_5_1	deform
+前裙带_7_1	前裙带_6_1	deform
+前裙带_8_1	前裙带_7_1	deform
+前裙带_9_1	前裙带_8_1	deform
+前裙带_10_1	前裙带_9_1	deform
+前裙带_11_1	前裙带_10_1	deform
+前裙带_12_1	前裙带_11_1	deform
+前裙带_13_1	前裙带_12_1	deform
+前裙带_14_1	前裙带_13_1	deform
+前裙带_15_1	前裙带_14_1	
+裙_0_15	下半身	deform
+裙_1_15	裙_0_15	deform
+裙_2_15	裙_1_15	deform
+裙_3_15	裙_2_15	deform
+裙_4_15	裙_3_15	deform
+裙_5_15	裙_4_15	deform
+裙_6_15	裙_5_15	
+裙_7_15	裙_6_15	
+上半身	腰	deform
+上半身1	上半身	deform
+上半身2	上半身1	deform
+首	上半身2	deform
+頭	首	deform
+目.R	頭	
+目先.R	目.R	deform
+_dummy_目先.R	目.R	
+目.L	頭	
+目先.L	目.L	deform
+_dummy_目先.L	目.L	
+両目	頭	
+両目先	両目	
+_dummy_目.R	両目	
+_dummy_目.L	両目	
+tongue_01	頭	deform
+tongue_02	tongue_01	deform
+tongue_03	tongue_02	deform
+tongue_04	tongue_03	deform
+DownTeeth	頭	deform
+UpTeeth	頭	deform
+中劉海1-1	頭	deform
+中劉海1-2	中劉海1-1	deform
+中劉海1-3	中劉海1-2	
+中劉海2-1	頭	deform
+中劉海2-2	中劉海2-1	deform
+中劉海2-3	中劉海2-2	
+劉海1.L	頭	deform
+劉海2.L	劉海1.L	deform
+劉海3.L	劉海2.L	
+側髪1-1.L	頭	deform
+側髪1-2.L	側髪1-1.L	deform
+側髪1-3.L	側髪1-2.L	deform
+側髪1-4.L	側髪1-3.L	
+長髮一1-1.L	頭	deform
+長髮一1-2.L	長髮一1-1.L	deform
+長髮一1-3.L	長髮一1-2.L	deform
+長髮一1-4.L	長髮一1-3.L	deform
+長髮一1-5.L	長髮一1-4.L	
+長髮一2-1.L	長髮一1-2.L	deform
+長髮一2-2.L	長髮一2-1.L	deform
+長髮一2-3.L	長髮一2-2.L	
+長髮一3-1.L	長髮一1-2.L	deform
+長髮一3-2.L	長髮一3-1.L	
+長髮二1-1.L	頭	deform
+長髮二1-2.L	長髮二1-1.L	
+長髮二1-3.L	長髮二1-2.L	deform
+長髮二1-4.L	長髮二1-3.L	
+長髮二1-5.L	長髮二1-4.L	deform
+長髮二1-6.L	長髮二1-5.L	
+長髮二1-7.L	長髮二1-6.L	
+長髮二2-2.L	長髮二1-3.L	deform
+長髮二2-3.L	長髮二2-2.L	
+長髮二2-4.L	長髮二2-3.L	
+長髮三1.L	頭	deform
+長髮三2.L	長髮三1.L	deform
+長髮三3.L	長髮三2.L	
+側髪1.R	頭	deform
+側髪2.R	側髪1.R	deform
+側髪3.R	側髪2.R	deform
+側髪4.R	側髪3.R	
+劉海1.R	側髪1.R	deform
+劉海2.R	劉海1.R	
+長髮一1-1.R	頭	deform
+長髮一1-2.R	長髮一1-1.R	deform
+長髮一1-3.R	長髮一1-2.R	deform
+長髮一1-4.R	長髮一1-3.R	deform
+長髮一1-5.R	長髮一1-4.R	
+長髮一2-1.R	長髮一1-2.R	deform
+長髮一2-2.R	長髮一2-1.R	deform
+長髮一2-3.R	長髮一2-2.R	
+長髮一3-1.R	長髮一1-1.R	deform
+長髮一3-2.R	長髮一3-1.R	
+長髮二1-1.R	頭	deform
+長髮二1-2.R	長髮二1-1.R	
+長髮二1-3.R	長髮二1-2.R	deform
+長髮二1-4.R	長髮二1-3.R	
+長髮二1-5.R	長髮二1-4.R	deform
+長髮二1-6.R	長髮二1-5.R	
+長髮二1-7.R	長髮二1-6.R	
+長髮二2-2.R	長髮二1-3.R	deform
+長髮二2-3.R	長髮二2-2.R	
+長髮二2-4.R	長髮二2-3.R	
+長髮三1.R	頭	deform
+長髮三2.R	長髮三1.R	deform
+長髮三3.R	長髮三2.R	
+髪飾結1	頭	deform
+髪飾結2	頭	deform
+髮飾帶1-1	頭	deform
+髮飾帶1-2	髮飾帶1-1	deform
+髮飾帶1-3	髮飾帶1-2	deform
+髮飾帶1-4	髮飾帶1-3	
+髮飾帶2-1	頭	deform
+髮飾帶2-2	髮飾帶2-1	deform
+髮飾帶2-3	髮飾帶2-2	deform
+髮飾帶2-4	髮飾帶2-3	
+耳環1.L	頭	deform
+耳環2.L	耳環1.L	deform
+耳環1.R	頭	deform
+耳環2.R	耳環1.R	deform
+耳.L	頭	deform
+耳.R	頭	deform
+後髪1.L	頭	
+後髪2.L	後髪1.L	deform
+後髪3.L	後髪2.L	
+後髪4.L	後髪3.L	deform
+後髪5.L	後髪4.L	
+後髪6.L	後髪5.L	deform
+後髪7.L	後髪6.L	
+後髪8.L	後髪7.L	deform
+後髪9.L	後髪8.L	
+後髪10.L	後髪9.L	deform
+後髪11.L	後髪10.L	
+後髪12.L	後髪11.L	deform
+後髪13.L	後髪12.L	
+後髪14.L	後髪13.L	deform
+後髪15.L	後髪14.L	
+後髪16.L	後髪15.L	deform
+後髪17.L	後髪16.L	
+後髪18.L	後髪17.L	
+側後髪.L	後髪4.L	deform
+後髪1.R	頭	
+後髪2.R	後髪1.R	deform
+後髪3.R	後髪2.R	
+後髪4.R	後髪3.R	deform
+後髪5.R	後髪4.R	
+後髪6.R	後髪5.R	deform
+後髪7.R	後髪6.R	
+後髪8.R	後髪7.R	deform
+後髪9.R	後髪8.R	
+後髪10.R	後髪9.R	deform
+後髪11.R	後髪10.R	
+後髪12.R	後髪11.R	deform
+後髪13.R	後髪12.R	
+後髪14.R	後髪13.R	deform
+後髪15.R	後髪14.R	
+後髪16.R	後髪15.R	deform
+後髪17.R	後髪16.R	
+後髪18.R	後髪17.R	
+側後髪.R	後髪4.R	deform
+中後髪1	頭	
+中後髪2	中後髪1	
+中後髪3	中後髪2	
+中後髪4	中後髪3	
+中後髪5	中後髪4	
+中後髪6	中後髪5	
+髪蝴蝶	中後髪4	deform
+髪蝴蝶.L	髪蝴蝶	deform
+髪蝴蝶.R	髪蝴蝶	deform
+_shadow_目.R	頭	
+_shadow_目先.R	頭	
+_shadow_目.L	頭	
+_shadow_目先.L	頭	
+肩P.R	上半身2	
+肩.R	肩P.R	deform
+肩C.R	肩.R	
+腕.R	肩C.R	deform
+腕捩.R	腕.R	deform
+ひじ.R	腕捩.R	deform
+手捩.R	ひじ.R	deform
+手首.R	手捩.R	deform
+ダミー.R	手首.R	
+中指１.R	手首.R	deform
+中指２.R	中指１.R	deform
+中指３.R	中指２.R	deform
+中指先.R	中指３.R	
+親指０.R	手首.R	deform
+親指１.R	親指０.R	deform
+親指２.R	親指１.R	deform
+親指先.R	親指２.R	
+人指１.R	手首.R	deform
+人指２.R	人指１.R	deform
+人指３.R	人指２.R	deform
+人差指先.R	人指３.R	
+薬指１.R	手首.R	deform
+薬指２.R	薬指１.R	deform
+薬指３.R	薬指２.R	deform
+薬指先.R	薬指３.R	
+小指１.R	手首.R	deform
+小指２.R	小指１.R	deform
+小指３.R	小指２.R	deform
+小指先.R	小指３.R	
+手袖饰1.R	手首.R	deform
+手袖饰2.R	手首.R	deform
+手袖饰3.R	手首.R	deform
+手先.R	手首.R	
+_dummy_手捩1.R	手捩.R	
+_dummy_手捩2.R	手捩.R	
+_dummy_手捩3.R	手捩.R	
+手捩1.R	ひじ.R	deform
+手捩2.R	ひじ.R	deform
+手捩3.R	ひじ.R	deform
+_shadow_手捩1.R	ひじ.R	
+_shadow_手捩2.R	ひじ.R	
+_shadow_手捩3.R	ひじ.R	
+_dummy_腕捩1.R	腕捩.R	
+_dummy_腕捩2.R	腕捩.R	
+_dummy_腕捩3.R	腕捩.R	
+腕捩1.R	腕.R	deform
+腕捩2.R	腕.R	deform
+腕飾.R	腕捩2.R	deform
+蝶翼1-1	腕飾.R	deform
+蝶翼1-2	蝶翼1-1	deform
+蝶翼1-3	蝶翼1-2	
+蝶翼1-2錘	蝶翼1-2	
+蝶翼1-1錘	蝶翼1-1	
+蝶翼2-1	腕飾.R	deform
+蝶翼2-2	蝶翼2-1	deform
+蝶翼2-3	蝶翼2-2	
+蝶翼2-2錘	蝶翼2-2	
+蝶翼2-1錘	蝶翼2-1	
+蝶翼3-1	腕飾.R	deform
+蝶翼3-2	蝶翼3-1	
+蝶翼3-1錘	蝶翼3-1	
+蝶翼4-1	腕飾.R	deform
+蝶翼4-2	蝶翼4-1	
+蝶翼4-1錘	蝶翼4-1	
+蝶翼5-1	腕飾.R	deform
+蝶翼5-2	蝶翼5-1	
+腕捩3.R	腕.R	deform
+_shadow_腕捩1.R	腕.R	
+_shadow_腕捩2.R	腕.R	
+_shadow_腕捩3.R	腕.R	
+_dummy_肩C.R	肩P.R	
+肩P.L	上半身2	
+肩.L	肩P.L	deform
+肩C.L	肩.L	
+腕.L	肩C.L	deform
+腕捩.L	腕.L	deform
+ひじ.L	腕捩.L	deform
+手捩.L	ひじ.L	deform
+手飾.L	手捩.L	deform
+腕饰1-1.L	手飾.L	deform
+腕饰1-2.L	腕饰1-1.L	
+腕饰1-1錘.L	腕饰1-1.L	
+腕饰2-1.L	手飾.L	deform
+腕饰2-2.L	腕饰2-1.L	
+腕饰2-1錘.L	腕饰2-1.L	
+手首.L	手捩.L	deform
+ダミー.L	手首.L	
+中指１.L	手首.L	deform
+中指２.L	中指１.L	deform
+中指３.L	中指２.L	deform
+中指先.L	中指３.L	
+親指０.L	手首.L	deform
+親指１.L	親指０.L	deform
+親指２.L	親指１.L	deform
+親指先.L	親指２.L	
+人指１.L	手首.L	deform
+人指２.L	人指１.L	deform
+人指３.L	人指２.L	deform
+人差指先.L	人指３.L	
+薬指１.L	手首.L	deform
+薬指２.L	薬指１.L	deform
+薬指３.L	薬指２.L	deform
+薬指先.L	薬指３.L	
+小指１.L	手首.L	deform
+小指２.L	小指１.L	deform
+小指３.L	小指２.L	deform
+小指先.L	小指３.L	
+手先.L	手首.L	
+_dummy_手捩1.L	手捩.L	
+_dummy_手捩2.L	手捩.L	
+_dummy_手捩3.L	手捩.L	
+手捩1.L	ひじ.L	deform
+手捩2.L	ひじ.L	deform
+手捩3.L	ひじ.L	deform
+_shadow_手捩1.L	ひじ.L	
+_shadow_手捩2.L	ひじ.L	
+_shadow_手捩3.L	ひじ.L	
+_dummy_腕捩1.L	腕捩.L	
+_dummy_腕捩2.L	腕捩.L	
+_dummy_腕捩3.L	腕捩.L	
+腕捩1.L	腕.L	deform
+腕捩2.L	腕.L	deform
+腕捩3.L	腕.L	deform
+_shadow_腕捩1.L	腕.L	
+_shadow_腕捩2.L	腕.L	
+_shadow_腕捩3.L	腕.L	
+_dummy_肩C.L	肩P.L	
+胸.R	上半身2	
+胸１.R	胸.R	deform
+胸２.R	胸１.R	deform
+胸.L	上半身2	
+胸１.L	胸.L	deform
+胸２.L	胸１.L	deform
+前結.L	上半身2	deform
+前結.R	上半身2	deform
+前結帶1.L	上半身2	deform
+前結帶2.L	前結帶1.L	deform
+前結帶1.R	上半身2	deform
+前結帶2.R	前結帶1.R	deform
+領碟	上半身2	deform
+_shadow_肩C.R	上半身2	
+_shadow_肩C.L	上半身2	
+_dummy_腰キャンセル.R	腰	
+_dummy_腰キャンセル.L	腰	
+_shadow_腰キャンセル.R	グルーブ	
+_shadow_腰キャンセル.L	グルーブ	
+足IK親.R	全ての親	
+足ＩＫ.R	足IK親.R	
+つま先ＩＫ.R	足ＩＫ.R	
+足IK親.L	全ての親	
+足ＩＫ.L	足IK親.L	
+つま先ＩＫ.L	足ＩＫ.L	
