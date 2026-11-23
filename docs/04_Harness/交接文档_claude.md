@@ -1,4 +1,4 @@
-# 共生岛 · 建模 / 动画 / 渲染 交接文档（2026-11-11）
+# 共生岛 · 建模 / 动画 / 渲染 交接文档（2026-11-11，11-23 更新）
 
 > 这份文档给接手**建模、动画、渲染**的新对话。功能开发（课表识别、排程、AI 聊天、桌面播放器）在另外的对话里做，不在这里。
 > 读完本文就能接着干。更细的规范在仓库 `gongshengdao/docs/`（见第 9 节）。
@@ -20,7 +20,8 @@
 | 渲染 / 合成流水线（裁剪渲染 + 遮罩 + 比值阴影 → 透明 WebM） | ✅ 在 Mac 上端到端验证通过 |
 | **Windows 正式渲染与合成** | ✅ 2026-11-16 完成：3 段背景 + 26 段人物 WebM + 26 段预览 + 3 份清单，0 错误（成品在用户 Windows `D:\gsd_island\output\video\`）。渲染改动：Freestyle → 反转外壳描边（130h → 6.5h）、面光关投影、白天隐藏萤火虫、遮罩忽略火星、合成 box 变量 bug 已修 |
 | 成品审核 | 🟡 Codex 抽帧检查 26 段未见明显穿模、方框、破洞；**坐凳接触、细微脚滑待看 preview 视频确认** |
-| 魔法教室场景 | ✅ 场景完成（另一个 AI 按我们的画风提示词做的），**还没放人物、没做听课动作** |
+| 魔法教室场景 | ✅ 场景完成（另一个 AI 按我们的画风提示词做的） |
+| **魔法教室人物动画** | ✅ 2026-11-18 Windows 渲染与合成完成，11-22 复核通过：伊蕾娜 B5_listen 听课循环 + 老师 T1_lecture 讲课循环（576 帧）/ T2_pace 踱步（441 帧），三层渲染（背景 / 伊蕾娜 / 老师）。详见 `docs/04_Harness/魔法教室交接.md`；老师头发 / 裙带 / 蝶翼摆动未做 |
 | 木屋室内（自习、睡觉、起床） | ⬜ 未开始（动作清单里是 P0） |
 
 ## 3. 硬约束（必须遵守）
@@ -37,10 +38,11 @@
 ## 4. 文件在哪（用户 Mac：`~/Desktop/共生岛/`）
 ```
 共生岛/
-├─ claude.md                         本交接文档（本地副本）
+├─ claude.md / 建模交接文档.md        本交接文档的本地副本（以仓库 docs/04_Harness/交接文档_claude.md 为准，改完同步过来）
 ├─ 共生岛_场景与动作清单.md           动作清单、一天的状态流程、制作顺序（原始规划）
 ├─ 共生岛开题报告.docx                开题报告（用户已改名，原「_Blender方案」版）
-├─ 共生岛_岛屿最终版_Windows渲染包.zip   ★ 当前正在 Windows 上渲染的包（84MB）
+├─ 共生岛_岛屿最终版_Windows渲染包.zip   岛屿最终版 Windows 渲染包（84MB，已渲染完成）
+├─ 共生岛_魔法教室_Windows渲染包_v2.zip  魔法教室 Windows 渲染包 v2（已渲染完成）
 ├─ 动作/                             19 个 Mixamo 动作 FBX + _probe.json（每个动作的帧数、臀部轨迹）
 ├─ 动作预览/、动作预览_衣摆/          白模预览、衣摆 v1/v2 对比视频与抽帧
 ├─ gongshengdao/                     ★ Git 仓库（文档 + 脚本 + 评测证据，见第 9 节）
@@ -54,8 +56,15 @@
    ├─ retarget_mixamo.py                     Mixamo 重定向；`-- preview island` 出白模；`-- lib` 作为库被调用
    ├─ cloth_sim.py                           斗篷弹簧摆（v2 参数）；cloth_sim_v1.py 是第一版
    ├─ magic_classroom.py + classroom_parts/ + check_classroom.py → magic_classroom.blend
-   ├─ _launch.py                             ★ 后台启动器（见第 6 节）
+   ├─ classroom_anim/                        ★ 魔法教室人物动画（详见 docs/04_Harness/魔法教室交接.md）
+   │  ├─ build_classroom.py / teacher.py / board_chalk.py   构建 B5 / T1 / T2、老师、板书 → classroom_anim.blend
+   │  ├─ pack_classroom.py                   裁剪框 + 清单 + 打包 → winpkg_build/classroom.blend
+   │  ├─ scripts/render_classroom.py / compose_classroom.py   三层渲染与合成
+   │  └─ *_v1…v5.py、whitebox_v1…v10/        旧版本脚本与白模（仓库里只有最终版）
+   ├─ _launch.py                             后台启动器（只在没有本机终端时用，见第 6 节）
    ├─ characters/elaina/                     人物模型与贴图（有版权，不进 Git）
+   ├─ characters/teacher/Untitled.fbx        老师 MMD 模型（用户提供，版权素材，不进 Git）
+   ├─ farm_*.blend、gongshengdao_v45.blend   旧方案产物（已废弃，可清理）
    └─ island_final/                          ★ 岛屿最终版
       ├─ build_clips.py                      构建 15 个片段 → island_{morning,noon,night}.blend + clips_*.json + closure_report.json
       ├─ island_{morning,noon,night}.blend   三个时段的渲染文件（各 28MB，贴图已打包，含全部片段动作）
@@ -119,7 +128,19 @@
 - 编码用 Blender 自带 FFmpeg（VSE）：WebM VP9 + RGBA（已验证 alpha_mode=1），背景 H.264。
 
 ## 6. 怎么在用户 Mac 上跑 Blender（重要）
-新对话通过「电脑控制」操作用户的 Blender，通过 device_bash 读写文件。device_bash 运行在一台 Linux 虚拟机里，**不能直接运行 Mac 上的 Blender**。所以用这个办法：
+### 6.1 在 Claude Code（桌面 App 的 Code 页 / 终端）里：直接运行（首选）
+Claude Code 的 Bash 就跑在用户 Mac 上，可以直接调用 Blender（`/Applications/Blender.app`，5.2.3 LTS），不需要电脑控制：
+```bash
+BL=/Applications/Blender.app/Contents/MacOS/Blender
+cd ~/Desktop/共生岛/blender
+"$BL" -b gongshengdao_v4_anim.blend -P island_final/build_clips.py > island_final/build_stdout.txt 2>&1
+```
+- 构建、白模这类超过 2 分钟的任务放后台跑（Bash 的 run_in_background），结束后看 `build_log.txt` / stdout。
+- 同一时间只跑一个 Blender 进程（16GB 内存）。
+- 仓库可以直接在 `gongshengdao/` 里 `git commit`（见第 9 节）。
+
+### 6.2 在 claude.ai 网页对话里：电脑控制 + device_bash（备用）
+网页对话通过「电脑控制」操作用户的 Blender，通过 device_bash 读写文件。device_bash 运行在一台 Linux 虚拟机里，**不能直接运行 Mac 上的 Blender**。所以用这个办法：
 1. 用 device_bash 写好 `blender/island_final/job.json`：
    ```json
    {"name": "build", "args": ["{B}/gongshengdao_v4_anim.blend", "-P", "{B}/island_final/build_clips.py"], "log": "build_stdout.txt"}
@@ -132,26 +153,28 @@
    之后每次只要按「↑」+ 回车重跑；控制台里的 `proc.kill()` 可以终止当前后台任务。
 3. 用 device_bash 看 `island_final/<log>` 和输出文件。
 
-注意：
+注意（6.2 方式）：
 - 电脑控制的批量操作经常 **60 秒超时，但命令其实已经执行**——先查日志 / 输出文件，不要重复执行。
 - 电脑控制权限 30 分钟不用会过期，要重新申请（resolve_access → request_access）。
 - Blender 刚打开时有启动画面，先点空白处关掉，再把鼠标移到视口按 Shift+F4。
-- Mac 上 EEVEE 很慢：夜景 25% 分辨率 8 采样约 110–140 秒一帧。**Mac 只做构建和 Workbench 白模（约 1 秒一帧），EEVEE 渲染交给 Windows**。
 - device_commit 偶尔没真正覆盖文件，提交后用 device_list_dir 核对大小。
 - 用户说过：打开浏览器用 SunBrowser。
 
+两种方式都适用：
+- Mac 上 EEVEE 很慢：夜景 25% 分辨率 8 采样约 110–140 秒一帧（换反转外壳描边后约 6.5 秒）。**Mac 只做构建和 Workbench 白模（约 1 秒一帧），EEVEE 正式渲染交给 Windows**（RTX 5060，用户自己运行 winpkg 批处理，成品在 `D:\gsd_island\`、`D:\gsd_classroom_v2\`）。
+
 ## 7. 下一步（按优先级）
-1. ~~等 Windows 试渲结果~~（已完成）。**下一步：看 6 个 preview 视频确认坐凳和脚滑**；原第 1 条内容保留作参考：：用户会发来 `render_log_*.txt` 的耗时估算、`bg_night/frame_0001.png`、几张 `raw/*/A_0001.png`。检查人物不是粉色（贴图丢失）、不发黑、裁剪区域没切到人物或影子。确认后让用户全量渲染（`4_render_all.bat`）。
-2. **看 preview 视频逐段审核**（规约 SPEC-DS-7）：重点是
+1. **看岛屿 preview 视频逐段审核**（规约 SPEC-DS-7，唯一未关闭的岛屿验收项；preview 在用户 Windows `D:\gsd_island\output\video\preview_*.mp4`，需要用户拷过来）：重点是
    - C3 三段：坐下时臀部是否贴凳面、腿和斗篷是否穿进原木凳；
    - 走路：绕篝火路径是否擦到原木凳 seat0 东端 / seat1、栅栏；上台阶、上门廊时脚是否贴合（B4_rush）；
    - C1b_water：是否穿进花箱；planter 位置离 planter1 只有约 0.4 m；
    - 弯腰动作（浇水、撒面包屑）帽子挡脸的程度；
    - 合成：人物周围有没有方框、闪烁的暗斑、假阴影。
    有问题就改 `build_clips.py`（位置、路径点、坐姿目标 +0.10、RAMP 等），重新构建 → 只重渲出问题的片段（`render_island.py -- clips --clips 名字`，先删掉该片段的 raw 目录）→ 重新合成。
-3. **魔法教室放人物**：用 CHAR_SPOT_1 / 2，做 B5 听课循环（可用 Typing / Sitting / Thinking 重定向），流程照搬岛屿最终版（中立姿势、闭合检查、衣摆、裁剪渲染）。教室只做白天也可以（动作清单里是简化版）。
-4. **木屋室内场景**（P0）：自习（B1 学习循环）、睡觉流程（D1 上床、D2 睡觉循环）、起床流程（G1–G7）。镜头要和岛屿同风格（剖面小屋、正交斜俯视）；床和衣帽钩是睡觉、起床共用的。
-5. 其他：岛屿深夜熄灯版、骑扫帚过渡、彩蛋动作（见动作清单）。
+2. **木屋室内场景**（P0）：自习（B1 学习循环）、睡觉流程（D1 上床、D2 睡觉循环）、起床流程（G1–G7）。镜头要和岛屿同风格（剖面小屋、正交斜俯视）；床和衣帽钩是睡觉、起床共用的。流程照搬岛屿最终版 / 魔法教室（中立姿势、闭合检查、衣摆、裁剪渲染）。
+3. 魔法教室补充（可选）：老师头发 / 裙带 / 蝶翼摆动，做完只重渲老师 T1、T2 两段。
+4. 其他：岛屿深夜熄灯版、骑扫帚过渡、彩蛋动作（见动作清单）。
+5. ~~魔法教室放人物~~（11-18 完成，见 `魔法教室交接.md`）；~~Windows 正式渲染~~（11-16 完成）。
 
 ## 8. 已知问题与经验
 - 原始 FBX 的 Auto-Rig Pro 约束丢失，已在 `animate_loop.fix_hierarchy()` 用 CHAIN 字典重建父子关系。姿势旋转公式 R⁻¹·A·R（静置骨架空间）。
@@ -163,12 +186,16 @@
 - Mixamo「Sitting Idle」是坐在地上，坐凳子用「Sitting」；「Sitting_edge」臀部高 0.9 m，适合高台边缘晃腿。
 - 合成第一版有物体边缘的细线假阴影，加开运算后解决（对比图在 `gongshengdao/evidence/island_final/compose_check.jpg`）。
 - 5.x 动作 API：`action.fcurves` 不存在；写曲线前必须先把动作分配给对象，否则 `fcurve_ensure_for_datablock` 报错。
-- 旧方案（已废弃，不要再用）：v4 渲染包 `共生岛_v4动画_Windows渲染包.zip`（背景里带人物）、Codex 渲染包 `共生岛_Codex动画渲染包.zip`（让 Codex 自己做动画的方案）、各云渲染平台。
+- 旧方案（已废弃，不要再用）：v4 渲染包 `共生岛_v4动画_Windows渲染包.zip`（背景里带人物）、Codex 渲染包 `共生岛_Codex动画渲染包.zip`（让 Codex 自己做动画的方案）、各云渲染平台（`共生岛_瑞云渲染包.zip`、`瑞云渲染包/`）、`blender/farm_*.blend`、`prepare_farm*.py`。
+- 教室光尘（`cls_dust_*`、shaft、volume）会在遮罩上打孔，教室 v1 渲染因此作废；遮罩必须排除这些物体（`render_classroom.py` 已处理）。
+- 循环片段可以是 192 的整数倍（如老师 T1_lecture 576 帧 = 3 个背景周期），这样叠在背景任意相位上仍然对得上。
 
 ## 9. Git 仓库 `共生岛/gongshengdao/`
-- 内容：`docs/`（需求、验收规约、前置调研 + ADR-001~007、Harness 六份规范、Global / Plan / Tasks、项目目录）、`blender/`（全部脚本）、`evidence/`（闭合检查、合成检查、日志、预览）。
-- 远程仓库：GitHub `https://github.com/seobang564-web/gongshengdao`（公开，用户确认过原样公开）。claude.ai 已连接 GitHub，可用 add_repo 拿推送权限，从云端克隆推送。
-- **改脚本后要同步进仓库**：这个文件夹在 device_bash 里不能删除文件，直接在里面 `git commit` 会留下锁文件报错。做法是在虚拟机里 `git clone` 一份到 `$HOME`，复制改好的文件、提交，再用 `rsync -a --exclude .git/config ./ <仓库目录>/` 同步回去（排除 config 是为了保留用户的远程地址）。或者先向用户申请删除权限。推到 GitHub：在虚拟机仓库里 `git bundle create <共生岛>/_to_delete/x.bundle main`，暂存到云端后 fetch 进克隆再 push。
+- 内容：`docs/`（需求、验收规约、前置调研 + ADR-001~007、Harness 六份规范 + 两份交接文档、Global / Plan / Tasks、项目目录）、`blender/`（全部脚本，含 `classroom_anim/`）、`evidence/`（闭合检查、合成检查、日志、预览、教室成品检查报告）。
+- 远程仓库：GitHub `https://github.com/seobang564-web/gongshengdao`（公开，用户确认过原样公开）。
+- **改脚本后要同步进仓库**（把 `~/Desktop/共生岛/blender/` 里改好的脚本复制到 `gongshengdao/blender/` 对应位置）。
+- **在 Claude Code 里**：直接在 `gongshengdao/` 里 `git commit`；推送用 `git push`（本机 git 用 osxkeychain 存凭据；能否免输密码推送未验证，要输密码时让用户自己来）。提交、推送前先问用户。
+- **在 claude.ai 网页对话里**：claude.ai 已连接 GitHub，可用 add_repo 拿推送权限，从云端克隆推送。这个文件夹在 device_bash 里不能删除文件，直接在里面 `git commit` 会留下锁文件报错。做法是在虚拟机里 `git clone` 一份到 `$HOME`，复制改好的文件、提交，再用 `rsync -a --exclude .git/config ./ <仓库目录>/` 同步回去（排除 config 是为了保留用户的远程地址）。或者先向用户申请删除权限。推到 GitHub：在虚拟机仓库里 `git bundle create <共生岛>/_to_delete/x.bundle main`，暂存到云端后 fetch 进克隆再 push。
 - 提交信息格式：`<类型>(<范围>): <说明>`，作者「方舒煜 <seobang564@gmail.com>」。
 - `.gitignore` 已排除 .blend、渲染帧、视频、zip、人物模型、Mixamo FBX。
 
@@ -182,3 +209,5 @@
             "x": 0, "y": 0, "w": 0, "h": 0, "fade_out": 0}]}
 ```
 x / y 是人物层在 2560×1440 画面里的左上角坐标。新增片段时保持这个格式和命名（`<编号>_<动作>`，走路用 `W_<起点>_<终点>`），功能那边就不用改代码。
+
+魔法教室的 `clips_classroom.json` 是同一格式的扩展：`"time": "classroom"`，顶层多一个 `"layers": ["elaina", "teacher"]`，每个片段多一个 `"layer"` 字段，桌面端按层分别播放（伊蕾娜层 B5_listen 循环；老师层 T1_lecture 循环，播完一圈可切 T2_pace，T2 播完回 T1）。岛屿清单没有 `layer` 字段，按单层处理。
