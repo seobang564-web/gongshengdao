@@ -22,7 +22,7 @@ import bpy, bmesh, math, os, sys, json, time, random
 from mathutils import Vector, Matrix, Euler, Quaternion
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-OUT = os.path.join(HERE, "whitebox", "v1")
+OUT = os.environ.get("GSD_CABIN_BUILD_OUT") or os.path.join(HERE, "whitebox", "v1")
 os.makedirs(OUT, exist_ok=True)
 LOGP = os.path.join(OUT, "build_log.txt")
 open(LOGP, "w", encoding="utf-8").close()
@@ -53,6 +53,8 @@ CHAR_SRC = os.environ.get("GSD_CHAR_SRC") or os.path.join(GSD_ROOT, "blender", "
 LIB_DIR = os.path.dirname(HERE)          # 仓库 blender/：retarget_mixamo.py、cloth_sim.py
 CLOTH_PATH = os.path.join(LIB_DIR, "cloth_sim.py")
 FONT_PATH = "/System/Library/Fonts/Supplemental/Arial Unicode.ttf"
+if sys.platform == "win32":
+    FONT_PATH = os.path.join(os.environ.get("WINDIR", r"C:\Windows"), "Fonts", "msyh.ttc")
 random.seed(24)
 
 RES_X, RES_Y = 2560, 1440
@@ -4464,9 +4466,10 @@ sc.view_settings.exposure = 0
 sc.render.film_transparent = False
 COL["HIDDEN"].hide_render = True
 set_state("wb")
-render(os.path.join(OUT, "wb_main.jpg"), CAM_MAIN, RES_X, RES_Y, 75)
-MK.hide_render = False
-render(os.path.join(OUT, "wb_top.jpg"), CAM_TOP, 2000, 1600, 100)
+if "--render-only" not in ARGV:
+    render(os.path.join(OUT, "wb_main.jpg"), CAM_MAIN, RES_X, RES_Y, 75)
+    MK.hide_render = False
+    render(os.path.join(OUT, "wb_top.jpg"), CAM_TOP, 2000, 1600, 100)
 MK.hide_render = True
 
 # ============================================================ 片段清单 + 统一切换入口（给 Windows 正式渲染用）
@@ -4597,8 +4600,9 @@ if B1:
     set_state("wb")
     sc.frame_set(1)
 
-bpy.ops.wm.save_as_mainfile(filepath=os.path.join(HERE, "cabin_whitebox.blend"), compress=True)
-log("已保存 cabin_whitebox.blend")
+if "--render-only" not in ARGV:
+    bpy.ops.wm.save_as_mainfile(filepath=os.path.join(HERE, "cabin_whitebox.blend"), compress=True)
+    log("已保存 cabin_whitebox.blend")
 
 # --- A4 白模视频（主镜头，裁到书桌一带）：--b1 --a4-wb
 if B1 and "--a4-wb" in ARGV and A4_INFO:
