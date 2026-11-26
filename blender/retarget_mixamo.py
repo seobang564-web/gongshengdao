@@ -23,8 +23,8 @@ import json
 import time
 from mathutils import Matrix, Quaternion, Vector
 
-ROOT = os.path.expanduser("~/Desktop/共生岛")
-SRC_DIR = os.path.join(ROOT, "动作")
+ROOT = os.environ.get("GSD_ROOT") or os.path.expanduser("~/Desktop/共生岛")
+SRC_DIR = os.environ.get("GSD_MIXAMO_DIR") or os.path.join(ROOT, "动作")
 OUT_DIR = os.environ.get("GSD_OUT") or os.path.join(ROOT, "动作预览")
 os.makedirs(OUT_DIR, exist_ok=True)
 LOG = os.path.join(OUT_DIR, "log.txt")
@@ -45,6 +45,8 @@ IN_PLACE = {"Happy Walk", "Jogging"}
 LOOP_CLIPS = {"Breathing Idle", "Happy Walk", "Jogging", "Sitting Idle", "Sitting_edge"}
 USE_CLOTH = os.environ.get("GSD_CLOTH", "1") != "0"
 sys.path.insert(0, os.path.join(ROOT, "blender"))
+if "__file__" in globals():                 # 被 exec 调用时用这份脚本旁边的 cloth_sim.py（仓库里那份）
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import cloth_sim
 
 # Mixamo → 伊蕾娜；第三项：True = 先对齐静止方向（手臂），False = 只套转动

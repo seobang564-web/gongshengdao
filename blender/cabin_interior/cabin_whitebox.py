@@ -47,7 +47,11 @@ RENDER_TIMES = [t for t in arg("--times", "night,dawn").split(",") if t]
 PCT = int(arg("--pct", "50"))
 SAMPLES = int(arg("--samples", "32"))
 WB_ONLY = "--wb-only" in ARGV
-CHAR_SRC = os.path.expanduser("~/Desktop/共生岛/blender/island_final/island_night.blend")
+# 外部文件：Mac 默认在 ~/Desktop/共生岛；Windows 用环境变量指过去（见 docs/04_Harness/Codex提示词_室内渲染.md）
+GSD_ROOT = os.environ.get("GSD_ROOT") or os.path.expanduser("~/Desktop/共生岛")
+CHAR_SRC = os.environ.get("GSD_CHAR_SRC") or os.path.join(GSD_ROOT, "blender", "island_final", "island_night.blend")
+LIB_DIR = os.path.dirname(HERE)          # 仓库 blender/：retarget_mixamo.py、cloth_sim.py
+CLOTH_PATH = os.path.join(LIB_DIR, "cloth_sim.py")
 FONT_PATH = "/System/Library/Fonts/Supplemental/Arial Unicode.ttf"
 random.seed(24)
 
@@ -1694,7 +1698,7 @@ def build_b1(CH, rig, root):
     os.environ["GSD_OUT"] = OUT
     _argv = sys.argv
     sys.argv = [sys.argv[0], "--", "lib"]
-    RT = {"__name__": "gsd_retarget"}
+    RT = {"__name__": "gsd_retarget", "__file__": RT_PATH}
     exec(compile(open(RT_PATH, encoding="utf-8").read(), RT_PATH, "exec"), RT)
     sys.argv = _argv
     CH.name = old
@@ -1791,7 +1795,7 @@ def build_b1(CH, rig, root):
         f"（桌裙底 {DESK_TOP - 0.13:.2f}，桌边 y {desk_edge:.3f}）")
     try:                                        # 斗篷摆动（cloth_sim v2，循环）
         import importlib.util
-        spec = importlib.util.spec_from_file_location("cloth_sim", os.path.expanduser("~/Desktop/共生岛/blender/cloth_sim.py"))
+        spec = importlib.util.spec_from_file_location("cloth_sim", CLOTH_PATH)
         cs = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(cs)
         sc.frame_start, sc.frame_end = 1, B1_LOOP
@@ -1870,7 +1874,7 @@ def relax_cape(rig, keep=CAPE_KEEP):
 
 HAT_ON_STAND = []
 HAT_INFO = {}         # 帽子：复制时的头骨矩阵 H0、帽子根矩阵 R0（G5 戴帽用）
-RT_PATH = os.path.expanduser("~/Desktop/共生岛/blender/retarget_mixamo.py")
+RT_PATH = os.path.join(LIB_DIR, "retarget_mixamo.py")
 SLEEP_CLIP = "Laying Sleeping"
 HB_FACE = BED_X[1] - 0.04 - 0.035       # 床头柱内侧（x）
 FB_FACE = BED_X[0] + 0.035 + 0.035      # 床尾柱内侧（x）
@@ -2010,7 +2014,7 @@ def build_sleep():
     os.environ["GSD_OUT"] = OUT
     _argv = sys.argv
     sys.argv = [sys.argv[0], "--", "lib"]
-    RT = {"__name__": "gsd_retarget"}
+    RT = {"__name__": "gsd_retarget", "__file__": RT_PATH}
     exec(compile(open(RT_PATH, encoding="utf-8").read(), RT_PATH, "exec"), RT)
     sys.argv = _argv
     n = RT["retarget"](SLEEP_CLIP, in_place=True)
@@ -3777,7 +3781,7 @@ def build_walk(name, pts2d, h_start, h_end, chair_from=None, chair_to=None, chai
     # 斗篷摆动
     try:
         import importlib.util
-        spec = importlib.util.spec_from_file_location("cloth_sim", os.path.expanduser("~/Desktop/共生岛/blender/cloth_sim.py"))
+        spec = importlib.util.spec_from_file_location("cloth_sim", CLOTH_PATH)
         cs = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(cs)
         sc.frame_start, sc.frame_end = 1, N
@@ -4464,6 +4468,134 @@ render(os.path.join(OUT, "wb_main.jpg"), CAM_MAIN, RES_X, RES_Y, 75)
 MK.hide_render = False
 render(os.path.join(OUT, "wb_top.jpg"), CAM_TOP, 2000, 1600, 100)
 MK.hide_render = True
+
+# ============================================================ 片段清单 + 统一切换入口（给 Windows 正式渲染用）
+# 渲染脚本的用法：exec 本脚本（带 --b1 --wb-only），然后
+#   for c in CLIPS_CABIN: for cam in c["cams"]: nf = play_clip(c["name"], cam); 渲 1..nf 帧
+# play_clip 会设好：时段光照、镜头、显示哪份人物、骨架 / 根物体 / 椅子 / 帽子 / 窗帘动作、B6 特效、窗外背景板。
+# 背景层：按 c["bg"] 渲（见 BG_VARIANTS）；c["props"] 里的道具在这个片段里会动，必须归人物层（背景里藏掉）。
+BG_VARIANTS = {
+    "night": dict(time="night", curtain_l2="closed", hat="stand", chair="under_desk"),
+    "late": dict(time="late", curtain_l2="closed", hat="stand", chair="under_desk"),
+    "dawn_closed": dict(time="dawn", curtain_l2="closed", hat="stand", chair="under_desk", note="G6 之前：东窗窗帘合着"),
+    "dawn_open": dict(time="dawn", curtain_l2="open", hat="stand", chair="under_desk", note="G6 之后、G5 之前：东窗拉开，帽子还在衣帽架上"),
+    "dawn_open_nohat": dict(time="dawn", curtain_l2="open", hat="head", chair="under_desk", note="G5 之后：衣帽架空着"),
+}
+CLIPS_CABIN = [
+    dict(name="W_door_desk", kind="walk", time="night", cams=["main"], bg="night", props=["chair"], fade_in=12,
+         note="从岛上进门（转场淡入）走到书桌前；椅子自己滑到书桌东北边"),
+    dict(name="A4_sit", kind="a4", time="night", cams=["main"], bg="night", props=["chair"], note="坐下，椅子滑到她身后"),
+    dict(name="B1_study", kind="b1", time="night", cams=["E_monitor", "A_right34"], bg="night", loop=True,
+         note="打字学习循环（192 帧）；书桌两个机位都要"),
+    dict(name="B6_smile", kind="b6", time="night", cams=["E_monitor", "A_right34"], bg="night", trigger="task_done", next="B1_study",
+         props=["fx"], note="用户完成任务时播放；首尾 = B1 第 1 帧；星光 / 眼里星星 / 红晕在 FX_B6_<机位> 集合里，遮罩必须算进人物层"),
+    dict(name="A4_up", kind="a4", time="night", cams=["main"], bg="night", props=["chair"], note="起身"),
+    dict(name="W_desk_bed", kind="walk", time="night", cams=["main"], bg="night", props=["chair"], fade_out=12,
+         note="走到床边，最后淡出转场（上床不做动画）"),
+    dict(name="D2_sleep", kind="d2", time="late", cams=["main"], bg="late", loop=True, fade_in=12, fade_out=12,
+         note="深夜睡觉循环（192 帧）：被子呼吸、屏幕光微闪都在背景里，也是 192 帧整周期"),
+    dict(name="W_bed_window", kind="morning", time="dawn", cams=["main"], bg="dawn_closed", fade_in=12, curtain="closed", hat="stand",
+         note="起床转场后在床边站着淡入，走到东窗"),
+    dict(name="G6_curtain", kind="morning", time="dawn", cams=["main"], bg="dawn_closed", props=["curtain_l2"], curtain="play", hat="stand",
+         note="拉开东窗窗帘（形状键）：这段东窗窗帘归人物层"),
+    dict(name="W_window_hat", kind="morning", time="dawn", cams=["main"], bg="dawn_open", curtain="open", hat="stand", note="走到衣帽架"),
+    dict(name="G5_hat", kind="morning", time="dawn", cams=["main"], bg="dawn_open_nohat", props=["hat"], curtain="open", hat="g5",
+         note="魔法戴帽：帽子从衣帽架飘到头上（这段帽子归人物层，背景用衣帽架空着的版本）"),
+    dict(name="W_hat_door", kind="morning", time="dawn", cams=["main"], bg="dawn_open_nohat", curtain="open", hat="head", fade_out=12,
+         note="戴着帽子走到门口，淡出回岛上"),
+]
+
+
+def _cam_obj(cam):
+    return CAM_MAIN if cam == "main" else DESK_CAM_OBJS[cam]
+
+
+def _show_char(which):
+    for k, info in CH_INFO.items():
+        info["coll"].hide_render = k != which
+        info["coll"].hide_viewport = k != which
+
+
+def clip_frames(c):
+    k = c["kind"]
+    if k in ("walk", "morning"):
+        return W_INFO[c["name"]]["frames"]
+    if k == "a4":
+        return A4_INFO.get("frames", 1)
+    if k == "b1":
+        return B1_LOOP
+    if k == "b6":
+        return B6_N
+    return 192
+
+
+def play_clip(name, cam="main"):
+    """把场景切到某个片段（某个机位）：返回帧数。渲染从第 1 帧到返回值。"""
+    c = next(x for x in CLIPS_CABIN if x["name"] == name)
+    apply_time(c["time"])
+    backdrops_on(c["time"], on=(cam != "main"))      # 窗外背景板只给书桌机位用；主镜头剖面视角看不到窗外
+    sc.camera = _cam_obj(cam)
+    sc.render.use_border = False
+    fx_on(None, False)
+    hat_mode("stand")
+    curtain_mode("closed")
+    k = c["kind"]
+    if k == "walk":
+        nf = walk_play(name)
+        _show_char("stand")
+    elif k == "morning":
+        nf = morning_play(name, c.get("curtain", "closed"), c.get("hat", "stand"))
+        _show_char("stand")
+    elif k == "a4":
+        _show_char("seat")
+        nf = a4_play(name)
+    elif k in ("b1", "b6"):
+        _show_char("seat")
+        a4_play(None)
+        if CHAIR_ROOT:
+            CHAIR_ROOT.location.x, CHAIR_ROOT.location.y = B1_CHAIR_XY
+        if k == "b6":
+            assign(CH_INFO["seat"]["rig"], bpy.data.actions[f"CLIP_B6_smile_{cam}"])
+            fx_on(cam)
+        nf = clip_frames(c)
+    else:                                              # d2
+        _show_char("lie")
+        nf = 192
+    sc.frame_start, sc.frame_end = 1, nf
+    sc.frame_set(1)
+    return nf
+
+
+def clips_json():
+    d = dict(version="cabin_clips_v1", fps=24, resolution=[RES_X, RES_Y], loop_frames=192,
+             cameras={"main": CAM_MAIN.name, **{k: v.name for k, v in DESK_CAM_OBJS.items()}},
+             backgrounds=BG_VARIANTS, flow=["W_door_desk", "A4_sit", "B1_study", "(B6_smile 任务完成时)", "A4_up", "W_desk_bed",
+                                           "(淡出转场)", "D2_sleep", "(淡出转场)", "W_bed_window", "G6_curtain", "W_window_hat",
+                                           "G5_hat", "W_hat_door", "(淡出回岛)"],
+             clips=[])
+    for c in CLIPS_CABIN:
+        e = dict(c)
+        e["frames"] = clip_frames(c)
+        e.setdefault("loop", False)
+        e.setdefault("fade_in", 0)
+        e.setdefault("fade_out", 0)
+        e.setdefault("props", [])
+        e["files"] = {cam: f"{c['name']}_{cam}.webm" if len(c["cams"]) > 1 else f"{c['name']}.webm" for cam in c["cams"]}
+        d["clips"].append(e)
+    with open(os.path.join(OUT, "clips_cabin.json"), "w", encoding="utf-8") as fh:
+        json.dump(d, fh, ensure_ascii=False, indent=1)
+    log(f"片段清单 clips_cabin.json：{len(d['clips'])} 段")
+
+
+if B1:
+    clips_json()
+    hat_mode("stand")
+    curtain_mode("closed")
+    fx_on(None, False)
+    for _k, _info in CH_INFO.items():
+        _info["coll"].hide_render = False
+    set_state("wb")
+    sc.frame_set(1)
 
 bpy.ops.wm.save_as_mainfile(filepath=os.path.join(HERE, "cabin_whitebox.blend"), compress=True)
 log("已保存 cabin_whitebox.blend")

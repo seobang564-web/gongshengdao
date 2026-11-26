@@ -1,5 +1,7 @@
 # 给 Windows Codex 的提示词 · 木屋室内灯光调色（2026-11-25）
 
+> ⚠️ 已过时：夜里灯光规则已改（只留显示器光）。正式渲染请用 `Codex提示词_室内渲染.md`。
+
 > 用法：在 Windows 上把仓库切到 `feat/cabin-interior` 分支，把下面「提示词」整段发给 Codex。
 > 场景 .blend 不进 Git，由用户把 `cabin_whitebox.blend`（Mac 上运行脚本后生成，贴图需先打包）拷到 Windows，例如 `D:\gsd_cabin\cabin_whitebox.blend`。
 
