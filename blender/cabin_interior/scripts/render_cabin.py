@@ -138,9 +138,16 @@ def compose(beauty, background, mask, gain, edges=(True, True, True, True), bloo
 
 
 def fade_gain(clip, frame):
+    if clip.get("loop"):
+        return 1
     enter = min(1, (frame - 1) / clip["fade_in"]) if clip["fade_in"] else 1
     leave = min(1, (clip["frames"] - frame) / clip["fade_out"]) if clip["fade_out"] else 1
     return min(enter, leave)
+
+
+def set_fade_mode(clip):
+    if clip["fade_in"] or clip["fade_out"]:
+        clip["fade_mode"] = "player" if clip["loop"] else "baked"
 
 
 def background_name(variant, camera, omit):
@@ -198,35 +205,6 @@ def prop_objects(state, camera):
         "curtain_l2": {obj for obj in objs if obj.name.startswith("cab_win_l2_cur_closed_")},
         "fx": set(fx.all_objects) if fx else set(),
     }
-
-
-def suppress_outline(state):
-    """过滤模型自带的描边材质面，仅作用于内存中的渲染求值。"""
-    actors = {obj for info in state["CH_INFO"].values() for obj in info["coll"].all_objects}
-    actors.update(state["HAT_ON_STAND"])
-    groups = {}
-    for obj in actors:
-        if obj.type != "MESH":
-            continue
-        for slot in obj.material_slots:
-            mat = slot.material
-            if mat is None or not mat.name.split(".")[0].endswith("_Line"):
-                continue
-            if mat not in groups:
-                group = bpy.data.node_groups.new(f"木屋隐藏描边 {mat.name}", "GeometryNodeTree")
-                group.interface.new_socket(name="Geometry", in_out="INPUT", socket_type="NodeSocketGeometry")
-                group.interface.new_socket(name="Geometry", in_out="OUTPUT", socket_type="NodeSocketGeometry")
-                source = group.nodes.new("NodeGroupInput")
-                target = group.nodes.new("NodeGroupOutput")
-                select = group.nodes.new("GeometryNodeMaterialSelection")
-                select.inputs["Material"].default_value = mat
-                remove = group.nodes.new("GeometryNodeDeleteGeometry")
-                remove.domain = "FACE"
-                group.links.new(source.outputs["Geometry"], remove.inputs["Geometry"])
-                group.links.new(select.outputs["Selection"], remove.inputs["Selection"])
-                group.links.new(remove.outputs["Geometry"], target.inputs["Geometry"])
-                groups[mat] = group
-            obj.modifiers.new("渲染隐藏描边", "NODES").node_group = groups[mat]
 
 
 def background_plan(manifest):
@@ -487,7 +465,6 @@ def run(args):
     timings["backgrounds"], timings["clips"] = [], []
 
     state = rebuild(work / "build")
-    suppress_outline(state)
     scene = state["sc"]
     render = scene.render
     render.resolution_x, render.resolution_y, render.resolution_percentage = WIDTH, HEIGHT, 100
@@ -501,6 +478,14 @@ def run(args):
     for time_name in ("night", "late"):
         state["TIME_CFG"][time_name].update(power=0.0, wpow=0.0)
     manifest = json.loads((Path(state["OUT"]) / "clips_cabin.json").read_text(encoding="utf-8"))
+    if args.clips:
+        names = set(args.clips)
+        unknown = names - {clip["name"] for clip in manifest["clips"]}
+        if unknown:
+            raise ValueError(f"未知片段：{', '.join(sorted(unknown))}")
+        manifest["clips"] = [clip for clip in manifest["clips"] if clip["name"] in names]
+    for clip in manifest["clips"]:
+        set_fade_mode(clip)
     manifest["time"] = "cabin"
     manifest["background_files"] = defaultdict(dict)
     background_samples = {}
@@ -599,11 +584,14 @@ def main():
     parser.add_argument("--output", type=Path, default=Path("D:/gsd_cabin/output"))
     parser.add_argument("--samples", type=int, default=64)
     parser.add_argument("--ffmpeg", default=shutil.which("ffmpeg"))
+    parser.add_argument("--clips", nargs="+", help="单帧试渲时只检查指定片段")
     args = parser.parse_args(sys.argv[sys.argv.index("--") + 1:] if "--" in sys.argv else [])
     if not bpy.app.background or bpy.app.version[:2] != (5, 2):
         parser.error("需要以 Blender 5.2 无界面运行")
     if args.mode == "all" and not args.ffmpeg:
         parser.error("全量编码需要 --ffmpeg 或 PATH 上的 FFmpeg")
+    if args.mode == "all" and args.clips:
+        parser.error("--clips 只用于单帧试渲")
     args.output = args.output.resolve()
     run(args)
 
