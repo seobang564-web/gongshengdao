@@ -1272,6 +1272,7 @@ for nm in ("win_f2", "win_f1", "win_l1", "win_l2"):
 # ============================================================ 灯光
 ROOM_E_NIGHT, ROOM_E_LATE = 200.0, 120.0   # 显示器照全屋的点光（W）：夜里学习 / 深夜睡觉
 ROOM_Z = 1.5                               # 这盏点光的高度
+ROOM_DESK_K = 0.25                         # 书桌机位（B1 / B6 近景）只用这盏点光的 25%：脸主要由屏幕照亮，背后墙面留一点（11-27 实测：100% 平均亮度 117，25% 为 89）
 
 
 def point(name, loc, rgb, powers, radius=0.05, shadow=True):
@@ -4547,6 +4548,9 @@ def play_clip(name, cam="main"):
     c = next(x for x in CLIPS_CABIN if x["name"] == name)
     apply_time(c["time"])
     backdrops_on(c["time"], on=(cam != "main"))      # 窗外背景板只给书桌机位用；主镜头剖面视角看不到窗外
+    if cam != "main" and not (L_ROOM.data.animation_data and L_ROOM.data.animation_data.action):
+        # 书桌机位离这盏照全屋的点光太近：照满会把台灯罩、墙照成一片亮、脸变平（11-27 Codex 复验）→ 只留一部分
+        L_ROOM.data.energy *= float(os.environ.get("GSD_ROOM_DESK_K", ROOM_DESK_K))
     sc.camera = _cam_obj(cam)
     sc.render.use_border = False
     fx_on(None, False)
