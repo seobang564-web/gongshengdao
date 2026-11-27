@@ -207,14 +207,21 @@ def prop_objects(state, camera):
     }
 
 
-def background_plan(manifest):
+def background_plan(manifest, clip_names=None, main_backgrounds=()):
     backgrounds = {}
     for clip in manifest["clips"]:
+        selected = clip_names is None or clip["name"] in clip_names
         for cam in clip["cams"]:
             variant = clip["bg"]
+            if not selected and not (cam == "main" and variant in main_backgrounds):
+                continue
             backgrounds.setdefault((variant, cam, ()), clip["name"])
-            omit = omitted_props(manifest, clip)
-            backgrounds.setdefault((variant, cam, omit), clip["name"])
+            if selected:
+                omit = omitted_props(manifest, clip)
+                backgrounds.setdefault((variant, cam, omit), clip["name"])
+    missing = [variant for variant in main_backgrounds if (variant, "main", ()) not in backgrounds]
+    if missing:
+        raise ValueError(f"未知主镜头背景：{', '.join(missing)}")
     return backgrounds
 
 
@@ -474,10 +481,8 @@ def run(args):
     render.image_settings.color_depth = "8"
     render.image_settings.compression = 15
     render.use_file_extension = True
-    # TIME_CFG 仍含原型的太阳/环境光强度，夜景按正式交接压到 0。
-    for time_name in ("night", "late"):
-        state["TIME_CFG"][time_name].update(power=0.0, wpow=0.0)
     manifest = json.loads((Path(state["OUT"]) / "clips_cabin.json").read_text(encoding="utf-8"))
+    backgrounds = background_plan(manifest, args.clips, args.main_background)
     if args.clips:
         names = set(args.clips)
         unknown = names - {clip["name"] for clip in manifest["clips"]}
@@ -490,7 +495,7 @@ def run(args):
     manifest["background_files"] = defaultdict(dict)
     background_samples = {}
     configure_eevee(state, args.samples)
-    for (variant, cam, omit), clip_name in background_plan(manifest).items():
+    for (variant, cam, omit), clip_name in backgrounds.items():
         name = background_name(variant, cam, omit)
         folder = work / Path(name).stem
         restore = set_background(state, manifest["backgrounds"][variant], cam, omit, clip_name)
@@ -585,13 +590,14 @@ def main():
     parser.add_argument("--samples", type=int, default=64)
     parser.add_argument("--ffmpeg", default=shutil.which("ffmpeg"))
     parser.add_argument("--clips", nargs="+", help="单帧试渲时只检查指定片段")
+    parser.add_argument("--main-background", action="append", default=[], help="单帧试渲时额外检查一个主镜头背景变体")
     args = parser.parse_args(sys.argv[sys.argv.index("--") + 1:] if "--" in sys.argv else [])
     if not bpy.app.background or bpy.app.version[:2] != (5, 2):
         parser.error("需要以 Blender 5.2 无界面运行")
     if args.mode == "all" and not args.ffmpeg:
         parser.error("全量编码需要 --ffmpeg 或 PATH 上的 FFmpeg")
-    if args.mode == "all" and args.clips:
-        parser.error("--clips 只用于单帧试渲")
+    if args.mode == "all" and (args.clips or args.main_background):
+        parser.error("--clips 和 --main-background 只用于单帧试渲")
     args.output = args.output.resolve()
     run(args)
 
