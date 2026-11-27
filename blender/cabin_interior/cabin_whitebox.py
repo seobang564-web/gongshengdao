@@ -1270,6 +1270,10 @@ for nm in ("win_f2", "win_f1", "win_l1", "win_l2"):
                 show_at(ob, [t for t, d in CURTAIN.items() if d[nm] == st])
 
 # ============================================================ 灯光
+ROOM_E_NIGHT, ROOM_E_LATE = 200.0, 120.0   # 显示器照全屋的点光（W）：夜里学习 / 深夜睡觉
+ROOM_Z = 1.5                               # 这盏点光的高度
+
+
 def point(name, loc, rgb, powers, radius=0.05, shadow=True):
     ld = bpy.data.lights.new(name, "POINT")
     ld.color = lin(rgb)
@@ -1319,6 +1323,12 @@ _bed_c = Vector(((BED_X[0] + BED_X[1]) / 2, (BED_Y[0] + BED_Y[1]) / 2, BED_TOP +
 L_SPILL.rotation_euler = (_bed_c - L_SPILL.location).to_track_quat("-Z", "Y").to_euler()
 COL["LIGHTS"].objects.link(L_SPILL)
 LIGHTS.append((L_SPILL, {"dawn": 0, "day": 0, "night": 0, "late": 30}))
+# 显示器照亮整间屋（用户 11-27：房间都亮一点，电脑周围最亮，远端弱一点）：屏幕前一盏柔和暖色点光，不限距离，
+# 点光按距离平方衰减 → 书桌一带最亮、床 / 门口 / 火炉逐渐变暗。深夜跟着屏幕一起微闪（screen_flicker）
+_room_e = [float(x) for x in os.environ.get("GSD_ROOM_E", f"{ROOM_E_NIGHT},{ROOM_E_LATE}").split(",")]
+# 放在屏幕前上方 1.5 m 高：太低的话桌面会在南半边地板投出一大片硬影子（11-27 试过 0.9 m）
+L_ROOM = point("L_monitor_room", (MON_C[0], MON_C[1] + 0.35, ROOM_Z), (1.0, 0.74, 0.48),
+               {"dawn": 0, "day": 0, "night": _room_e[0], "late": _room_e[1]}, radius=0.6)
 point("L_stove", (STOVE_C[0] - 0.42, STOVE_C[1] - 0.12, 0.32), (1.0, 0.50, 0.20), {"dawn": 4, "day": 2, "night": 0, "late": 0}, radius=0.1)
 point("L_night_lamp", (NIGHTSTAND_C[0] + 0.05, NIGHTSTAND_C[1] + 0.08, 0.70), (1.0, 0.72, 0.45), {"dawn": 3, "day": 0, "night": 0, "late": 0}, radius=0.05)
 fl = bpy.data.lights.new("L_fill", "AREA")
@@ -4295,7 +4305,7 @@ def flicker_factor(f):
 
 def screen_flicker(on):
     """睡觉时显示器的光微弱地闪：屏幕自发光 + 两盏屏幕灯一起按 flicker_factor 打关键帧；其它时段清掉动画"""
-    targets = [(L_MON.data, "energy", None), (L_SPILL.data, "energy", None)]
+    targets = [(L_MON.data, "energy", None), (L_SPILL.data, "energy", None), (L_ROOM.data, "energy", None)]
     for m in (G_SCREEN, G_SCREEN_UI):
         em = next(n for n in m.node_tree.nodes if n.type == "EMISSION")
         targets.append((m.node_tree, f'nodes["{em.name}"].inputs[1].default_value', em.inputs[1]))
