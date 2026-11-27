@@ -209,6 +209,8 @@ cd ~/Desktop/共生岛/blender
 - `.gitignore` 已排除 .blend、渲染帧、视频、zip、人物模型、Mixamo FBX。
 
 ## 10. 和功能开发对话的接口
+> 给功能开发的完整说明在 `docs/04_Harness/播放器接入说明.md`（三个场景的叠层、切换、一天的流程、状态机、缺的过渡片段）。改了片段或清单格式，要同步更新那份文档。
+
 桌面播放器只读 `output/video/clips_<时段>.json`：
 ```json
 {"time": "night", "background": "bg_night.mp4", "loop_frames": 192, "fps": 24, "resolution": [2560, 1440],
