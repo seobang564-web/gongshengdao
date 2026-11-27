@@ -1,4 +1,4 @@
-# 共生岛 · 建模 / 动画 / 渲染 交接文档（2026-11-11，11-23 更新）
+# 共生岛 · 建模 / 动画 / 渲染 交接文档（2026-11-11，11-27 更新）
 
 > 这份文档给接手**建模、动画、渲染**的新对话。功能开发（课表识别、排程、AI 聊天、桌面播放器）在另外的对话里做，不在这里。
 > 读完本文就能接着干。更细的规范在仓库 `gongshengdao/docs/`（见第 9 节）。
@@ -22,7 +22,7 @@
 | 成品审核 | 🟡 Codex 抽帧检查 26 段未见明显穿模、方框、破洞；**坐凳接触、细微脚滑待看 preview 视频确认** |
 | 魔法教室场景 | ✅ 场景完成（另一个 AI 按我们的画风提示词做的） |
 | **魔法教室人物动画** | ✅ 2026-11-18 Windows 渲染与合成完成，11-22 复核通过：伊蕾娜 B5_listen 听课循环 + 老师 T1_lecture 讲课循环（576 帧）/ T2_pace 踱步（441 帧），三层渲染（背景 / 伊蕾娜 / 老师）。详见 `docs/04_Harness/魔法教室交接.md`；老师头发 / 裙带 / 蝶翼摆动未做 |
-| 木屋室内（自习、睡觉、起床） | 🟡 2026-11-25 布局白模 v1 + 侧睡静帧用户认可（分支 `feat/cabin-interior`，详见 `docs/04_Harness/木屋室内交接.md`）；灯光调色交给 Windows Codex（`Codex提示词_室内.md`）；动作片段未开始 |
+| **木屋室内（自习、完成任务、睡觉、起床）** | ✅ 2026-11-27 Windows 全量渲染与合成完成并复核通过：12 段 / 14 个片段×机位（进门、A4 坐下 / 起身、B1 打字学习循环与 B6 完成任务星星眼各两个书桌机位、走到床边、D2 睡觉循环、起床后拉窗帘 G6、魔法戴帽 G5、出门），9 段背景、14 段透明 WebM + 预览 + `clips_cabin.json`，成品在 `D:\gsd_cabin\output\video\`。脚本 `blender/cabin_interior/`（仓库），详见 `木屋室内交接.md`、`木屋室内成品检查.md` |
 
 ## 3. 硬约束（必须遵守）
 - **Blender 5.2**。所有 .blend 是 5.2 格式，4.x 打不开；不要用低版本保存。
@@ -62,6 +62,8 @@
    │  ├─ scripts/render_classroom.py / compose_classroom.py   三层渲染与合成
    │  └─ *_v1…v5.py、whitebox_v1…v10/        旧版本脚本与白模（仓库里只有最终版）
    ├─ _launch.py                             后台启动器（只在没有本机终端时用，见第 6 节）
+   ├─ （木屋室内脚本只在仓库里：gongshengdao/blender/cabin_interior/ —— cabin_whitebox.py 场景 + 全部片段、
+   │   render_window_bg.py 窗外背景板、scripts/render_cabin.py Windows 三层渲染与合成；详见 木屋室内交接.md）
    ├─ characters/elaina/                     人物模型与贴图（有版权，不进 Git）
    ├─ characters/teacher/Untitled.fbx        老师 MMD 模型（用户提供，版权素材，不进 Git）
    ├─ farm_*.blend、gongshengdao_v45.blend   旧方案产物（已废弃，可清理）
@@ -171,10 +173,11 @@ cd ~/Desktop/共生岛/blender
    - 弯腰动作（浇水、撒面包屑）帽子挡脸的程度；
    - 合成：人物周围有没有方框、闪烁的暗斑、假阴影。
    有问题就改 `build_clips.py`（位置、路径点、坐姿目标 +0.10、RAMP 等），重新构建 → 只重渲出问题的片段（`render_island.py -- clips --clips 名字`，先删掉该片段的 raw 目录）→ 重新合成。
-2. **木屋室内场景**（P0，布局已认可，见 `木屋室内交接.md`）：自习（B1 学习循环）、睡觉流程（D1 上床、D2 睡觉循环）、起床流程（G1–G7）。镜头要和岛屿同风格（剖面小屋、正交斜俯视）；床和衣帽钩是睡觉、起床共用的。流程照搬岛屿最终版 / 魔法教室（中立姿势、闭合检查、衣摆、裁剪渲染）。
-3. 魔法教室补充（可选）：老师头发 / 裙带 / 蝶翼摆动，做完只重渲老师 T1、T2 两段。
-4. 其他：岛屿深夜熄灯版、骑扫帚过渡、彩蛋动作（见动作清单）。
-5. ~~魔法教室放人物~~（11-18 完成，见 `魔法教室交接.md`）；~~Windows 正式渲染~~（11-16 完成）。
+2. **木屋室内接入播放器**（交给功能开发对话）：`clips_cabin.json` 比岛屿清单多 `views`（每个机位的背景文件和人物层位置）、`trigger`（B6 = `task_done`）、`next`、`fade_in / fade_out` 与 `fade_mode`（`baked` = 已做进视频；`player` = D2 睡觉循环，由播放器在进出场时淡入淡出）、书桌两个机位的切换。
+3. 木屋室内精修（可选）：B6 改成十指交扣（现在是手指伸直的合掌）、W_desk_bed 斗篷毫米级穿插（真正的布料碰撞）、A4_up 换成真正的 Sit To Stand（现在是 A4_sit 倒放）。改完只重渲对应片段。
+4. 魔法教室补充（可选）：老师头发 / 裙带 / 蝶翼摆动，做完只重渲老师 T1、T2 两段。
+5. 其他：岛屿深夜熄灯版、骑扫帚过渡、彩蛋动作（见动作清单）。
+6. ~~木屋室内~~（11-27 完成）；~~魔法教室放人物~~（11-18 完成，见 `魔法教室交接.md`）；~~Windows 正式渲染~~（11-16 完成）。
 
 ## 8. 已知问题与经验
 - 原始 FBX 的 Auto-Rig Pro 约束丢失，已在 `animate_loop.fix_hierarchy()` 用 CHAIN 字典重建父子关系。姿势旋转公式 R⁻¹·A·R（静置骨架空间）。
@@ -189,9 +192,15 @@ cd ~/Desktop/共生岛/blender
 - 旧方案（已废弃，不要再用）：v4 渲染包 `共生岛_v4动画_Windows渲染包.zip`（背景里带人物）、Codex 渲染包 `共生岛_Codex动画渲染包.zip`（让 Codex 自己做动画的方案）、各云渲染平台（`共生岛_瑞云渲染包.zip`、`瑞云渲染包/`）、`blender/farm_*.blend`、`prepare_farm*.py`。
 - 教室光尘（`cls_dust_*`、shaft、volume）会在遮罩上打孔，教室 v1 渲染因此作废；遮罩必须排除这些物体（`render_classroom.py` 已处理）。
 - 循环片段可以是 192 的整数倍（如老师 T1_lecture 576 帧 = 3 个背景周期），这样叠在背景任意相位上仍然对得上。
+- 木屋室内的经验（详见 `木屋室内交接.md`）：
+  - Windows 上不用拷 .blend：`cabin_whitebox.py` 用环境变量 `GSD_CHAR_SRC`、`GSD_MIXAMO_DIR` 找外部文件，在 Windows 上从零重建；渲染脚本 exec 场景脚本后对每个片段调 `play_clip(名字, 机位)`。
+  - 夜里「屋里灯全关」只关灯具；月光 `power 0.6`、天空光 `wpow 0.2` 必须保留，设成 0 主镜头会变成黑剪影。房间整体靠屏幕前上方一盏照全屋的点光（200 W / 深夜 120 W），书桌近景只用 25%。
+  - 渲染要打开 `COL["HIDDEN"]` 里的遮光盒，否则月光整片灌进屋。
+  - 伊蕾娜手臂约 34 cm、帽檐半径 43 cm，用手戴帽必然穿模 → G5 改成魔法让帽子飘到头上（逐帧穿模扫描 0）。
+  - 表情靠 Auto-Rig Pro 面部骨骼（没有形状键）：抬 `c_cheek_smile` 会把下眼皮顶上来、眼睛变小；`eyelid_top` 正转 = 闭眼。
 
 ## 9. Git 仓库 `共生岛/gongshengdao/`
-- 内容：`docs/`（需求、验收规约、前置调研 + ADR-001~007、Harness 六份规范 + 两份交接文档、Global / Plan / Tasks、项目目录）、`blender/`（全部脚本，含 `classroom_anim/`）、`evidence/`（闭合检查、合成检查、日志、预览、教室成品检查报告）。
+- 内容：`docs/`（需求、验收规约、前置调研 + ADR-001~007、Harness 六份规范 + 两份交接文档、Global / Plan / Tasks、项目目录）、`blender/`（全部脚本，含 `classroom_anim/`、`cabin_interior/`）、`evidence/`（闭合检查、合成检查、日志、预览、教室和木屋成品检查图）。
 - 远程仓库：GitHub `https://github.com/seobang564-web/gongshengdao`（公开，用户确认过原样公开）。
 - **改脚本后要同步进仓库**（把 `~/Desktop/共生岛/blender/` 里改好的脚本复制到 `gongshengdao/blender/` 对应位置）。
 - **在 Claude Code 里**：直接在 `gongshengdao/` 里 `git commit`；推送用 `git push`（本机 git 用 osxkeychain 存凭据；能否免输密码推送未验证，要输密码时让用户自己来）。提交、推送前先问用户。
@@ -209,5 +218,7 @@ cd ~/Desktop/共生岛/blender
             "x": 0, "y": 0, "w": 0, "h": 0, "fade_out": 0}]}
 ```
 x / y 是人物层在 2560×1440 画面里的左上角坐标。新增片段时保持这个格式和命名（`<编号>_<动作>`，走路用 `W_<起点>_<终点>`），功能那边就不用改代码。
+
+木屋室内的 `clips_cabin.json`（`D:\gsd_cabin\output\video\`）也是同一格式的扩展：多 `views`（每个机位的背景文件和 x / y / w / h）、`trigger`、`next`、`fade_in`、`fade_out`、`fade_mode`、`cams`，见第 7 节第 2 条。
 
 魔法教室的 `clips_classroom.json` 是同一格式的扩展：`"time": "classroom"`，顶层多一个 `"layers": ["elaina", "teacher"]`，每个片段多一个 `"layer"` 字段，桌面端按层分别播放（伊蕾娜层 B5_listen 循环；老师层 T1_lecture 循环，播完一圈可切 T2_pace，T2 播完回 T1）。岛屿清单没有 `layer` 字段，按单层处理。
