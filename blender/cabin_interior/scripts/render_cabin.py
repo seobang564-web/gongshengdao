@@ -444,6 +444,15 @@ def image_sequence(folder):
     return ["-framerate", str(FPS), "-i", str(folder / "frame_%04d.png")]
 
 
+def preview_overlay(x, y):
+    # WebM 的毫秒时间戳会舍入 24 fps 的帧间隔。按帧号对齐两路，
+    # 由 encode 的 -frames:v 控制长度，避免 overlay shortest 提前结束。
+    return (
+        f"[0:v]settb=1/{FPS},setpts=N[bg];"
+        f"[1:v]settb=1/{FPS},setpts=N[fg];[bg][fg]overlay={x}:{y}"
+    )
+
+
 def publish_videos(encoded, video):
     for source in encoded.iterdir():
         if source.name.startswith(".") or source.suffix not in {".mp4", ".webm"}:
@@ -572,7 +581,7 @@ def run(args):
                 encode(args.ffmpeg, encoded / f"preview_{stem}.mp4", "mp4",
                        ["-stream_loop", "-1", "-i", str(encoded / bg_file),
                         "-c:v", "libvpx-vp9", "-i", str(encoded / file)], n,
-                       ["-filter_complex", f"[0:v][1:v]overlay={x}:{y}:shortest=1"])
+                       ["-filter_complex", preview_overlay(x, y)])
         clip.update(views[clip["cams"][0]], views=views)
     if test:
         write_json(check / "clips_cabin.json", manifest)
